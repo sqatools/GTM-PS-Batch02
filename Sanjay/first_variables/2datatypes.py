@@ -65,4 +65,3 @@ print(type(lis1))
 print(type(lis2))
 
 print(("-")*50)
-
