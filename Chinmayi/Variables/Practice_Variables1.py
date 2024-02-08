@@ -130,5 +130,22 @@ area = 2*pi*r*h + 2*pi*r*r
 
 print("area of cylinder =",area)
 
+#20). Python program to calculate simple interest.
+#Formula = P+(P/r)*t
+
+p = 10000
+r = 6
+t = 2
+
+SI = p +(p/r)*t
+
+print("Simple Interest =",SI)
+
+#21). Python program to print the current date in the given format
+
+import datetime
+Date = datetime.datetime.now()
+print ("Date :",Date)
+
 
 
