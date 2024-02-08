@@ -136,6 +136,7 @@ print(dir(tuple))
 
 tup2 = (4, )
 print(type(tup2))
+#
 
 list1 = [5]
 print(type(list1))
