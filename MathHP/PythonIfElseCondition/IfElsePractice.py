@@ -2,7 +2,7 @@
 if condition
   code
 else:
-  code            # if you have space , then its intendation error
+  code            # if you have space , then its indentation error
 
 """
 

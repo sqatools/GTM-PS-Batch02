@@ -44,7 +44,7 @@ print(type(var_b), var_b)
 print(type(var_c), var_c)  # <class 'float'>
 
 """
-Properties of integer
+Properties of Float
 -> Float is immutable data type.
 -> Any decimal number will be consider as float.
 -> There is no specific range or limit for float value, we can define 
