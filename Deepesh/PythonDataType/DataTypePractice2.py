@@ -15,15 +15,16 @@ Python Data Type
 """
 
 # Integer data type
-
+print("________ Integer_________")
 var1 = 2
 var2 = 456
 var3 = 532454325432543254325
-print(type(var1), "\n")
-print(type(var2))
-print(type(var3))
+print(type(var1), "\n") # <class 'int'>
+print(type(var2)) # <class 'int'>
+print(type(var3)) # <class 'int'>
 
 var4 = int
+print(var4, type(var4))
 """
 Properties of integer
 -> Integer is immutable data type.
@@ -32,7 +33,9 @@ Properties of integer
 any long number as int.
 """
 
+print("________ Integer_________")
 print("_"*50)
+print("________ float_________")
 # float data type
 
 var_a = 80.25
@@ -44,13 +47,15 @@ print(type(var_b), var_b)
 print(type(var_c), var_c)  # <class 'float'>
 
 """
-Properties of Float
+Properties of float
 -> Float is immutable data type.
 -> Any decimal number will be consider as float.
 -> There is no specific range or limit for float value, we can define 
 any long number decimal number as float.
 """
+print("________ end of float_________")
 
+print("________ complex number_________")
 # complex number (x+yj)
 # real number : x
 # imaginary number : y
@@ -59,10 +64,10 @@ val = 4+5j
 val2 = 435435 + 5.6j
 print(val, type(val))
 # (4+5j) <class 'complex'>
-print(val2, type(val2))
-print("Hello Good Morning")
-var3 = "Good Evening"
-print("Hey ", var3)
+# print(val2, type(val2))
+# print("Hello Good Morning")
+# var3 = "Good Evening"
+# print("Hey ", var3)
 
 var1 = 800
 var1 = 1000
@@ -70,8 +75,11 @@ print(var1)
 
 
 print("_"*40)
+print("________ End of complex _________")
+
 ######### Sequantial Data Type #######
 
+print("________ string _________")
 # String
 
 str1 = "H"
@@ -92,17 +100,17 @@ so jump in!
 
 str5 = ''
 
-str6 = "Python 5645645645 Programming"
+str6 = "Python 5645645645 ^&*^&^&* Programming"
 
 print(str1, type(str1))
 print("_"*40)
 print(str2, type(str2))
 print("_"*40)
 
-print(str3, type(str3))
+print(str3, type(str3)) # <class 'str'>
 print("_"*40)
 
-print(str4, type(str4))
+print(str4, type(str4)) # <class 'str'>
 print("_"*40)
 
 print(str5, type(str5))
@@ -116,10 +124,10 @@ stra = "Python"
 
 print(stra)
 
-print(stra[2], stra[-4])
+print(stra[2], stra[-4]) # t t
 
 strb = "Hello Good"
-print(strb[6])
+print("print g:",strb[6])
 
 # print(strb[10])
 # IndexError: string index out of range
@@ -132,6 +140,8 @@ Properties of string
 """
 
 print("_"*40)
+
+print("______ List data Type _________")
 ###### List #########
 
 #        0  1     2       3
@@ -139,7 +149,7 @@ list1 = [3, 4.5, 'Hello', [4, 6, 8]]
 #       -4  -3   -2      -1
 
 
-print(list1, type(list1))  # <class 'list'>
+print("list1 values :", list1, type(list1))  # <class 'list'>
 
 print(list1[2])
 var1 = list1[-3]
@@ -210,7 +220,7 @@ print(dict1, type(dict1))
 
 # Dict is mutable data type, we can modify it any point of time
 dict1['email'] = "rahul@gmail.com"
-print(dict1)
+print("dict1 value :", dict1)
 
 dict2 = {}
 dict2['phone'] = 956755657
@@ -267,7 +277,7 @@ print(school['teachers']['physics'][1]['email'])
 print("_"*50)
 
 set1 = {4, 7, 'a', 'b', 7, 5, 3, 4}
-print(set1, type(set1))
+print("set value :", set1, type(set1))
 
 """
 # Properties of the set
