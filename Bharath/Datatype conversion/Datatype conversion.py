@@ -1,16 +1,17 @@
-#Python Data Type
+"""
+Python Data Type
 
-#1. Numbers
-    #i)   Integer
-    #ii)  Float
-    #iii) Complex#
-#2. Sequential Data
-    #i).   String
-    #ii).  List
-    #iii). Tuple
-#3. Dictionary
-#4. Set
-#5. Boolean#
+1. Numbers
+    i)   Integer
+    ii)  Float
+    iii) Complex
+2. Sequential Data
+    i).   String
+    ii).  List
+    iii). Tuple
+3. Dictionary
+4. Set
+5. Boolean
 """
 
 ############ Integer ###########
@@ -97,7 +98,7 @@ str1 = "Hello"
 v1 = int(str1)
 print(v1, type(v1))
 # ValueError: invalid literal for int() with base 10: 'Hello'
-
+"""
 # if string contains only numbers then the string to integer
 # conversion is possible
 str2 = "56734"
@@ -221,3 +222,198 @@ list3 =[]
 b2 = bool(list3)
 print(b2, type(b2))
 # False <class 'bool'>
+
+########################## Tuple #######################
+print("_"*40)
+#  tuple ->int : conversion is not possible
+#  tuple -> float : conversion is not possible
+# tuple -> string
+tup1 = (3, 6, 8, 1)
+str1 = str(tup1)
+print(str1, type(str1), str1[-2])
+# (3, 6, 8, 1) <class 'str'> 1
+
+# tuple -> list
+
+tup2 = (5, 7, 8, 2)
+l1 = list(tup2)
+print(l1, l1[1], type(l1))
+# [5, 7, 8, 2] 7 <class 'list'>
+
+"""
+# tuple -> dict
+t1 = (4, 7, 9, 2)
+d1 = dict(t1)
+print(d1, type(d1))
+# TypeError: cannot convert dictionary update sequence element #0 to a sequence
+"""
+
+t2 = ('a', 'b', 'c', 'd', 'e')
+t3 = (456, 67, 83, 32, 12)
+print(t2, t3)
+
+result = dict(zip(t3, t2))
+print(result, type(result))
+# {'a': 456, 'b': 67, 'c': 83, 'd': 32, 'e': 12} <class 'dict'>
+# {456: 'a', 67: 'b', 83: 'c', 32: 'd', 12: 'e'} <class 'dict'>
+
+print("_"*40)
+
+######## tuple -> set ###########
+t5 = (4, 6, 2, 8, 1, 2, 6)
+s1 = set(t5)
+print(s1, type(s1))
+# {1, 2, 4, 6, 8} <class 'set'>
+
+
+######## Tuple -> Boolean #######
+t1 = (5, 7, 3, 8)
+b1 = bool(t1)
+print(b1, type(b1))
+# True <class 'bool'>
+
+t2 = () # empty tuple
+print(t2, type(t2))
+b2 = bool(t2)
+print(b2, type(b2))
+# False <class 'bool'>
+
+################# Dictionary #############
+print("_"*40)
+# dict -> int : conversion not possible
+"""
+dict1 = {'a' : 456, 'b' : 256, 'Name': 'Rahul', 'a' : 666}
+print(dict1['a'])
+val1 = int(dict1)
+print(val1)
+# TypeError: int() argument must be a string, a bytes-like object or a real number, not 'dict'
+"""
+
+
+# dict -> float : conversion is not possible
+# dict -> string :
+dict1 = {'Name' : 'john', 'mobile' : 5654645, 'email' : 'john123@gmail.com'}
+s1= str(dict1)
+print(s1, type(s1), s1[0], s1[2])
+# {'Name': 'john', 'mobile': 5654645, 'email': 'john123@gmail.com'} <class 'str'> { N
+
+### dict -> list ###
+dict1 = {'Name' : 'john', 'mobile' : 5654645, 'email' : 'john123@gmail.com'}
+l1 = list(dict1)
+print(l1, type(l1), l1[-1], l1[1])
+# ['Name', 'mobile', 'email'] <class 'list'> email mobile
+
+
+#### dict -> tuple  ####
+dict1 = {'Name' : 'john', 'mobile' : 5654645, 'email' : 'john123@gmail.com'}
+t1 = tuple(dict1)
+print(t1, type(t1))
+# ('Name', 'mobile', 'email') <class 'tuple'>
+
+#### dict -> set #####
+dict2 = {'Name' : 'john', 'mobile' : 5654645, 'email' : 'john123@gmail.com'}
+set1 = set(dict2)
+print(set1, type(set1))
+# {'Name', 'email', 'mobile'} <class 'set'>
+
+
+##### dict -> boolean ####
+
+dict11 = {'a' : 123}
+b1 = bool(dict1)
+print(b1, type(b1))
+# True <class 'bool'>
+
+dict2 = {}
+b2 = bool(dict2)
+print(b2, type(b2))
+# False <class 'bool'>
+
+############ Set ##############
+
+set1 = {5, 'B', 7, 2, 8, 'a', 1, 3, 5, 7, 8}
+
+# set -> int # conversion is not possible
+# set -> float #  conversion is not possible
+# set -> string #
+print("_"*50)
+print(set1, type(set1))
+s1 = str(set1)
+print(s1, type(s1), s1[0], s1[1])
+# {1, 2, 3, 5, 7, 8, 'a', 'B'} <class 'str'> { 1
+
+
+# set -> list
+set2 = {4, 6, 8, 'C', 2, 6, 7, 2, 8, 'a', "B"}
+l1 = list(set2)
+print(l1, l1[0])
+# [2, 4, 6, 7, 8, 'a', 'B', 'C'] 2
+
+# set -> tuple
+s2 = {4, 7, 9, 12}
+t1 = tuple(set2)
+print(t1, type(t1))
+# ('B', 2, 4, 6, 7, 8, 'a', 'C') <class 'tuple'>
+
+
+# set -> dict : conversion is not possible
+# set -> bool
+set1 = {4, 6}
+b1 = bool(set1)
+print(b1, type(b1))
+# True <class 'bool'>
+
+set2 = {}
+b2 = bool(set2)
+print(b2, type(b2))
+# False <class 'bool'>
+
+s1 = {4, 6, 8, 9}
+s2 = {'a', 'b', 'c', 'd'}
+
+result = dict(zip(s1, s2))
+print(result)
+# {8: 'c', 9: 'd', 4: 'b', 6: 'a'}
+
+
+###### Boolean ###########
+
+# bool -> int
+v1 = True
+v2 = int(v1)
+print(v2) # 1
+
+v3 = False
+v4 = int(v3)
+print(v4) # 0
+
+# bool -> float
+v1 = True
+v2 = float(v1)
+print(v2)  # 1.0
+
+v3 = False
+v4 = float(v3)
+print(v4) # 0.0
+
+# bool -> string
+var1 = True
+s1 = str(var1)
+print(s1, type(s1), s1[0])
+# True <class 'str'> T
+
+
+# bool -> list # conversion is not possible
+"""
+b1 = True
+l1 = list(b1)
+print(l1, type(l1))
+"""
+# bool -> tuple # conversion is not possible
+# bool -> dict # # conversion is not possible
+# bool -> set # # conversion is not possible
+"""
+v1 = True
+s1 = set(v1)
+print(s1)
+"""
