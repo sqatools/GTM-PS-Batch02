@@ -100,9 +100,9 @@ False or True : True
 
 x = 500
 y = 700
-z = 501
+z = 500
 #  False or False : False
-if x == y or x == z:
+if x == y and x == z:
     print("variables has equal value ")
 else:
     print("variables does not have equal value")
