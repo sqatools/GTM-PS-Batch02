@@ -69,3 +69,94 @@ for i in range(10):
         break
     print(i)
 
+
+
+# find out the palimdrop number and check its output.
+print("_"*50)
+num1 = 565
+rev_num = str(num1)[::-1]
+print("rev_num :", rev_num)
+
+if num1 == int(rev_num):
+    print("This number is palimdrome")
+else:
+    print("This number is not a palimdrome")
+
+
+# Query question:
+
+# input_values = [1,"cat","dog", True, 10, 6.7, [4, 6, 7]]
+
+# var1 = '40'
+# print(type(var1))
+#
+# if isinstance(var1, int):
+#     print("this is integer")
+# else:
+#     print("this is not integer")
+
+# apply loop on the list
+input_values = [1, "cat", "dog", True, 10, 6.7, [4, 6, 7]]
+for data in input_values:
+    print(data)
+    if isinstance(data, bool):
+        print("this is bool value :", data)
+    elif isinstance(data, str):
+        print("this is string value :", data)
+    elif isinstance(data, float):
+        print("this is float value :", data)
+    elif isinstance(data, list):
+        print("this is list value :", data)
+    elif isinstance(data, int):
+        print("this is int value :", data)
+
+
+# apply loop on the string
+# remove all the vowels from the string.
+print("_"*50)
+str1 = "Hello, Good MOrning 567"
+vowels = ['a','i','e','o','u','A','E','I','O','U']
+
+result = ""
+for char in str1: # Hel
+    print(char)
+    if char in vowels:
+        continue
+    else:
+        result = result + char # ""+H = H | H + l = Hl
+
+print("result :", result)
+
+print(dir(str))
+
+
+# apply loop on tuple:
+# Add all number from given tuple.
+print("_"*50)
+tup1 = (5, 7, 'Hello', (4, 7, 9), 7, 9)
+addition = 0
+for a in tup1:
+    if isinstance(a, int):
+        print(a)
+        addition = addition + a
+    else:
+        continue
+
+print("addition output :", addition)
+
+
+# Apply loop on dictionary
+print("_"*50)
+dict1 = {'a' : 123, 'b' : 345, 'c' : {'e' : {'f' : 456}}}
+
+for val in dict1.items():
+    print(val)
+
+# apply loop on set
+set1 = {50, 60, 70, 80}
+for val in set1:
+    print(val**2)
+
+
+
+
