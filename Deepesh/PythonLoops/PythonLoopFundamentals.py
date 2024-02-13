@@ -155,7 +155,7 @@ for val in dict1.items():
 # apply loop on set
 set1 = {50, 60, 70, 80}
 for val in set1:
-    print(val**2)
+    print(val**2, end=" ")
 
 
 
