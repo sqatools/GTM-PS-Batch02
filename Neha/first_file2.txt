@@ -1,0 +1,8 @@
+
+## Python Program to add two integer values.
+
+i1=4
+i2=5
+
+sum = i1+i2
+print(sum)
