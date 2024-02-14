@@ -47,26 +47,7 @@ print("LHS:", LHS)
 RHS= a**2+b**2-2*a*b
 print("RHS:", RHS)
 
-#Python program to solve the given math formula.
-#Formula : a2 – b2 = (a-b)(a+b)
-a= 3
-b= 2
-Result = (a-b)*(a+b)
-print("a^2-b^2:", Result)
-
-#Python program to solve the given math formula.
-#Formula : (a + b)3 = a3 + 3ab(a+b) + b3
-a=3
-b=2
-result= a**3+3*a*b*(a+b)+b**3
-print("(a+b)^3:", result)
-
-#Python program to solve the given math formula.
-#Formula : (a – b)3 = a3 – 3a2b + 3ab2 – b3
-a=3
-b=2
-result= a**3-3*a**2*b+3*a*b**2-b**3
-print("(a-b)^3:", result)
+print("_"*40)
 
 #Python program to calculate the area of the square.
 #Formula : area = a*a

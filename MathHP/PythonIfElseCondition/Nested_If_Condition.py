@@ -1,5 +1,5 @@
 """
-if cond1:
+ if cond1:
    code
 if cond2:
     code
@@ -12,6 +12,7 @@ else:
 else:
   code
 """
+
 ###WAP for interview process
 round1 = "pass"
 round2 = "fail"
