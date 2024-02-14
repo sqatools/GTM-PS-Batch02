@@ -45,15 +45,6 @@ for i in range(1,10):
 
 
 
-#Python program to check given number is a prime number or not
-number=4
-
-for i in range()
-
-if number%number==0 and number%1==0:
-    print(number,"is prime no")
-else:
-    print(number,"is not prime no")
 
 
 #If else program to assign grades as per total marks.
@@ -102,6 +93,13 @@ elif username=='ABC' and password=="pswrd":
     print("Please enter correct Username")
 else:
     print("login successfully")
+
+##Python program to check any person eligible to vote or not
+vote=int(input("enter the age:"))
+if age< 18 :
+    print("Not Eligible for Vote")
+else:
+    print("Eligible for Vote")
 
 
 
