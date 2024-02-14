@@ -127,4 +127,40 @@ else:
     print("you are not eligible to vote cast")
 
 
+# program to check whether any given number is a palindrome.
 
+num1 = int(input("enter a number: "))
+num2 = str(num1)
+
+if num1 == int(num2[::-1]):
+    print("It is a palindrome number")
+else:
+    print("It is not a palindrome number")
+
+#program to check if any given string is palindrome or not.
+
+num1 = input("enter a string: ")
+num2 = num1
+
+if num1 == num2[::-1]:
+    print("It is a palindrome")
+else:
+    print("It is not a palindrome")
+
+#program to check whether the given number is positive or not.
+
+num = int(input("Enter a number: "))
+
+if num>0:
+    print("True")
+else:
+    print("False")
+
+#program to check whether the given number is negative or not.
+
+num = int(input("Enter a number: "))
+
+if num<0:
+    print("True")
+else:
+    print("False")
