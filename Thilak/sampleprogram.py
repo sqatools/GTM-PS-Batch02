@@ -32,3 +32,14 @@ print("the median no is :", (n+1)//2)
 n = len(list1)
 n =n//2
 print(list1[n])
+
+#print the square of the number if it is divided by 11
+
+x = int(input("Please enter the value:"))
+y = x%11
+if y==0:
+    print(x**2)
+else:
+    print("The given no is not divisible by 11")
+
+
