@@ -23,5 +23,8 @@ if num2 in input_list:
     print("Present in list")
 else:
     print("Not Present in list")
+"""
+14.
+"""
 
 

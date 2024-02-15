@@ -1,4 +1,3 @@
-
 # range(initial value, end value, different value)
 # it will print the value till end_value - 1
 for i in range(5, 10, 1):
@@ -157,7 +156,3 @@ for val in dict1.items():
 set1 = {50, 60, 70, 80}
 for val in set1:
     print(val**2, end=" ")
-
-
-
-
