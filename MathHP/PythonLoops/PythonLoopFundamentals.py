@@ -45,7 +45,7 @@ for i in range(10,0,-1):
 for i in range(-10,-20,-1):
     print(i)
 
-# for i in range(-10, -20):                # difference 1 by default -10,-9.-8,    not possible no output
+# for i in range(-10, -20):                          # difference 1 by default -10,-9.-8,    not possible no output
 #         print(i)
 
         ###Check if condition in ;oop
@@ -62,7 +62,7 @@ fact = 1
 num = 5
 
 for i in range(num,0,-1):
-    fact = fact*i                            #maintain the intendation
+    fact = fact*i                                     #maintain the intendation
     #i=5, 1*5 = 5
     #i=4, 5*4 = 20
     #i=3, 20*3 = 60
