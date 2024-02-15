@@ -12,12 +12,12 @@ Python data type
 
 2)Sequential data
 a)String    -immutable
-b)List      - mutable
-c)Tuple     - immutable
+b)List      - mutable ,   can modify
+c)Tuple     - immutable , cant modify
 
-3)Dictionary - mutable
-4)Set - mutable
-5)Boolean
+3)Dictionary - mutable , always key value pair
+4)Set - mutable , only unique no duplicates
+5)Boolean - True / False
 """
 
 #Integer
