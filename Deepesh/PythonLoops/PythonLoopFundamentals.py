@@ -1,3 +1,4 @@
+
 # range(initial value, end value, different value)
 # it will print the value till end_value - 1
 for i in range(5, 10, 1):

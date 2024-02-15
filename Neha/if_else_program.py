@@ -6,11 +6,9 @@ if number%3 == 0 :
 else:
     print("no not divided by 3")
 
-
 ## Python program to print the square of the number if it is divided by 11.
 
 number = 22
-
 if number%11 == 0:
     square =number**2
     print("square of the number:",square)
@@ -35,17 +33,6 @@ elif number%5==0:
 else:
     print(number,"neither divided by 3 nor 5")
 
-#python for even or odd:
-
-for i in range(1,10):
-    if i%2==0:
-        print (i,"is even no")
-    else:
-        print(i,"odd no")
-
-
-
-
 
 #If else program to assign grades as per total marks.
 print("_"*50)
@@ -67,19 +54,7 @@ elif marks>=80 and marks<90:
 elif marks>=90 and marks<=100:
     print("student got excellent rank")
 else:
-    print("marks not exceeded than 100")--##
-
-#Python program to check a given number is part of the Fibonacci series from 1 to 10.
-n1=0
-n2=1
-print(n1)
-print(n2)
-
-for i in range (2,10):
-    sum = n1+n2
-    print(sum)
-    n1=n2
-    n2=sum
+    print("marks not exceeded than 100")
 
 #check authentication with the given username and password.
 username= "userid"

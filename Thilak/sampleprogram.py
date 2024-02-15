@@ -22,8 +22,8 @@ else:
     print("please enter the valid no")
 """
 # finding the median of given numbers.
-list1 = [4, 6, 99, 5, 9]
-"""
+list1 = [4, 6, 99, 5, 9,2]
+
 #list1.sort()
 n = len(list1)
 #print(list1, n)
@@ -32,9 +32,9 @@ print("the median no is :", (n+1)//2)
 n = len(list1)
 n =n//2
 print(list1[n])
-
+"""
 #print the square of the number if it is divided by 11
-
+"""
 x = int(input("Please enter the value:"))
 y = x%11
 if y==0:
@@ -42,4 +42,13 @@ if y==0:
 else:
     print("The given no is not divisible by 11")
 
+"""
+list1 = [4, 6, 99, 5, 9,2]
 
+#list1.sort()
+n = len(list1)
+#print(list1, n)
+print("the median no is :", (n+1)//2)
+n = len(list1)
+n =n//2
+print(list1[n])
