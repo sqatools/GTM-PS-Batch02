@@ -6,8 +6,8 @@ Using if else statement check whether a  number is divisible by 3 or not.
 If it is divisible by 3 then print the number.
 """
 
-for i in range(0 ,30):
-    if i%3 ==0:
+for i in range(0, 30):
+    if i % 3 == 0:
         print(i)
 
 print("_"*50)
@@ -19,10 +19,10 @@ If yes then then print True, if not then print False.
 print("Program to check if a number is divisible by both 3 and 5")
 num = int(input("Enter a number  :"))
 
-if num % 3==0 and num % 5 ==0:
+if num % 3 == 0 and num % 5 == 0:
     print(" Number is divisible by both 3 and 5")
 else:
-    print("The given number " + str(num)+ "is not divisible by 3 and 5")
+    print("The given number " + str(num) + "is not divisible by 3 and 5")
 
 """
 Take a number as input through the user.
@@ -52,10 +52,10 @@ ct = 0
 for i in range(2,num):
     if num%i == 0:
         ct = ct + 1
-if ct==0:
-    print(" %s is prime" %num)
+if ct == 0:
+    print(" %s is prime" % num)
 else:
-    print("%s is not prime" %num)
+    print("%s is not prime" % num)
 """
 prime = False
 for i in range(2, num-1):
