@@ -2,7 +2,7 @@
 if condition
   code
 else:
-  code            # if you have space , then its indentation error
+  code            # if you have space , then its indendation error
 
 """
 
@@ -20,7 +20,7 @@ else:
 """
 Logical operators:
 
-> greatet than
+> greater than
 > = greater than equal to
 < less than
 < = less than or equal to
@@ -110,5 +110,4 @@ z= 500
 if x==y or x==z:
     print("variables has equal value")
 else:
-    print("variables does not have equal value")                #####################################
-
+    print("variables does not have equal value")
