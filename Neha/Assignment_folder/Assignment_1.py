@@ -1,3 +1,22 @@
+"""
+1). Python Program to add two integer values.
+2). Python Program to subtract two integer values.
+3). Python program to multiply two numbers.
+4)Python program to repeat a given string 5 times.
+Input :
+str1 = “SQATools”
+Output :
+“SQAToolsSQAToolsSQAToolsSQAToolsSQATools”
+5)Python program to get the Average of given numbers.
+6). Python program to get the median of given numbers.----???
+7). Python program to print the square and cube of a given number.
+8). Python program to interchange values between variables.
+9). Python program to solve this Pythagorous theorem.
+Theorem : (a2 + b2 = c2)
+10). Python program to solve the given math formula.
+Formula : (a + b)2 = a^2 + b^2 + 2ab
+
+"""
 import selenium
 
 ## Python Program to add two integer values.
@@ -67,3 +86,19 @@ a = 10
 b = 20
 Theorem = sqrt((a*a) + (b*b))
 print (Theorem)
+
+##Python program to solve the given math formula.
+##Formula : (a + b)2 = a^2 + b^2 + 2ab
+
+a=10
+b=20
+
+LHS=(a+b)**2
+print(LHS)
+RHS=((a)**2) + ((b)**2) + (2*a*b)
+print(RHS)
+
+if RHS==LHS:
+    print ("LHS is equal to RHS'")
+else:
+    print('LHS is not equal to RHS')
