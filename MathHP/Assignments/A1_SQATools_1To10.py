@@ -41,15 +41,32 @@ z = 4325
 average = (x+y+z)/3
 print("Average of given numbers: ", average)
 
-################ 6)Python program to get the median of given numbers
+################ 6)Python program to get the median of given numbers if length is odd
 
 Input = [78,98,34,23,67,45,54]
 AscendingOrder = sorted(Input)                                       # Arrange in ascending order
 print("List in ascending order :" ,AscendingOrder)
 n = (len(AscendingOrder))
 print("Total number of values in the list :",n)
-Median_n = (len(AscendingOrder))/2
-print("Median:" ,AscendingOrder[int(Median_n)])
+Median_n = n//2                                                     # // Gives the quotient only that is integer format, so no need to convert to int
+print("Median:" ,AscendingOrder[(Median_n)])
+
+################# 6a) Python program to get the median of given numbers if length is even
+
+print("&" *60)
+Input1 = [56,23,87,95,34,46]                                        # length is 6 , index from 0 to 5
+AscendingOrder = sorted(Input1)
+print("Sorted in Ascending Order : " ,AscendingOrder)
+n1 = len(AscendingOrder)
+print("Length: ", n1)
+### calculate the indices of two middle elements
+# n1 is length which is 6, 87 is 3rd element which is if index 2 , 95 is 4th element which is of index 3
+firstMiddle_n1 = n1//2                                                             # Index of first middle element
+secondMiddle_n2 = (n1//2)-1                                                       # Index of second middle element
+Median = (AscendingOrder[firstMiddle_n1]+AscendingOrder[secondMiddle_n2])/2
+print("Median : ",Median)
+print("&"*60)
+
 
 ################## 7)Python program to print the square and cube of a given number
 

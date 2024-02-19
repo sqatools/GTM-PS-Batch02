@@ -76,13 +76,24 @@ print("Surface area of the Cylinder : ", SurfaceAreaOfTheCylinder)
 
 ##### In general, for a number with n digits, if the sum of the nth power of each digit equals the number itself, then it is an Armstrong number.
 
+num = 153
+num1 = num
+arms_num = 0
+reverse = 0
+length = len(str(num))
+                                                                          #print("Length of given number :" ,length)
 
+while num>0:
+ temp = num%10                      #3
+                                                                        #reverse = reverse*10 + temp         # reverse = 3
+ arms_num = arms_num + temp ** length
+ num = num//10                    # ignores 3
 
-
-
-
-
-
+                                                                       #print("Reverse number is :", reverse)
+if arms_num == num1:
+    print("The given number is Armstrong number :", num1)
+else:
+    print("The given number is not Armstrong number : ",num1)
 
 ################## 20)Python program to calculate the Amount in simple interest.
 # Amount  = P+(P*n*r)
