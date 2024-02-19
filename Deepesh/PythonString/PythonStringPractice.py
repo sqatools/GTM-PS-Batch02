@@ -125,3 +125,138 @@ str2 = "Good Morning"
 
 print(str2[2:])  # od Morning
 print(str2[-6:])  # orning
+
+print("+"*50)
+# Rule 4 : str[initial index : last index : difference of index]
+# In this rule initial index value will be included and last index value will be exluded.
+
+stra = "We are learning Python"
+
+print(stra[3: 15: 1])  # are learning
+
+print(stra[3: 15: 2]) # aelann
+
+print(stra[-1: -10: -1]) # nohtyP gn
+
+print(stra[-1: -10: -2]) # nhy n
+
+print(stra[1:-10:1]) # e are learn
+
+# default initial index as zero in case of positive difference
+# default initial index as -1  in case of negative difference
+# str[:last index: difference]
+strb = "Python Programming"
+
+# default initial index is zero
+print(strb[:7:1])  # Python
+
+# default initial index is -1
+print(strb[:7:-1])  # gnimmargor
+print(strb[:7:-2])  # gimro
+
+print(strb[:7:-1])  # gnimmargor
+
+print("_"*50)
+# Rule 5: str[::difference]
+# default initial index will be zero with positive difference value
+# default initial index will be -1 with negative difference value
+# default last index will be end of string positive in case of positive and negative in case of negative difference
+
+strc = "Good Morning"
+
+# initial index zero and last index will end of string
+print(strc[::1]) # Good Morning
+
+print(strc[0: len(strc)+1 :1]) # Good Morning
+
+# initial index as -1 and last index will be end of string at negative site
+print(strc[::-1])  # gninroM dooG
+
+print(strc[-1:-len(strc)-1:-1])  # gninroM dooG
+
+
+
+# Slicing pratice programs
+
+"""
+write python program get following output
+
+str1= "Hello Good Morning"
+output = "gello Good MorninH"
+
+str2 = "Python Programming"
+output2 = "Pto rgamn"
+
+
+str3 = "Learning Python"
+output = "gninraeL nohtyP"
+
+str4 = "Good Evening"
+output4 = "GGood Eveningg"
+"""
+
+###################### String Methods ####################
+
+print(dir(str))
+"""
+'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs',
+ 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii',
+  'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric',
+'isprintable', 'isspace', 'istitle', 'isupper', 'join', 
+'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 
+'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex',
+'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 
+'startswith', 'strip', 'swapcase', 'title', 'translate',
+'upper', 
+'zfill'
+"""
+
+# upper case and lower case method
+
+# 1. upper()
+str1 = "Hello We are Learning Python"
+print(str1.upper())
+# HELLO WE ARE LEARNING PYTHON
+
+# 2. Lower()
+print(str1.lower())
+# hello we are learning python
+
+# 3. islower() and islower()
+str2 = "LearninG"
+print("is lower :", str2.islower())  # False
+print("is upper :", str2.isupper())  # False
+str3 = "python"
+print("is lower :", str3, ":", str3.islower()) # True
+# is lower : python : True
+
+str4 = "PROGRAMMING"
+print("is upper :", str4, ":", str4.isupper()) # True
+# is upper : PROGRAMMING : True
+
+print(str3[0].upper()) # P
+
+
+# 4.  swapcase() : convert upper case to lower and lower case to upper
+
+stra = "India Won 3rd Test"
+print(stra.swapcase())
+# iNDIA wON 3RD tEST
+
+# 5. Title : this method convert first character of each into capital case.
+
+strb = "India is best country"
+print(strb.title())
+# India Is Best Country
+
+# 6. istitle() : Check the target string is in title case or not
+
+print("it title :",strb, ":", strb.istitle())
+# it title : India is best country : False
+
+strc = "All The Best"
+print("strc :", strc, ":", strc.istitle())
+# strc : All The Best : True
+
+
+
