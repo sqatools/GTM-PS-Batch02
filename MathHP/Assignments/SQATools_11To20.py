@@ -84,6 +84,7 @@ print("Surface area of the Cylinder : ", SurfaceAreaOfTheCylinder)
 
 
 
+
 ################## 20)Python program to calculate the Amount in simple interest.
 # Amount  = P+(P*n*r)
 # P = Principal Amount
