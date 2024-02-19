@@ -2,7 +2,7 @@
 1. Write a Python program to get a string made of the first and the last 2 chars from a given string.
  If the string length is less than 2, return instead of the empty string
 """
-input_string = 'M'
+input_string = 'Madhuri'
 if len(input_string) < 2:
     print(True)
 else:
