@@ -5,7 +5,7 @@
 # Print T as shown
 
 # 0 1  2 3 4 5 6 7 8
-# * * * * * * * * *
+# * * * * * * * * *                                     i is rows and j is columns
 # * * * * * * * * *
 #       * * *
 #       * * *

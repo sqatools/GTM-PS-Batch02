@@ -75,8 +75,55 @@ for i in range(2,num):
     if num%i == 0:
         print("The given number is not a prime number")
         break
-else:                                                                                         # In case else is in the same line of if, your print is many times
+    else:                                                                                    # In case else is in the same line of if, your print is many times
      print("The given number is prime")                                                      # Just 1 time print
+
+
+######### 7)Python program to check given number is odd or even
+
+print("&"*60)
+num = int(input("Enter any number to check odd or even"))
+if num%2 == 0:
+    print("The given number is even : " ,num)
+else:
+    print("The given number is odd : ",num)
+
+######## 8)Python program to check a given number is part of the Fibonacci series from 1 to 10
+#0 1 1 2 3 5 8  13 21 34
+
+print("&"*60)
+fib_series = [0,1,1,2,3,5,8,13,21,34]
+num = int(input("Enter any number:"))
+if num in fib_series:
+    print("The given number is in the Fibonacci series : ",num)
+else:
+    print("The given number is not in the fibonacci series : ",num)
+
+####### 9)Python program to check authentication with the given username and password
+
+print("&"*60)
+username = input("Enter the username")
+password = input("Enter the password")
+if username == password:
+    print("Authentication proper and valid")
+else:
+    print("Authentication is not valid")
+
+####### 10)Python program to validate user_id in the list of user_ids
+
+print("&"*60)
+listOfUser_Ids = [45,3,67,84,23,47,99,100,71,25,56]
+user_id = int(input("Enter any user id to check :"))
+if user_id in listOfUser_Ids:
+    print("The given user id is present in the list:" ,user_id)
+else:
+    print("The given user id is not in the list :" , user_id)
+
+
+
+
+
+
 
 
 
