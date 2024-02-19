@@ -163,6 +163,115 @@ print(str2[5:])                            # Morning
 print(str2[2:])                            # od Morning
 print(str2[-6:])                           # orning
 
+#### Rule 4: str[initial index : last index : difference of index]  # like range  but with :
+# In this rule initial index value will be included and last index value will be excluded
+
+print("&"*60)
+stra = "We are learning Python"
+print(stra[3:15])             #are learning
+print(stra[3:15:2])           # aelann
+print(stra[-1:-10:-1])        # nohtyP gn  , right to left so -1
+print(stra[-1:-10:-2])        # nhy n
+
+# for 2 values in index then always left to right
+# for 3 values then L to R or R to L depends upon positive or negative indexing
+
+print(stra[1:-10:1])          # e are learn , L to R
+
+# default initial index is zero in case of positive difference L to R
+# default initial index is -1 in case of negative difference  R to L
+# str[ :last index: difference]
+
+strb = "Python Programming"
+
+print(strb[ :6:1])            # Python , default initial index is 0
+print(strb[ :6:-1])           # gnimmargorP , default initial index is -1
+
+print(strb[ :6:-2])           # gimroP , default initial index is -1
+
+#### Rule 5: str[::difference]
+# default initial index will be 0 with positive difference
+# default initial index will be -1 with negative difference
+# default last  index will be end of the string positive in case of positive difference
+# default last  index will be end of the string negative in case of negative difference
+
+strc = "Good Morning"
+
+print(strc[::1])                   #Good Morning , initial default is 0 , last index is default end of the string
+
+print(strc[::-1])                  # gninroM dooG , R to L , default initial is -1, last index will be end of string from R to L
+
+# Some slicing practice programs
+
+""" HW
+1) WAP to get output
+
+str1 = "Hello Good Morning"
+output = gello Good MorninH
+
+str2 = "Python Programming"
+output = Pto rgamn
+
+str3 = "Learning Python"
+output = gninraeL nohtyP
+
+str4 = "Good Evening"
+output = "GGood Eveningg"
+
+"""
+
+################### String Methods
+
+print(dir(str))         # solution in the console
+#['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__',
+# '__getitem__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__',
+# '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__',
+# '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index',
+# 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join',
+# 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip',
+# 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+
+# Upper case and Lower case method
+
+#1) upper case - Conversion
+
+str1 = "Python Programming"
+print(str1.upper())                               # PYTHON PROGRAMMING , All Upper
+
+#2)Lower case
+
+str1 = "Python Programming"
+print(str1.lower())                              # python programming
+
+
+#3)islower() - Checking
+str2 = "LearninG"
+print(str2.islower())                            # False , all cases are not lower
+
+#4)isupper()
+print(str2.isupper())                           # False , all cases are not upper
+
+str5 = "python"
+print(str5[0].upper())                          # P
+
+#5) swapcase : Convert upper to lower and lower to upper
+
+stra = "India Won 3rd Test"
+print(stra.swapcase())
+
+#6)Title : This method converts first character of each  word into capital case , Pascal case
+
+strb = "India is best country"
+print(strb.title())
+
+#7) istitle() : Check the target string is in title case or not
+
+print(strb.istitle())              # India is best country , so false
+
+strc = "All The Best"
+print(strc.istitle())
+
+
 
 
 
