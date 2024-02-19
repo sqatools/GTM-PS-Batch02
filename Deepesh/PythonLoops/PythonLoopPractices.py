@@ -48,3 +48,83 @@ for i in range(4):
         print(chr(temp), end=' ')
         temp += 1
     print()
+
+print()
+###################################
+
+
+for i in range(0, 11):
+    for j in range(0, 11):
+        if(i==0 or i==1):
+            print("*", end=" ")
+        elif(j >3 and j <7):
+            print("*", end=" ")
+        else:
+            print(" ", end=' ')
+    print()
+
+print()
+#####################################
+"""
+num = input("PLease enter the input value :")
+if num.isdigit():
+    num = int(num)
+elif num.isdecimal():
+    num = int(float(num))
+
+if isinstance(num, int):
+    if num.is_integer():
+        print("True")
+    else:
+        print("False")
+else:
+    print("Invalid input, please enter the number :")
+"""
+#################################################
+
+"""
+  *** 
+*     *
+*     *
+*     *
+*     *
+*     *
+  ***
+"""
+for i in range(1, 8):
+    if i > 2 and i < 6:
+        print("*", end=" ")
+    else:
+        print("", end=" ")
+print()
+for i in range(1, 6):
+    for j in range(1, 9):
+        if j == 1 or j == 8:
+            print("*", end=" ")
+        else:
+            print("", end=" ")
+    print()
+
+for i in range(1, 8):
+    if i > 2 and i < 6:
+        print("*", end=" ")
+    else:
+        print("", end=" ")
+
+
+print()
+
+
+##################################
+
+
+
+
+
+for i in range(1,8):
+    for j in range(1,8):
+        if i==1 or i==7 or j==1 or j==7:
+                print("*" , end= " ")
+        else:
+            print(" ", end = " ")
+    print()
