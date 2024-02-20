@@ -48,10 +48,11 @@ n = Number of values
 Input : [45, 60, 61, 66, 70, 77, 80]
 Output:  66
 '''
-list = [45, 60, 61, 66, 70, 77, 80]
+list = [45, 60, 61, 66, 70, 77, 80, 90]
 list.sort()
-res = len(list)//2
-print("median value is: ", list[int(res)])
+l1= list[3] + list[4]
+res = l1//2
+print("median value is: ", res)
 
 
 #program to interchange values between variables.
@@ -74,3 +75,34 @@ print("LHS: ", LHS)
 #RHS
 RHS = (a**2) + (b**2) +(2 * a * b)
 print("RHS: ", RHS)
+
+
+l1 = [1, 2, 3,4,7]
+l1.sort()
+n = len(l1) # length of the list
+m = n // 2 # middle index
+print("middle index", m)
+# Check if the length is even or odd
+if n % 2 == 0:
+    res = (l1[m - 1] + l1[m]) / 2 # l1[3-1] + l1[3] = l1[2] + l1[3] = 7/2
+    print(res)
+else:
+    res_1= (n + 1) / 2
+    print(res_1)
+
+
+
+num = int(input("enter a number: "))
+flag = False
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            flag = True
+            break
+if flag == True:
+    print(num, "is not a prime number")
+else:
+    print(num, "is a prime number")
+
+
+#
