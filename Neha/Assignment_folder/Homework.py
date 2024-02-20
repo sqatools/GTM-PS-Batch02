@@ -1,4 +1,4 @@
-# Slicing pratice programs
+# Slicing practice programs
 
 """
 write python program get following output
@@ -15,12 +15,13 @@ output = "gninraeL nohtyP"
 
 str4 = "Good Evening"
 output4 = "GGood Eveningg"
-"""
+# """
 
 print("__"*50)
 
 input_str = "Hello Good Morning"
-output_str = input_str[0].replace('H', 'g') + input_str[1:] + input_str[-1].replace('g', 'H')
+output_str = (input_str[0].replace('H', 'g') + input_str[1:17] +
+            input_str[-1].replace('g', 'H'))
 
 print("Modified output:", output_str)
 
@@ -29,7 +30,8 @@ print("__"*50)
 str2 = "Python Programming"
 #output= "Pto rgamn"
 output_str2=str2[::2]
-print(output_str2) #Pto rgamn
+print("Modified output:", output_str2)
+
 
 print("__"*50)
 
@@ -42,7 +44,8 @@ print(x) #['nohtyP', 'gninraeL']
 y = x[-1::-1]
 print(y) #['gninraeL', 'nohtyP']
 reverse_str = ' '.join(y)
-print(reverse_str) #gninraeL nohtyP
+
+print("Modified output:", reverse_str)
 
 print("__"*50)
 
