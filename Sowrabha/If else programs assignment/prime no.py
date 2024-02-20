@@ -5,7 +5,8 @@ if x==1:
     print("Its not a prime no")
 else:
     if x%2==0:
-        print("Its not  a prime no")
+        print("Its not "
+              "a prime no")
     else:
            if x%2!=0:
             print("It is a prime no")
