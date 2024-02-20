@@ -12,9 +12,8 @@ for val in str1:
     val[-1] = val[0]
 print("Answer1 After: ",str1)
 print("_"*100)
-
-
 """
+
 str1= "Hello Good Morning"
 
 start_letter = str1[0]
@@ -33,11 +32,7 @@ output2 = "Pto rgamn"
 str2 = "Python Programming"
 print("Question 2 :", str2[0:18:2])
 
-
 """
-3. str3 = "Learning Python"
-output = "gninraeL nohtyP"
-
 4. str4 = "Good Evening"
 output4 = "GGood Eveningg"
 """
