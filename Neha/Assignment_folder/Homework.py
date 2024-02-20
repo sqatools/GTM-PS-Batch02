@@ -51,4 +51,12 @@ input_str = "Good Evening"
 output_str = input_str[0] + input_str[0] + input_str[1:] + input_str[-1]
 print("Modified output:", output_str)
 
+print("__"*50)
 
+input = 'S@oftwar!e'
+#output = e@rawtfo!S
+
+output_str = (input[0].replace('S', 'e') + input[1:2] + input[-3:1:-1] +
+              input[-2:-1]+input[-1].replace('e', 'S'))
+
+print("Modified output:", output_str)
