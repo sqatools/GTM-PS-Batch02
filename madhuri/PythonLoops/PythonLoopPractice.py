@@ -158,7 +158,7 @@ Output:
 """
 for i in range(0, 7):
     for j in range(0, 7):
-        if ( i == 0 or i ==6 ) and (1 < j and j < 5):
+        if ( i == 0 or i == 6 ) and (1 < j and j < 5):
             print("*", end="")
         elif (0 < i <= 5) and (j == 1 or j == 5):
             print("*", end=' ')
@@ -174,7 +174,7 @@ for i in range(0, 7):
 
 for i in range(0,9):
     for j in range(0,9):
-        if (i == 0 or i == 1):
+        if (i == 0 or i == 1) :
             print("*", end="")
         elif (i >= 2) and (j >=3  and j <=6 ):
             print("*", end="")
@@ -182,6 +182,7 @@ for i in range(0,9):
             print(" ", end=' ')
 
     print()
+
 
 
 
