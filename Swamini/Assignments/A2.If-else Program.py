@@ -1,4 +1,4 @@
-#1). Python program to check given number is divided by 3 or not.
+# 1). Python program to check given number is divided by 3 or not.
 """
 a=10
 b=5
@@ -169,7 +169,7 @@ if num%2==0 or num%3==0:
     print ("number is divide by 2 and 3 ",num**2,num**3)
 else:
     print("number is not divide by 2 and 3")
-   
+
 #12). Python program to describe the interview process.
 r1= input("enter round1 result")
 r2 = input("enter round1 result")
@@ -275,17 +275,17 @@ elif num1==num2:
 else:
     print("num2 is greater num")
 """
-l1 = [1, 2, 3,4,7]
+l1 = [1, 2, 3, 4, 7]
 l1.sort()
-n = len(l1) # length of the list
-m = n // 2 # middle index
+n = len(l1)  # length of the list
+m = n // 2  # middle index
 print("middle index", m)
 # Check if the length is even or odd
 if n % 2 == 0:
-    res = (l1[m - 1] + l1[m]) / 2 # l1[3-1] + l1[3] = l1[2] + l1[3] = 7/2
+    res = (l1[m - 1] + l1[m]) / 2  # l1[3-1] + l1[3] = l1[2] + l1[3] = 7/2
     print(res)
 else:
-    res_1= (n + 1) / 2
+    res_1 = (n + 1) / 2
     print(res_1)
 
 
