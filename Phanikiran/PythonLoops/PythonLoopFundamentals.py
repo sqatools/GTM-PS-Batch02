@@ -78,8 +78,29 @@ print("*" * 400)
 # Applying loop on list and displaying data according data type.
 
 list1 = ['33', "phanikiran", '34', True, '23.5']
+print(list1)
 for i in list1:
     if isinstance(i, int):
         print("This value is integer", i)
+    elif isinstance(i,str):
+        print("This is string value", i)
+    elif isinstance(i,bool):
+        print("This is boolean value", i)
+    elif isinstance(i,float):
+        print("This is float", i)
+print("*"*400)
+
+
+# Loop on string
+# Remove all the vowels from the string.
+"""string1= "Python programming language 34535"
+string2= ['A','E','I','O','U','A','E','I','O','U']
+print(string1)
+print(string2)
+for char in string1:
+    print(char,end=" ")
+    if char == string2:
+        print("Vowels are",char)
     else:
-        print("This is not a integer")
+        print("These are not vowels",char)
+"""

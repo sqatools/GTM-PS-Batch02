@@ -258,5 +258,114 @@ strc = "All The Best"
 print("strc :", strc, ":", strc.istitle())
 # strc : All The Best : True
 
+# 7. split method : This method break the string from given delimenters and return as list
+print("_"*50)
+str11 = "Today is very sunny day"
+
+output = str11.split(" ")
+print(output)
+for word in output:
+    print(word,":", word[::-1])
+
+
+str12 = "Python,Programming,Language"
+print(list(str12))
+# ['P', 'y', 't', 'h', 'o', 'n', ',', 'P', 'r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g', ',', 'L', 'a', 'n', 'g', 'u', 'a', 'g', 'e']
+print(str12.split(","))
+# ['Python', 'Programming', 'Language']
+
+
+url = "https://www.google.co.in"
+
+protocol = url.split(":")[0]
+print("protocol :", protocol)
+
+server = url.split(".")[1]
+print("server :", server)
+
+www = url.split(".")[0].split("//")[1]
+print("www :", www)
+
+
+#8. Replace method: replace any substring or character from target string
+print("_"*50)
+strb = "Hello good morning, Hope you are doing good"
+
+result = strb.replace("good", "bad")
+print("result :", result)
+
+result3 = result.replace("Hello", "Hi")
+print(result3)
+
+output = strb.replace("good", "bad").replace("Hello", "Hi")
+print("output :", output)
+
+
+print("_"*50)
+# program to replace first good with bad and second good with nice
+strb = "Hello good morning, Hope you are doing good"
+
+word_list = strb.split(" ")
+output = ""
+count = 0
+for word in word_list:
+    if "good" in word and count == 0:
+        output = output + "bad" + " "
+        count += 1
+    elif "good" in word and count == 1:
+        output = output + "nice" + " "
+    else:
+        output = output + word + " "
+
+
+print("Output :", output)
+# Output : Hello bad morning, Hope you are doing nice
+
+# 9. count() method : This method return count of any character/sub-string repeated in given target string.
+
+strc = "Hello good morning, Hope you are doing good"
+print("count of good :", strc.count("good")) # 2
+print("count of o :", strc.count("o")) # 9
+
+
+# 10. index() method : this method provide index position of any character/substring
+stre = "Good Morning"
+
+print("index of d :", stre.index("d"))  # 3
+print("index of d :", stre.index("Mor")) # 5
+
+# if the given char or substring is not found then it gives error.
+# print("index of d :", stre.index("D"))
+# ValueError: substring not found
+
+
+# 11. find() method : this method return the index position of the character or substring.
+
+strj = "Python Learning is Fun"
+print("check substring Lea :", strj.find("Lea"))  # 7
+
+# if the target character/substring is not available then it return -1
+print("check substring Lea :", strj.find("LLea"))  # -1
+
+
+strj.index("L")
+
+
+# 12. strip() method : This method remove the trailing space, means space in begining and end of the string
+print("_"*50)
+strk = "   India is Best Cricket Team    "
+print(strk)
+print(strk.strip())
+
+# remove space from left side
+print(strk.lstrip())
+
+# remove space from right side
+print(strk.rstrip())
+
+# remove all space
+print(strk.replace(" ", ""))
+# IndiaisBestCricketTeam
+
 
 
