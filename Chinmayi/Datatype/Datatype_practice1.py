@@ -107,3 +107,21 @@ If we compare list with tuple then list is bit slow than tuple.
 """
 print("-"*50)
 #########Tuple
+
+
+#properties
+"""
+Tuple is immutable datatype ,Can't modify once defined.
+It's a combination of all the datatypes,All type of datatype can be stored in tuple.
+Tuple follow Positive & Negative Indexing.
+If compare tuple is faster while accessing the data then list.
+"""
+T1= (3,5,6.7,'hello',[3.4,5,7,90])
+
+print(type(T1),T1[3],T1[4][1])
+
+print("-"*50)
+
+#####Dictionary##############
+
+dict1

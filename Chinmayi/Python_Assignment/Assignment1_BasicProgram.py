@@ -45,12 +45,26 @@ print('*'*60)
 
 #6.Program to get the median of given numbers.
 
-list1 = [34,76,23,54,89,21,45]
+list1 = [34,76,23,54,89,21,45,90,80,51]
 Sort1 = sorted(list1)
 print(Sort1)
 n = len(Sort1)
 median1 = ((n+1)/2)
-print("Median =",median1)
+
+if n % 2 == 0:
+   Var1= n//2
+   Var2 = n//2 + 1
+   print("Median Position= ",Sort1[Var1-1],Sort1[Var2-1])
+   print('Median =',(Sort1[Var1-1]+Sort1[Var2-1])/2)
+
+elif n % 2 != 0:
+
+    median1 = ((n+1)/2)
+    print("Median Position=", median1)
+    print("Median  =", Sort1[median1 - 1])
+else:
+    print("No Median")
+
 
 print('*'*60)
 
