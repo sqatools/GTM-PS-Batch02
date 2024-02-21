@@ -275,18 +275,80 @@ elif num1==num2:
 else:
     print("num2 is greater num")
 """
-l1 = [1, 2, 3, 4, 7]
-l1.sort()
-n = len(l1)  # length of the list
-m = n // 2  # middle index
-print("middle index", m)
-# Check if the length is even or odd
-if n % 2 == 0:
-    res = (l1[m - 1] + l1[m]) / 2  # l1[3-1] + l1[3] = l1[2] + l1[3] = 7/2
-    print(res)
+"""
+23). Python program to check whether a given character is uppercase or not.
+Input = A
+Output = The given character is an Uppercase
+
+a=input("enter input: ")
+if a.isupper():
+    print("char is upper case")
+else :
+    print("char is small case")
+"""
+"""24). Python program to check whether the given character is lowercase or not.
+Input = c
+Output = True
+
+a=input("enter character: ")
+if a.islower():
+    print("True")
+else :
+     print("False")
+
+"""
+
+"""25). Python program to check whether the given number is an integer or not.
+Input = 54
+Output = True
+a=34.2
+if type(a)==int:
+    print("number is interger")
 else:
-    res_1 = (n + 1) / 2
-    print(res_1)
+    print("number is not integer")
+"""
+"""26). Python program to check whether the given number is float or not.
+Input = 12.6
+Output = True
+
+
+a=23.3
+if type(a)==float:
+    print("number is float")
+else:
+    print("number is not float")
+"""
+
+"""
+27). Python program to check whether the given input is a string or not.
+Input = ‘sqatools’
+Output = True
+a="Swamini"
+if type(a)==str:
+    print("True")
+else:
+    print("false")
+"""
+
+"""28). Python program to print all the numbers from 10-15 except 13
+
+for a in range(10,16):
+    if  a!=13:
+        print(a)
+"""
+"""
+30). Python program to check whether a given year is a leap or not.
+Input = 2000
+Output = The given year is a leap year"""
+a=int(input("enter year"))
+if a%400==0 or a%4==0:
+    print("year is leap year")
+else:
+    print("year is not leap year")
+
+
+
+
 
 
 
