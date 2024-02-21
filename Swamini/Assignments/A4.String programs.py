@@ -22,8 +22,8 @@ output4 = "GGood Eveningg"
 
 str1= "Hello Good Morning"
 output = "gello Good MorninH"
-c="H"
-d="g"
+c=str1[0]
+d=str1[-1]
 
 str1=f"{d}ello Good Mornin{c}"
 print(str1)
@@ -40,8 +40,8 @@ print("*"*50)
 #assignemnets4#
 str4 = "Good Evening"
 output4 = "GGood Eveningg"
-a="G"
-b="g"
+a=str4[0]
+b=str4[-1]
 str4="{}Good Evening{}".format(a,b)
 print(str4)
 
@@ -52,7 +52,7 @@ print("*"*50)
 str3 = "Learning Python"
 output = "gninraeL nohtyP"
 
-print(str3[-8::-1],end=" "+str3[-1:-7:-1])
+print(str3[-8::-1],""+str3[-1:-7:-1])
 
 
 
