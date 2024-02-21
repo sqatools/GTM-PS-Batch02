@@ -219,6 +219,17 @@ str4 = "Good Evening"
 output = "GGood Eveningg"
 
 """
+str1 = "Hello Good Morning"
+print(str1[-1]+str1[1:16]+str1[0])
+
+str2 = "Python Programming"
+print(str2[0:18:2])
+
+str3 = "Learning Python"
+print(str3[-8:-16:-1]+"  "+str3[-1:-7:-1])
+
+str4 = "Good Evening"
+print(str4[0]+str4[0:12]+str4[11])
 
 ################### String Methods
 
@@ -271,8 +282,101 @@ print(strb.istitle())              # India is best country , so false
 strc = "All The Best"
 print(strc.istitle())
 
+#8)split method: This method breaks the string from delimenters and return as list
+
+str11 = "Today is very sunny day"
+output = str11.split(" ")          #['Today', 'is', 'very', 'sunny', 'day'] converts to list of words
+print(output)
+for word in output:
+    print(word,":",word[::-1])     # Each word in reverse order
+
+str12 = "Python,Programming,Language"
+print(str12.split("g"))            # ['Python,Pro', 'rammin', ',Lan', 'ua', 'e']
+
+url = "https://www.google.co.in"   # http -protocol , co.in - domain
+
+protocol = url.split(":")
+print("protocol:",protocol)         # ['https', '//www.google.co.in']      , splits into list of words
+
+server = url.split(".")
+print("server:",server)             #['https://www', 'google', 'co', 'in']
+
+server = url.split(".")[1]
+print("server:",server)             #google
+
+www= url.split(".")[0].split("//")[1]
+print("www:",www)                   #www
+
+#9) Replace method:Replace any substring or character from target string
+
+strb = "Hello good Morning, Hope you are doing good"
+
+result = strb.replace("good","bad")
+print("result:",result)
+
+result1 = strb.replace("Hello","Hi")
+print("result:",result1)
+
+result2 = strb.replace("good","bad").replace("Hello","Hi")
+print("result:",result2)
+
+#Program to replace first good with bad and second good with nice
+strb = "Hello good Morning, Hope you are doing good"
+
+print("_"*60)
+word_list = strb.split(" ")
+output = " "
+count =0
+for word in word_list:
+    if "good" in word and count==0:
+        output = output+"bad"+" "
+        count += 1
+    elif "good" in word and count ==1:
+        output=output+"nice"+" "                                    #########
+    else:
+        output= output+word+" "
+print("Output:",output)
+
+## 9) Count method: This method return count of any character/sub-string repeated in given target string
+
+str12="Good Morning Girl"
+print("Count of o:",str12.count("o"))                       # 3
+print("Count of Good:",str12.count("Good"))                 # 1
+
+## 10) index method: This method provide index position of any character or substring
+
+stre="Good Morning"
+print("index of d:",stre.index("d"))                        # 3
+print("index of Mor:",stre.index("Mor"))                      # 5
+
+# print("index of d:",stre.index("D"))                        # ValueError: substring not found, D not available
+
+## 11)find() method- this method return the index position of the character or substring
+
+strj = "Python Learning is Fun"
+print("Check substring Lea:",strj.find("Lea"))                # 7
+
+#if the target character/substring is not available then it return -1
+print("Check substring LLea:",strj.find("LLea"))              # -1
+
+## For index if its not available then it will throw the error and stops the program
+## For find() if its not available then it will not  throw the error , returns value -1 , for smooth running of the program
 
 
+#12) strip() method : This method remove the leading and trailing spaces, beginning and end
+print("_"*60)
+strk = "    India is the best in Cricket    "
+print(strk)
+print(strk.strip())
+
+# Remove space from left side
+print(strk.lstrip())
+
+# Remove space from right side
+print(strk.rstrip())
+
+# Remove all  spaces
+print(strk.replace(" ",""))                    # IndiaisthebestinCricket, in between spaces
 
 
 

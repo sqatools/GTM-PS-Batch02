@@ -4,7 +4,7 @@ n = str(input("enter the number:"))
 for i in range(len(n)):
     if i==0:
         print ("First digit of number:",n[i])
-    elif i==len(n)-1:
+    elif i == len(n)-1:
         print("Last digit of number:", n[i])
 
 
@@ -18,3 +18,15 @@ for i in range(len(n)):
 #     print("Not Eligible for Vote")
 # else:
 #     print("Eligible for Vote")
+
+
+# Python string program to test whether a passed letter is a vowel or consonant.--??
+
+vowel = "AEIOU aeiou"
+letter = input("enter the Letter:")
+
+if letter in vowel:
+    print(letter, "is vowel ")
+else:
+    print(letter, "is consonant")
+
