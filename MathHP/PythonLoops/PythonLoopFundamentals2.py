@@ -1,5 +1,5 @@
 """
-Nested loop condition
+Assignment provided in class condition
 loop inside loop
 for loop inside for loop
 
