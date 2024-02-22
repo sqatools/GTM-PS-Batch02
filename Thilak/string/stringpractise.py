@@ -27,6 +27,7 @@ print("-"*40)
 str1 = "Hello Good Morning"
 print("g",str1[1:17],"H")
 print(str1[:-2:-1],str1[1:17],str1[:1:1])
+print(str1[:-2:-1]+str1[1:17]+str1[:1:1])
 print("_"*40)
 #str2 = "Python Programming"-output2 = "Pto rgamn"
 str2 = "Python Programming"
@@ -39,3 +40,4 @@ print(str3[-8:0:-1], str3[-1:8:-1])
 str4 = "Good Evening"
 #output4 = "GGood Eveningg"
 print(str4[0:1], str4[1:12], str4[:-2:-1])
+print(str4[0:1]+str4[1:12]+str4[:-2:-1])
