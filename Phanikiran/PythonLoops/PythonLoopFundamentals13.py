@@ -1,5 +1,5 @@
 """
-Nested loop condition
+Assignment provided in class condition
 """
 
 for i in range(1, 5):
