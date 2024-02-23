@@ -31,11 +31,23 @@ str1.count("goog")
 """
 
 #7
+"""
 str1 = "we are learning python"
 list1 = str1.split(" ")
 print("long word", max(list1, key=len))
 print("smallest word", min(list1, key=len))
+"""
+#8.calculate length of the string
 
+str1 = " python programing"
+str_len = len(str1)
+count = 0
+for i in range(str_len):
+    print(str1[i], end=" ")
+    for char in str1:
+        count += 1
+print(count)
+print(len(str1))
 
 
 
