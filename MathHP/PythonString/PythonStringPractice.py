@@ -379,5 +379,41 @@ print(strk.rstrip())
 print(strk.replace(" ",""))                    # IndiaisthebestinCricket, in between spaces
 
 
+#######################################################################################################################################################
+
+# Program2: WAP to find out the longest word in the given string
+
+str_input = " User properties become part of the test report and are available to the configuredvalues reporters"
+
+longest_word = ''
+long_len = 0
+
+#########################################################################################################################################################
+#3) WAP to get count of vowels from each word
+
+str1= " User properties become part of the test"
+#output = {"User":2,"properties":3,"become":2,"part":1,"of":1,"test":1}
+
+word_list = str1.split(" ")
+vowels = "aeiou"
+output ={}              # initiate dict
+for word in word_list:
+    count = 0
+    for char in vowels:    # ae  char in word means properties 4 vowels
+        if char in word.lower():     # char.lower() in vowels
+            count +=1
+        else:
+            continue
+    output[word] = count
+
+print("Output:",output)
+
+
+
+
+
+
+
+
 
 
