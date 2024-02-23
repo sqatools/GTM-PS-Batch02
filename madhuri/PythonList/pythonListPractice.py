@@ -102,7 +102,7 @@ print("_"*100)
 """
 7.Python program to remove all duplicate elements from the list. 
 """
-dup_list = [5, 7, 8, 2, 5, 0, 7, 2]
+dup_list = [5, 7, 8, 8, 5, 0, 7, 7]
 
 print(len(dup_list)-1)
 print(dup_list[7])
@@ -113,5 +113,15 @@ for i in range(len(dup_list)-1):
     if dup_list[i] == dup_list[i+1]:
         new_list = dup_list[i]
 print(new_list)"""
+
+new_list = []
+for i in range(len(dup_list)-1):
+    print(dup_list[i], '=', dup_list[i+1])
+    if dup_list[i] == dup_list[i+1]:
+        new_list.append(dup_list[i])
+        #add occurance of duplicate value
+    else:
+        continue
+print("New List: ", new_list)
 
 
