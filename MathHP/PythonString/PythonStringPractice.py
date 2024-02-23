@@ -388,6 +388,8 @@ str_input = " User properties become part of the test report and are available t
 longest_word = ''
 long_len = 0
 
+                                                    ###     PENDING CLASS
+
 #########################################################################################################################################################
 #3) WAP to get count of vowels from each word
 
