@@ -23,8 +23,25 @@ if num2 in input_list:
     print("Present in list")
 else:
     print("Not Present in list")
+print("_"*100)
+
 """
-14.
+14). Python program to find the largest number among three numbers.
 """
+num1 = 78
+num2 = 60
+num3 = 10
+
+if num1 > num2 and num1 > num3:
+    print("Largest number is: ", num1)
+elif num2 > num1 and num2 > num3:
+    print("Largest number is: ", num2)
+else:
+    print("Largest number is: ",num3)
 
 
+"""
+15). Python program to check any person eligible to vote or not
+age > 18+ : eligible
+age < 18: not eligible
+"""
