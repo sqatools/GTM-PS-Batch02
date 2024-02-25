@@ -50,4 +50,20 @@ print(b)
 #pythogorous theorem (a2 + b2 = c2)
 a = 2
 b = 3
+RHS = (a**2)+(b**2)
+LHS = (a**2)+(b**2)
+print(LHS, "=", RHS)
 
+#program to solve the given math formula.
+#Formula : (a + b)2 = a^2 + b^2 + 2ab
+
+
+a = 2
+b = 3
+#LHS
+LHS = (a + b)**2
+print("LHS: ", LHS)
+
+#RHS
+RHS = (a**2) + (b**2) +(2 * a * b)
+print("RHS: ", RHS)

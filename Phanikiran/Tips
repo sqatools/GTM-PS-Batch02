@@ -1,2 +1,17 @@
 - To print some series of numbers in reverse order
     for i in range(10, 0, -1) # Here
+- for char in str:
+- whenever we want to reverse a number we have to change it to string for example palindrome.
+  num1=565
+  rev_num=str(num1)[::-1] # Here we are converting integer to string and reversing
+- print() : This is for printing all loop statements in the fresh line.
+- end="" : This is for printing in the same line like ******. If we give space then it prints * * * * *
+- for i in range (1,5): Here it will print from 1 to 4 only.
+- Loops: last loops completes all iterations and last top iteration.
+- print(): It plays main role in the pattern programs.
+- each value of i in the loop will go in the next line by using print() for i loop.
+- print(ord("A"): This function is to find the ASCII value of that particular letter.
+- print(char("97")): This function is to find the character of particular ASCII value.
+-
+
+
