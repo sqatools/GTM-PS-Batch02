@@ -179,6 +179,7 @@ list1 = [4, 5, 7, 9, 2, 1]
 list2 = [2, 5, 8, 3, 4, 7]
 output_list = []
 
+#solution1
 for i in range(len(list1)):
     for j in range(len(list2)):
        if list1[i] == list2[j]:
@@ -186,6 +187,7 @@ for i in range(len(list1)):
             output_list.append(list1)
 #print("11. Get common elements from two lists: ",output_list)
 
+#solution2
 common_list = []
 for val in list1:
     if val in list2:
