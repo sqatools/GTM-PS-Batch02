@@ -104,24 +104,128 @@ print("_"*100)
 """
 dup_list = [5, 7, 8, 8, 5, 0, 7, 7]
 
-print(len(dup_list)-1)
-print(dup_list[7])
-
-"""new_list = []
-
-for i in range(len(dup_list)-1):
-    if dup_list[i] == dup_list[i+1]:
-        new_list = dup_list[i]
-print(new_list)"""
-
+#Get next duplicate value from the list
 new_list = []
 for i in range(len(dup_list)-1):
-    print(dup_list[i], '=', dup_list[i+1])
+    #print(dup_list[i], '=', dup_list[i+1])
     if dup_list[i] == dup_list[i+1]:
         new_list.append(dup_list[i])
         #add occurance of duplicate value
     else:
         continue
-print("New List: ", new_list)
+#print("New List: ", new_list)
+
+#Remove Duplicate Values from the list
+
+unique_list = []
+for val in dup_list:
+    if val not in unique_list:
+        unique_list.append(val)
+print("Removed duplicate values from the list is: ", unique_list)
+print("_"*100)
+"""
+Doubt 8. Python program to print a combination of 2 elements from the list whose sum is 10.
+"""
+comb_list= [2,5,8,5,1,9]
+result = tuple()
+for i in range(len(comb_list)):
+    for j in range(i+1, len(comb_list)):
+        #combination = sum(comb_list[i],comb_list[j])
+        combination = comb_list[i] + comb_list[j]
+        if combination == 10:
+            print(comb_list[i], '=', comb_list[j])
+print("_"*100)
+
+"""
+9. Python program to print squares of all even numbers in a list.
+"""
+square_input_list = [2, 4, 7, 8, 5, 1, 6]
+square_list = []
+
+for val in square_input_list:
+    if val % 2 == 0:
+        square_list.append(val**2)
+print("9. Square of even numbers in list is: ", square_list)
+print("_"*100)
+
+"""
+10). Python program to split the list into two-part, the left side all odd values and the right side all even values.
+Input = [5, 7, 2, 8, 11, 12, 17, 19, 22]
+Output = [5, 7, 11, 17, 19, 2, 8, 12, 22]
+"""
+Input = [5, 7, 2, 8, 11, 12, 17, 19, 22]
+
+odd_list = []
+even_list = []
+
+for val in Input:
+    if val%2 != 0:
+        odd_list.append(val)
+    else:
+        even_list.append(val)
+odd_list.extend(even_list)
+print("10. left side all odd values and the right side all even values: ", odd_list)
+print("_"*100)
 
 
+"""
+Doubt 11).  Python program to get common elements from two lists.
+Input =
+list1 = [4, 5, 7, 9, 2, 1]
+list2 = [2, 5, 8, 3, 4, 7]
+Outputt : [4, 5, 7, 2]
+"""
+list1 = [4, 5, 7, 9, 2, 1]
+list2 = [2, 5, 8, 3, 4, 7]
+output_list = []
+
+for i in range(len(list1)):
+    for j in range(len(list2)):
+       if list1[i] == list2[j]:
+            #if list1[i] not in output_list:
+            output_list.append(list1)
+#print("11. Get common elements from two lists: ",output_list)
+
+common_list = []
+for val in list1:
+    if val in list2:
+        common_list.append(val)
+print("11. Get common elements from two lists: ", common_list)
+print("_"*100)
+
+"""
+12. Python program to reverse a list with for loop.
+input = [1, 2, 3, 4, 55]
+output = [55, 4, 3, 2, 1]
+"""
+list1 = [1, 2, 3, 4, 55]
+new_list = []
+#print(list1[::-1])
+
+for i in range(len(list1)-1,-1,-1):
+    new_list.append(list1[i])
+print("12. program to reverse a list with for loop: ", new_list)
+print("_"*100)
+
+"""
+13.Problem to print the list in reverse order using while loop
+"""
+list1 = [1, 2, 3, 4, 55]
+count = len(list1) - 1
+new_list = []
+while count >= 0:
+    new_list.append(list1[count])
+    count = count - 1
+print("Print the list in reverse order using while loop: ", new_list)
+print("_"*100)
+
+"""
+14. Python program to reverse a list using index slicing.
+"""
+list1 = [1, 2, 3, 4, 55]
+print("Reverse a list using index slicing: ",list1[::-1])
+
+"""
+15). Python program to reverse a list with reversed and reverse methods.
+"""
+list1 = [1, 2, 3, 4, 55]

@@ -68,7 +68,7 @@ Formula : area = a*a
 """
 side = float(input("Enter the side of square: "))
 print("Area of square is: area = a*a ==> ",side ** side)
-
+print("_"*100)
 
 """
 16.Python program to calculate the area of a circle.
@@ -79,14 +79,14 @@ PI = 3.14
 radius = float(input("Enter the radius of a circle: "))
 PI = 3.14
 print("Area of circle is: PI*r*r ==> ", PI * radius * radius)
-
+print("_"*100)
 """
 17. Python program to calculate the area of a cube.
 Formula = 6*a*a
 """
 side_cube = float(input("Enter the side of cube: "))
 print("Area of cube is: 6*a*a ==>  ", 6* side_cube* side_cube)
-
+print("_"*100)
 """
 18: Python program to calculate the area of the cylinder.
 Formula = 2*PI*r*h + 2*PI*r*r
@@ -95,12 +95,26 @@ radius_cyldr = float(input("Enter the radius of cylinder: "))
 height_cyldr = float(input("Enter the height of cylinder: "))
 area_cydr = 2* PI * radius_cyldr * height_cyldr + 2 * PI * radius_cyldr * radius_cyldr
 print("Area of cylinder is ==> ", radius_cyldr )
+print("_"*100)
 
 """
 19.Python program to check whether the given number is an Armstrong number or not.
 Example: 153 = 1*1*1 + 5*5*5 + 3*3*3
 """
+num = int(input("Enter a number: "))
+sum = 0
 
+temp = num
+while temp > 0:
+    digit = temp%10
+    sum = sum + digit**3
+    temp = temp // 10
+
+if num == sum:
+    print(num, "Is Armstrong")
+else:
+    print(num, "Is not Armstrong")
+print("_"*100)
 """
 20). Python program to calculate simple interest.
 Formula = P+(P/r)*t
@@ -108,3 +122,11 @@ P = Principle Amount
 r = Anual interest rate
 t = time
 """
+
+p = 1000
+r = 5
+t = 2
+
+amount = p + (p/r)*t
+print(amount)
+print("_"*100)
