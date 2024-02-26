@@ -6,6 +6,7 @@ while n>0:
     rev=(rev*10)+r
     n=n//10
 print("reverse of number",rev)
-#without using loop
-num=input("enter a no")
-print(num[::-1])
+if n==rev:
+    print("its a palindrome")
+else:
+    print("its not a palindrome")
