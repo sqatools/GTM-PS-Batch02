@@ -3,5 +3,5 @@
 Input = 26
 Output = The given number is positive and even
 """
-input1 = int(input("Enter number to check +ve/-ve and even/odd"))
-
+#input1 = int(input("Enter number to check +ve/-ve and even/odd"))
+print(23//10)

@@ -113,7 +113,7 @@ for i in range(len(dup_list)-1):
         #add occurance of duplicate value
     else:
         continue
-#print("New List: ", new_list)
+print("7. New List: ", new_list)
 
 #Remove Duplicate Values from the list
 
@@ -127,7 +127,6 @@ print("_"*100)
 Doubt 8. Python program to print a combination of 2 elements from the list whose sum is 10.
 """
 comb_list= [2,5,8,5,1,9]
-result = tuple()
 for i in range(len(comb_list)):
     for j in range(i+1, len(comb_list)):
         #combination = sum(comb_list[i],comb_list[j])
@@ -183,9 +182,10 @@ output_list = []
 for i in range(len(list1)):
     for j in range(len(list2)):
        if list1[i] == list2[j]:
-            #if list1[i] not in output_list:
-            output_list.append(list1)
-#print("11. Get common elements from two lists: ",output_list)
+            if list1[i] not in output_list:
+                output_list.append(list1[i])
+
+print("11. Get common elements from two lists: ", output_list)
 
 #solution2
 common_list = []

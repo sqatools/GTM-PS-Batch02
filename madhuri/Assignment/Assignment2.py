@@ -130,3 +130,4 @@ t = 2
 amount = p + (p/r)*t
 print(amount)
 print("_"*100)
+
