@@ -58,3 +58,34 @@ for i in range(len(str1)-1):
 
 print("max count :", max_count)
 print("max repeated character :", max_r_char)
+
+
+############################################
+print("_"*50)
+# write a python program to get all the number which are divisible 3 and 7 from given list
+
+lista = [4, 6, 7, 8, 15, 21, 35, 40, 18, 28]
+output = []
+for val in lista :
+    if val%3 ==0 or val%7 ==0:
+        output.append(val)
+    else:
+        output.append(None)
+
+print("output :", output)
+
+#result = [val for val in lista if val%3 == 0 or val%7 == 0]
+#print("result :", result)
+
+
+result = [val if val%3 ==0 or val%7 ==0 else None for val in lista]
+print("result :", result)
+
+#21. Write a Python to remove unwanted characters from the given string.
+Input_val = "Prog^ra*m#ming"
+#Output = “Programming”
+
+result = [char for char in Input_val if char.isalpha()]
+print("result :", result)
+print("output :", "".join(result))
+
