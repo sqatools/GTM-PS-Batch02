@@ -1,15 +1,15 @@
 # #find max element
 #
-# """list=[5,8,9,56,98,12]
-#
-#
-# max=list[0]
-# n=len(list)
-#
-# for i in range (1,n):
-#     if list[i]>max:
-#         max=list[i]
-# print(max)"""
+list=[5,8,9,56,98,12]
+
+
+max=list[0]
+n=len(list)
+
+for i in range (1,n):
+    if list[i]>max:
+        max=list[i]
+print(max)
 #
 # #find min values
 #
