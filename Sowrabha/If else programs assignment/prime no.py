@@ -1,12 +1,7 @@
 #Python program to check given number is a prime number or not.
+n=int(input("enter a no:"")
+count=0
 
-x=int(input("enter a no:"))
-if x==1:
-    print("Its not a prime no")
-else:
-    if x%2==0:
-        print("Its not "
-              "a prime no")
-    else:
-           if x%2!=0:
-            print("It is a prime no")
+for i in range(2,num):
+    if i%n==0:
+        print
