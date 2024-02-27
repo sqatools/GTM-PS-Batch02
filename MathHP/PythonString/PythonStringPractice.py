@@ -304,8 +304,8 @@ print("server:",server)             #['https://www', 'google', 'co', 'in']
 server = url.split(".")[1]
 print("server:",server)             #google
 
-www= url.split(".")[0].split("//")[1]
-print("www:",www)                   #www
+www_val= url.split(".")[0].split("//")[1]
+print("www:",www_val)                   #www
 
 #9) Replace method:Replace any substring or character from target string
 
@@ -378,19 +378,82 @@ print(strk.rstrip())
 # Remove all  spaces
 print(strk.replace(" ",""))                    # IndiaisthebestinCricket, in between spaces
 
+#13) Join() method , we can combine with given delimiters, Any string with any delimiters like , _ . ;
 
-#######################################################################################################################################################
+print("_"*60)
+str2 = "Python"
+result ="_".join(str2)
+print("result:",result)                                    # result: P_y_t_h_o_n
+
+# 14) Check given string has only numbers
+
+str3 = "64565465455456"
+print("is numeric method of string:", str3.isnumeric())   #True      # Only numbers not even space should be present orelse False
+
+str4 = "8656759 69876"
+print("is numeric check with space:",str4.isnumeric())    # False
+
+str5a = "6721AB%78689"
+print("Check with alpha and num and special char mixed:",str5.isnumeric())  # False
+
+# isalnum() method works with three conditions, all numerics, all alphabets and combination of alphabets and numerics
+
+str5 = "hello123"
+print("is alphanumeric :",str5.isalnum())                 #True
+
+str5b = "5978587987"
+print("is alphanumeric:",str5b.isalnum())                 # True , only numbers
+
+str5c ="fkjgfvjhv"                                        # True ,only alphabets
+print("isalphanumeric:",str5c.isalnum())
+
+str5d = "fkuhg 85795"
+print("isalphanum with space:",str5d.isalnum())          # False
+
+str5e = "65865jklghkjlhg@"
+print("isalphanum with @",str5e.isalnum())              # False
+
+print("_"*60)
+
+# Program to find out all the mobile numbers and email ids in the given string
+
+str7 = """
+Add 53544 user3@facebook.com extra properties to the calling test.
+User properties 8593485908 become part of the test 
+report and admin@gmail.com 543453 are available to the 
+configured 8883485908 reporters, 25243 like JUnit XML.
+The fixture user2@gmail.com is callable with name, 
+value. The value is 5593489908 nonadmin@yahoo.com automatically XML-encoded.
+"""
+
+# Only 10 digits are mobile numbers
+
+word_list = str7.split(" ")                   # space so will get word list, each word is separated
+print(word_list)
+for word in word_list:
+    if word.isnumeric() and len(word)== 10:   # only numbers and length is 10
+        print(word)
+    elif "@" in word:
+        print(word)
+    else:
+        continue
 
 # Program2: WAP to find out the longest word in the given string
 
-str_input = " User properties become part of the test report and are available to the configuredvalues reporters"
+print("_"*60)
+str_input = " User properties become part of the test reportfuygfuhgvdsxdfgxfxdgh and are available to the configuredvalues reporters"
 
 longest_word = ''
-long_len = 0
+long_len = 0                                  # initially
+word_list = str_input.split(" ")             # split all words,by default split is by space (" ")
+for word in word_list:
+    word_len = len(word)
+    if word_len>long_len:                  #print(word,word_len)
+      long_len=word_len                   # Now setting long_len as 4 ,User which is word len
+      longest_word = word
 
-                                                    ###     PENDING CLASS
+print("Longest word:",longest_word)
 
-#########################################################################################################################################################
 #3) WAP to get count of vowels from each word
 
 str1= " User properties become part of the test"
@@ -409,6 +472,26 @@ for word in word_list:
     output[word] = count
 
 print("Output:",output)
+
+# electricity bill. According to the following conditions:
+# # Up to 50 units rs 0.50/unit
+# # Up to 100 units rs 0.75/unit
+# # Up to 250 units rs 1.25/unit
+# # above 250 rs 1.50/unit
+# # an additional surcharge of 17% is added to the bill
+
+number_unit = int(input("Please enter total unit consumption"))
+total_bill=0
+if number_unit<=50:
+    total_bill=total_bill+(number_unit*0.50)
+elif number_unit>50 and number_unit<=100:
+    total_bill=total_bill+(number_unit*0.75)
+elif number_unit>100 and number_unit<=250:
+    total_bill=total_bill+(number_unit*1.25)
+elif number_unit>250:
+    total_bill=total_bill+(number_unit*1.5)
+total_bill=total_bill+total_bill*0.17
+print("Total bill:",total_bill)                                      # 614.25
 
 
 

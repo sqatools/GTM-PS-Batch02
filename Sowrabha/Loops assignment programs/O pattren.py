@@ -24,7 +24,8 @@ for i in range(1, 6):
             print("*", end=" ")
         else:
            print("", end=" ")
-    print()
+    print( )
+
 
 for i in range(1,8):
     if i>2 and i<6:
