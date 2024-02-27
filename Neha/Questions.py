@@ -27,3 +27,19 @@ if sorted(str1) == sorted(str2):
     print("The two strings are anagrams of each other")
 else:
     print("The two strings are not anagrams")
+
+#Questions need to ask
+10). Write a Python program to replace the second occurrence of any char with the special character $.
+Input = “Programming”
+Output = “Prog$am$in$”
+
+21. Write a Python to remove unwanted characters from the given string.
+Input = “Prog^ra*m#ming”
+Output = “Programming”
+
+# output = ''.join(i for i in Input_21 if i.isalnum())
+# print(output)
+
+##Write a Python program to find the longest capital letter word from the string.
+Input = "Learning PYTHON programming is FUN"
+#Output = “PYTHON”
