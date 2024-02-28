@@ -199,3 +199,61 @@ if type(num1) is int: # float, str
     print("True")
 else:
     print("False")
+
+# 26. Python program to check whether the given input is a complex type or not.
+input_val = 2+3j
+if type(input_val) == complex:
+    print("True")
+else:
+    print("false")
+
+# 27.  Python program to check whether the given input is Boolean type or not.
+input_num = True
+if type(input_num) == bool:
+    print("True") # True, False
+else:
+    print("false") # 53,hi
+
+# 30. Python program to find employees eligible for bonus.
+# A company decided to give a bonus of 10% to employees. If the employee has served more than 4 years.
+# Ask the user for years served and check whether an employee is eligible for a bonus or not.
+year = int(input("Enter the number of years: "))
+if year > 4:
+    print("Employee is eligible for a bonus")
+else:
+    print("Employee is not eligible for a bonus")
+
+# 31. A shop will give a 10% discount if the bill is more than 1000, and 20% if the bill is more than 2000.
+# Using the python program Calculate the discount based on the bill.
+bill = 1600
+if bill >= 2000:
+    discount = 20*(bill/100)
+elif bill >= 1000 and bill < 2000:
+    discount = 10*(bill/100)
+print("Discount is: ",discount)
+
+# 32. Python Loops program to count the number of even and odd numbers from a series of numbers using python.
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+even = 0
+odd = 0
+
+for val in numbers:
+    if val%2 == 0:
+        even += 1
+    else:
+        odd += 1
+
+print("Number of even numbers: ",even)
+print("Number of odd numbers: ",odd)
+
+# 32.  Write a program to get the Fibonacci series between 0 to 20 using python.
+number1 = 0
+number2 = 1
+count = 0
+while count < 20:
+    print(number1, end=" ")
+    temp = number1+number2
+    number1 = number2
+    number2 = temp
+    count +=1
+
