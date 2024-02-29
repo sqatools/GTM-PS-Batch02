@@ -16,8 +16,8 @@ output4 = "GGood Eveningg"
 """
 
 str1= "Hello Good Morning"
-first_char = str1[0]
-last_char = str1[-1]
+first_char = str1[0:1]
+last_char = str1[-1:]
 middle = str1[1:-1]
 print(last_char+middle+first_char) # output = "gello Good MorninH"
 
@@ -34,4 +34,3 @@ first = str4[0:1]
 last = str4[-1:]
 middle = str4[1:-1]
 print(first+first+middle+last+last) # output4 = "GGood Eveningg"
-print(first*2+middle+last*2)
