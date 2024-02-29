@@ -14,7 +14,6 @@
 """
 
 list1 = [5, 7, 9, 3, 17, 2]
-# Create a dictionary from the input list with keys as uppercase alphabets
 output_dict = {}
 for i in range(len(list1)):
     output_dict[chr(65 + i)] = list1[i]
