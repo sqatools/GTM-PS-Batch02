@@ -19,7 +19,6 @@ output_dict = {}
 for i in range(len(list1)):
     output_dict[chr(65 + i)] = list1[i]
 
-
 print(output_dict)
 
 Str1 = "We are Learning Python Programming"
@@ -30,6 +29,5 @@ for word in words:
     key = word[0].swapcase() + word[-1].swapcase()
     value = str(len(word)) + word + str(len(word))
     output_dict2[key] = value
-
 
 print(output_dict2)
