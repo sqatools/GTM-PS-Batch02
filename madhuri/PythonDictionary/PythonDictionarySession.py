@@ -29,3 +29,13 @@ dict1[False] = [4, 7, 8, 2, 5]
 
 print(dict1)
 # {'a': 456, 4: 'Hello', 4.5: [4, 7, 8], (1, 4, 6): {'a': 4567, 'b': 123}, True: {9, 2, 5, 7}, False: [4, 7, 8, 2, 5]}
+
+str = "Python"
+str_list = list(str)
+print(str_list)
+list1= [4,6,8,2,9,10]
+output = {}
+
+for i in range(len(str_list)):
+    output[str_list[i] * 2] = list1[i]
+print(output)
