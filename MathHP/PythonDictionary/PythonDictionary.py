@@ -61,10 +61,46 @@ print("dict_f:",dict_f)
 # Questions
 # WAP to get below result
 #Q1)
-list1 =[5,7,9,3,7,2]
-output={'A':5,'B':7,'C':9,'D':3,'E':17,'F':2}
+# list1 =[5,7,9,3,7,2]
+# output={'A':5,'B':7,'C':9,'D':3,'E':17,'F':2}
 
-#Q2)
-str1 = "We are learning Python Programming"
-Output = {""}
+list1 = [5, 7, 9, 3, 7, 2]
+
+# Define alphabets to assign to elements
+alphabets = ['A', 'B', 'C', 'D', 'E', 'F']
+
+# Calculate the sum of list1 along with alphabets
+output = {}
+for i in range(len(list1)):
+    output[alphabets[i]] = list1[i]
+
+# Adding the sum of the list to the output dictionary
+output['E'] = sum(list1)
+
+print(output)
+print("_"*60)
+
+###################################################
+
+# Question2
+Str1 = "We are Learning Python Programming"
+Output = {"wE" : "2We2", "AE" : "3are3", "lG": "8Learning8", "pN" : "6Python6", "pG" : "11Programming11"}
+
+Str1 = "We are Learning Python Programming"
+
+# Initialize an empty dictionary to store the output
+output = {}
+
+# Iterate through the string Str1
+for char in Str1:
+    # Check if the character is an alphabet
+    if char.isalpha():
+        # Count the occurrences of the character in Str1
+        count = Str1.count(char)
+        # Construct the output string as per the format specified
+        output[char.upper() + char.lower()] = str(count) + char.upper() + str(count)
+
+print(output)
+print("_"*60)
+
 
