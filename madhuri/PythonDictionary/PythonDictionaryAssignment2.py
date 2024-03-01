@@ -53,39 +53,49 @@ students = school.get('Students')
 for key, values in students.items():
     for data in values:
         if data['phone'] == input_phone:
-            flag = 1
-            break
+            # flag = 1
+            # break
+            input_name = input("Enter student Name: ")
+            input_email = input("Enter Student Email: ")
+            input_address = input("Enter Student Address: ")
+            input_mobile = input("Enter Student Mobile: ")
+            data['student_name'] = input_name
+            data['email'] = input_email
+            data['address'] = input_address
+            data['phone'] = input_mobile
         else:
             continue
-if flag == 1:
-    print("_"*50 + "Enter following information to update student details" + "_"*50)
-    input_name = input("Enter student Name: ")
-    input_email = input("Enter Student Email: ")
-    input_address = input("Enter Student Address: ")
-    input_mobile = input("Enter Student Mobile: ")
-    for key, values in students.items():
-        for data in values:
-            if data['phone'] == input_phone:
-                data['student_name'] = input_name
-                data['email'] = input_email
-                data['address'] = input_address
-                data['phone'] = input_mobile
-                flag = 1
-                flag2 = 1
-                output.update(data)
-                break
-            else:
-                continue
-else:
-    print("Student not found 2")
 
-if flag2 == 1:
-    print("_"*50 + " Success, Student information Updated Successfully. " + "_"*50)
-    print()
-    print(output)
-    print("_"*100)
-    print(students)
-else:
-    print("_"*50 + " Failed, Student information Failed to Update. "+"_"*50)
-
+print("student details :", school['Students'])
+# if flag == 1:
+#     print("_"*50 + "Enter following information to update student details" + "_"*50)
+#     input_name = input("Enter student Name: ")
+#     input_email = input("Enter Student Email: ")
+#     input_address = input("Enter Student Address: ")
+#     input_mobile = input("Enter Student Mobile: ")
+#     for key, values in students.items():
+#         for data in values:
+#             if data['phone'] == input_phone:
+#                 data['student_name'] = input_name
+#                 data['email'] = input_email
+#                 data['address'] = input_address
+#                 data['phone'] = input_mobile
+#                 flag = 1
+#                 flag2 = 1
+#                 output.update(data)
+#                 break
+#             else:
+#                 continue
+# else:
+#     print("Student not found 2")
+#
+# if flag2 == 1:
+#     print("_"*50 + " Success, Student information Updated Successfully. " + "_"*50)
+#     print()
+#     print(output)
+#     print("_"*100)
+#     print(students)
+# else:
+#     print("_"*50 + " Failed, Student information Failed to Update. "+"_"*50)
+#
 
