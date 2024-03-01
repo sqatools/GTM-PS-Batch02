@@ -59,7 +59,7 @@ Output = [5, 7, 11, 17, 19, 2, 8, 12, 22]
 
 #4). Python program to find a product of all elements from a given list.
 
-list5=[1,2,3,4]
+list5=[1,2,3,4,9,3,6,7,1]
 val=1
 
 for i in list5:
@@ -70,3 +70,5 @@ print(val)
 
 print(max(list5))
 print(min(list5))
+print(sorted(list5))
+print(list5)

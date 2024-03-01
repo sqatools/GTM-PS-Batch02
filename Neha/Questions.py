@@ -1,45 +1,99 @@
-# # Write a program to find the first and last digits of a number using python.---???
-# n = str(input("enter the number:"))
+# # # Write a program to find the first and last digits of a number using python.---???
+# # n = str(input("enter the number:"))
+# #
+# # for i in range(len(n)):
+# #     if i==0:
+# #         print ("First digit of number:",n[i])
+# #     elif i == len(n)-1:
+# #         print("Last digit of number:", n[i])
 #
-# for i in range(len(n)):
-#     if i==0:
-#         print ("First digit of number:",n[i])
-#     elif i == len(n)-1:
-#         print("Last digit of number:", n[i])
-
+# #
+# # # Python string program to test whether a passed letter is a vowel or consonant.--??
+# #
+# # vowel = "AEIOU aeiou"
+# # letter = input("enter the Letter:")
+# #
+# # if letter in vowel:
+# #     print(letter, "is vowel ")
+# # else:
+# #     print(letter, "is consonant")
 #
-# # Python string program to test whether a passed letter is a vowel or consonant.--??
 #
-# vowel = "AEIOU aeiou"
-# letter = input("enter the Letter:")
 #
-# if letter in vowel:
-#     print(letter, "is vowel ")
-# else:
-#     print(letter, "is consonant")
+# # # Usage
+# # str1 = "listen"
+# # str2 = "sileno"
+# # if sorted(str1) == sorted(str2):
+# #     print("The two strings are anagrams of each other")
+# # else:
+# #     print("The two strings are not anagrams")
+# #
+# # #Questions need to ask
+# # 10). Write a Python program to replace the second occurrence of any char with the special character $.
+# # Input = “Programming”
+# # Output = “Prog$am$in$”
+# #
+# # 21. Write a Python to remove unwanted characters from the given string.
+# # Input = “Prog^ra*m#ming”
+# # Output = “Programming”
+# #
+# # # output = ''.join(i for i in Input_21 if i.isalnum())
+# # # print(output)
+# #
+# # ##Write a Python program to find the longest capital letter word from the string.
+# # Input = "Learning PYTHON programming is FUN"
+# # #Output = “PYTHON”
+#
+# # def exceptionHandling():
+# #     try:
+# #         car = {'make':'BMW','model':'1100','Year':'2010'}
+# #         print(car['color'])
+# #     except:
+# #         print("Key not found")
+# #     finally:
+# #         print("Please try different key value")
+# #
+# # exceptionHandling()
+# #
+# # Input = "sqatools"
+# # #Output = {‘s’:2, ‘q’:1, ‘a’: 1, ‘t’:1,‘o’:2, ‘l’:1, ‘s’:1}
+# #
+# # output_dict={}
+# #
+# # for char in Input:
+# #     output_dict[char]= Input.count(char)
+# # print(output_dict)
+#
+# ## Program: write a python get below result
+#
+# str1 = "Python"
+# list1 = [4, 6, 8, 2, 9, 10]
+# #output = {'PP' : 4, 'yy' : 6, 'tt' : 8, 'hh': 2, 'oo': 9, 'nn' : 10}
+#
+# list2= list(str1)
+# print(list2)
+# output_dict={}
+#
+# for i in range (len(list2)):
+#     output_dict[(list2[i])*2]= list1[i]
+# print(output_dict)
+#
+date_string = "01-03-2024"
 
+# Print the date string
+print(date_string)
 
+# Split the date string into day, month, and year
+day, month, year = date_string.split('-')
 
-# Usage
-str1 = "listen"
-str2 = "sileno"
-if sorted(str1) == sorted(str2):
-    print("The two strings are anagrams of each other")
-else:
-    print("The two strings are not anagrams")
-
-#Questions need to ask
-10). Write a Python program to replace the second occurrence of any char with the special character $.
-Input = “Programming”
-Output = “Prog$am$in$”
-
-21. Write a Python to remove unwanted characters from the given string.
-Input = “Prog^ra*m#ming”
-Output = “Programming”
-
-# output = ''.join(i for i in Input_21 if i.isalnum())
-# print(output)
-
-##Write a Python program to find the longest capital letter word from the string.
-Input = "Learning PYTHON programming is FUN"
-#Output = “PYTHON”
+# Print the day, month, and year on separate lines
+print(day)
+print(month)
+print(year)
+# AI-generated code. Review and use carefully. More info on FAQ.
+# The output will be:
+#
+# 01-03-2024
+# 01
+# 03
+# 2024
