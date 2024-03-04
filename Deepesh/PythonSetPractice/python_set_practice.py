@@ -32,11 +32,11 @@ print(dir(set))
 
 seta = {5, 8, 9, 2, 1}
 seta.add(700)
-print("seta :",seta)
+print("seta :", seta)
 # seta : {1, 2, 5, 8, 9, 700}
 
 #####################
-print("_"*50)
+print("_" * 50)
 # update() method : this method update data from set1 to set2
 
 set_c = {5, 8, 0, 2}
@@ -49,26 +49,25 @@ print("set_c :", set_c)  # {8, 0, 2, 5}
 set_d.update({50})
 print("set_d :", set_d)  # {'b', 0, 2, 5, 'a', 8, 50, 'd', 'c'}
 
-
 ##############################
-print("_"*50)
+print("_" * 50)
 # union() method : This method combine two sets and retrun new set
 
 set_e = {5, 8, 0, 2, 22, 'a', 'b'}
 set_f = {'a', 'b', 'c', 'd', 22}
 
-#set_g= set_e.union(set_f)
-set_g= set_f.union(set_e)
+# set_g= set_e.union(set_f)
+set_g = set_f.union(set_e)
 
-print("set_g :", set_g)# {0, 2, 5, 8, 'd', 'a', 'b', 22, 'c'}
+print("set_g :", set_g)  # {0, 2, 5, 8, 'd', 'a', 'b', 22, 'c'}
 print("set_e :", set_e)
 print("set_f :", set_f)
 
 ################# Remove data from set ##############
-print("_"*50)
+print("_" * 50)
 # remove() method :  This remove specific data from set and does not return.
 
-set_h = {6, 8, 3, 90 ,88}
+set_h = {6, 8, 3, 90, 88}
 set_h.remove(90)
 print("set_h :", set_h)  # set_h : {3, 6, 8, 88}
 
@@ -90,20 +89,19 @@ set_j.discard(200)
 print(" set_j :", set_j)
 
 #############
-print("_"*50)
+print("_" * 50)
 # pop() method : this remove data from set and return it.
 
 set_k = {5, 7, 8, 22, 33, 55}
 val = set_k.pop()
-print("removed value:", val) # removed value: 33
-print("set_k :", set_k) # {5, 22, 7, 8, 55}
+print("removed value:", val)  # removed value: 33
+print("set_k :", set_k)  # {5, 22, 7, 8, 55}
 
 ############
 # clear method : this method remove all the data from set
 set_l = {5, 7, 9, 22}
 set_l.clear()
 print("set_l :", set_l)  # set()
-
 
 set_a = set()
 print("set_a :", set_a)
@@ -122,10 +120,9 @@ set_a = {'a', 'b', 'c', 'd', 5, 6, 7}
 set_b = {5, 10, 50, 70, 33, 'a', 'b'}
 
 output = set_a.intersection(set_b)
-print("intersection output :", output) # {'a', 5, 'b'}
+print("intersection output :", output)  # {'a', 5, 'b'}
 
 # intersection_update method : this method update the intersection values to target set.
 set_b.intersection_update(set_a)
-print("set_a :", set_a) # {'a', 'c', 'b', 7, 5, 6, 'd'}
-print("set_b :", set_b) # {'a', 'b', 5}
-
+print("set_a :", set_a)  # {'a', 'c', 'b', 7, 5, 6, 'd'}
+print("set_b :", set_b)  # {'a', 'b', 5}
