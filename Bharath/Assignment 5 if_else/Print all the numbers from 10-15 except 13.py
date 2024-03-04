@@ -1,3 +1,5 @@
 n=int(input("Enter number:"))
-if n!=13:
-    print (n)
+for n in range (1, 15):
+    if n!=13:
+        print(n)
+

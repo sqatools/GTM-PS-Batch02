@@ -187,7 +187,19 @@ output = {'A' : 5, 'B' : 7, 'C': 9, 'D': 3, 'E' : 17, 'F' : 2}
 Str1 = "We are Learning Python Programming"
 Output = {"wE" : "2We2", "AE" : "3are3", "lG": "8Learning8", "pN" : "6Python6", "pG" : "11Programming11"}
 
-"""
+word_list = Str1.split(" ")
+output2 = {}
+for word in word_list:
+    key = word[0].swapcase() + word[-1].swapcase()
+    value = f"{len(word)}{(word)}{len(word)}"
+    output2[key] = value
+
+print(output2)
+# {'wE': '2We2', 'AE': '3are3', 'lG': '8Learning8', 'pN': '6Python6', 'pG': '11Programming11'}
+
+
+
+
 company = {
     'IT': [
         {'name': 'sanjay', 'email': 'sanjay@gmail.com', 'phone': 5654645, 'address': 'mumbai'},
@@ -224,7 +236,7 @@ print("#" * 60)
 # Get specified person details with mobile number
 per_phone = 98978998
 for key, values in company.items():
-    print('values:',values)
+    # print(values)
     for data in values:
         # print(data['name'])
         if data['phone'] == per_phone:
@@ -233,7 +245,6 @@ for key, values in company.items():
             continue
 
 print("#" * 50)
-"""
 # add/update person information on the basis of mobile number
 per_phone = int(input("Please enter mobile the number :"))
 new_data = input("Please enter new details of with this format : salary,767876576 :")
@@ -250,7 +261,7 @@ for k, v in company.items():
             continue
 
 # print("company :", company)
-"""
+
 # Get details
 for key, values in company.items():
     # print(values)
@@ -260,7 +271,7 @@ for key, values in company.items():
             print(data)
         else:
             continue
-"""
+
 # assignment to design dictionary structure of school institute
 # write a program to update student info with phone
 # write a program to get any person details with phone
@@ -288,4 +299,3 @@ school = {
     }
 
 }
-"""
