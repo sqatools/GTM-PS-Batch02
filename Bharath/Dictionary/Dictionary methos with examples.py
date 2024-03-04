@@ -10,6 +10,7 @@
      if we defined duplicate key then latest defined data will be considered.
 """
 
+
 dict1 = {'a' : 456,
          4: 'Hello',
          4.5 : [4, 7, 8],
@@ -279,23 +280,30 @@ for key, values in company.items():
 
 school = {
     'teacher': {
-        'maths': [],
-        'physics': [],
-        'chemistry': [],
-        'english': [],
-        'Hindi': []
+        'maths': [{'name': 'Bharath','email': 'sanjay@gmail.com', 'phone': 5654645, 'address': 'mumbai'}],
+        'physics': [{'name': 'Rajiv','email': 'rajiv@gmail.com', 'phone': 5654645, 'address': 'mumbai'}],
+        'chemistry': [{'name': 'Rakul','email': 'rakul@gmail.com', 'phone': 5654645, 'address': 'mumbai'}],
+        'english': [{'name': 'Rahul','email': 'rahul@gmail.com', 'phone': 5654645, 'address': 'mumbai'}],
+        'Hindi': [{'name': 'Krishna','email': 'krishna@gmail.com', 'phone': 5654645, 'address': 'mumbai'}]
     },
     'Students': {
-        '10th': [],
-        '11th': [],
-        '12th': [],
+        '10th': [{'name': 'Kiran','email': 'kiran@gmail.com', 'phone': 5654645, 'address': 'mumbai'}],
+        '11th': [{'name': 'Chethan','email': 'chetan@gmail.com', 'phone': 5654645, 'address': 'mumbai'}],
+        '12th': [{'name': 'Das','email': 'das@gmail.com', 'phone': 5654645, 'address': 'mumbai'}],
 
     },
 
     'Administrator': {
-        'account': [],
-        'registration': []
+        'account': [{'name': 'Sandy','email': 'sandy@gmail.com', 'phone': 5654645, 'address': 'mumbai'}],
+        'registration': [{'name': 'Rakesh', 'email': 'rakesh@gmail.com', 'phone': 5654645, 'address': 'mumbai'}]
 
     }
 
 }
+
+# write a program to update student info with phone
+
+#company['IT'][2]['email'] = "Saumya2024@gmail.com"
+
+print(school['Students']['10th'][0]['phone']) == 1234567879
+print(school['Students']['10th'][0])
