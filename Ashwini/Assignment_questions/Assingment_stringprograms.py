@@ -131,6 +131,7 @@ print(dict)
 
 print("-"*50)
 
+
 #14). Write a python to repeat vowels 3 times and consonants 2 times.
 #Input = “Sqa Tools Learning”
 #Ouput = “SSqqaaa TToooooollss LLeeeaaarrnniiinngg”
