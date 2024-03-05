@@ -6,6 +6,7 @@ write python program get following output
 str1= "Hello Good Morning"
 output = "gello Good MorninH"
 
+
 str2 = "Python Programming"
 output2 = "Pto rgamn"
 
