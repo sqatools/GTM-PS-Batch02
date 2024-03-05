@@ -30,10 +30,12 @@ school = {
 
 #company['IT'][2]['email'] = "Saumya2024@gmail.com"
 
-school['Students']['12']['phone']
+school['Students']['12th'][0]['phone']=123456789
+
+print(school['Students']['12th'][0]['phone'])
 
 per_phone = int(input("Please enter mobile the number :"))
-new_data = input("Please enter new phone, new phone,767876576 " )
+new_data = input("Please enter new phone, newphone,767876576 " )
 new_key = new_data.split(",")[0]
 new_value = new_data.split(",")[1]
 print("new_key :", new_key)
