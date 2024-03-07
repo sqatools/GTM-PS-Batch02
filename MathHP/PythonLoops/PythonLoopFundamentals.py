@@ -1,4 +1,4 @@
-#range(initial value,end value,different value
+#range(initial value,end value,difference value
 
 
 for i in range(1,10,1):                  # initial value 1 and less than final 10 , 1 to 9
