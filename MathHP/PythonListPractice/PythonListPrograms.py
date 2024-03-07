@@ -43,9 +43,54 @@ print("Reverse:",reverse)
 
 print("__"*60)
 ########################################################
+
 #1) Print most simultaneously repeated characters in the input String
 
 str1 = "Hello we aaare leeeearning Python Programming"
+
+count = 1
+max_count =0
+max_r_char = ''
+
+for i in range(len(str1)-1):                   # index 0 starting from 1st char and end until before last char
+    if str1[i] == str1[i+1]:                  # 1st char check with 2nd char
+        count += 1
+        if count > max_count:
+            max_count=count
+            max_r_char=str1[i]               # repeated character
+            print("max",max_count,max_r_char)
+    else:
+        count =1                            # If no repeated char , then the count is same 1 not increased
+
+print("max count:",max_count)
+print("max repeated character:",max_r_char)
+
+# WAP to get all the number which are divisible by either 3  or 7 from given list
+
+list1 = [4, 6, 7, 8, 15, 21, 35, 40, 18, 28]
+output =[]
+for val in list1:
+    if val%3==0 or val%7==0:
+        output.append(val)
+    else:
+        output.append(None)                                                  # None is blank
+print("Output:",output)
+
+####### Using list comprehension, can do for String,numbers and tuple  as well
+
+result = [val if val%3==0 or val%7==0 else None for val in list1]            # if else means extreme leftmost , for right
+print("Result:",result)
+
+
+# 21)Write a Python to remove unwanted characters from the given string
+
+Input_val = "Prog^ra*m#ming"
+# To get output Programming
+
+result = [char  for char in Input_val if char.isalpha()]               # if character is an alphabet then print the alphabet
+print("Result:",result)
+print("Output:" ,"".join(result))
+
 
 
 
