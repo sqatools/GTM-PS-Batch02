@@ -94,7 +94,7 @@ print("Result:",result)                              #Result: <generator object 
 for val in result:
     print(val)
 
-# tuple works on generator thats y most efficient in performance
+# tuple works on generator that's y most efficient in performance
 # keeps entire load on the system consuming memory
 
 # 22
