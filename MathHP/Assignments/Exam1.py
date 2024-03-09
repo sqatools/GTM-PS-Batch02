@@ -151,7 +151,7 @@ print(dict1)
 
 # a) {‘mike’: 1, ‘sarah’: 20, ‘jim’: 16}
 # b) {‘mike’: 1, ‘sarah’: 20, ‘jim’: 16, ‘val’: 1, ‘val’: 20, ‘val’: 16}
-# c) {‘mike’: 1, ‘sarah’: 20, ‘jim’: 16, 0: ‘mike’, 1: ‘sarah’, 2: ‘jim’}
+# c) {‘mike’: 1, ‘sarah’: 20, ‘jim’: 16, 0: ‘mike’, 1: ‘sarah’, 2:‘jim’}
 # d)Error
 
 
