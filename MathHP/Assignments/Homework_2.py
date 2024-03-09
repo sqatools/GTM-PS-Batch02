@@ -1,6 +1,7 @@
 """
-# Question
+# Questions:
 # Write a python program to get below result
+
 # Question1
 #list1 = [5, 7, 9, 3, 17, 2]
 #output = {'A' : 5, 'B' : 7, 'C': 9, 'D': 3, 'E' : 17, 'F' : 2}
