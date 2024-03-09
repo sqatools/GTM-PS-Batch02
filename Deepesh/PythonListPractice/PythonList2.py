@@ -65,6 +65,8 @@ print("listx :", listx, id(listx))
 print("listy :", listy, id(listy))
 
 ######################## List Comprehension ################################
+# Compact way to write in a single line
+
 print("#"*50)
 
 list1 = [5, 7, 8, 2, 3]
