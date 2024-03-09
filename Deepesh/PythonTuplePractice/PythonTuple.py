@@ -55,6 +55,7 @@ for val in tup_b:
     print("val :", val)
 
 
+
 # with indexing
 for i in range(len(tup_b)):
     print(i, ":", tup_b[i])

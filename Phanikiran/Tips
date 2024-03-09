@@ -14,4 +14,21 @@
 - print(char("97")): This function is to find the character of particular ASCII value.
 -
 
+Loops:
+- In for loop we can use below items after "in range" only.
+   i. integer variables like "in range(var)"
+   ii.String variables like "in range()"
 
+Strings:
+- output= "Hello my name is" + name + "and my age is " + str(age) + "and living in" + city (Here we are converting integer age variable to string)
+- output2 = "Hello my name is {} and my age is {} and living in {}".format(name, city, age) -- String formatting.
+- output3 = f"Hello my name is {name} and my age is {age} and living in {city}" -- F string formatting.
+- for i in stra:
+    print(i, end="")    # Loop without indexing
+- for i in range(val_len):
+    print(stra[i])      # Here it will print by using indexing.
+
+
+String slicing:
+- In slicing it is always from left to right but right to left is not possible.
+- In string slicing initial index element will be printed and last index element will be excluded.

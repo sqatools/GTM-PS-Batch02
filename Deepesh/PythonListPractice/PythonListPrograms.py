@@ -15,6 +15,7 @@ print("output :", output)
 # program to get sum of digit
 """
 n= input("enter the numbers :")
+
 sum=0
 for i in n:
     print(i, type(i))
