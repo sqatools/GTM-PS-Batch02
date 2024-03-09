@@ -2,26 +2,26 @@
 global variable
 local variable
 non local variable
+
 """
 
-# global variable
-varp = 600
+#global variable
+
+varp=600
 
 def function1():
-    print("---function1 ----")
-    var_q = 700 # local variable variable
-    print("global var varp :", varp)
-    print("local varq :", var_q)
-
+    print("___function1___")
+    varq = 700        # local variable , inside function
+    print("global var varp:",varp)
+    print("local varq:",varq)
 
 def function2():
-    print("---function2 ----")
-    var_r = 800 # local variable variable
+    print("__function2___")
+    varq = 800        # local variable , inside function
     global varp
     varp = 900
-    print("global varp :", varp)
-    print("local var_r :", var_r)
+    print("global var varp:",varp)
+    print("local varq:",varq)
 
 function1()
 function2()
-function1()
