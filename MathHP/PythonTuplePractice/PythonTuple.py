@@ -78,7 +78,7 @@ print("Sum of all values in a tuple :",sum(tup_b))  #Sum of all values in a tupl
 # list has 2 nodes , 1 to modify and 1 to manage the data
 # tuple only one single node  to access the data Hence faster
 
-#tuple comprehension
+# tuple comprehension
 # WAP to find values in tuple divisible by 2
 
 tup_d = (5,7,9,22,66,88,12,11,13)

@@ -1,5 +1,5 @@
 #Date : 30Jan2024
-# Variables
+# PythonVariables
 a = 10
 b = 20
 print(id(a))

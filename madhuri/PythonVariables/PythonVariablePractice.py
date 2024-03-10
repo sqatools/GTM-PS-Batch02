@@ -24,7 +24,7 @@ print("b:", b, id(b))
 print("c:", c, id(c))
 print("Hello Good Morning")
 
-# Assign Single Values to Multiple Variables
+# Assign Single Values to Multiple PythonVariables
 x = y = z = 700
 
 print("Value of x :", x, id(x))

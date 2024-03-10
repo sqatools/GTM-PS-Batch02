@@ -58,21 +58,15 @@ for i in range(3):
     print()
 
 """
-    ***
-*        *
-
-*            *
-
-*            *
-
-*            *
-
-*            *
-     ***
+ *** 
+*     *
+*     *
+*     *
+*     *
+*     *
+  ***
 
 """
-
-
 
 #Write a program to find the first and last digits of a number using python.---???
 n = str(input("enter the number:"))
@@ -83,4 +77,36 @@ for i in range(len(n)):
     elif i == len(n)+1:
         print("Last digit of number:", n[i])
 
+for i in range(1, 8):
+    if i > 2 and i < 6:
+        print("*", end=" ")
+    else:
+        print("", end=" ")
+print()
+for i in range(1, 6):
+    for j in range(1, 9):
+        if j == 1 or j == 8:
+            print("*", end=" ")
+        else:
+            print("", end=" ")
+    print()
 
+for i in range(1, 8):
+    if i > 2 and i < 6:
+        print("*", end=" ")
+    else:
+        print("", end=" ")
+
+
+print()
+
+
+##################################
+
+for i in range(1,8):
+    for j in range(1,8):
+        if i==1 or i==7 or j==1 or j==7:
+                print("*" , end= " ")
+        else:
+            print(" ", end = " ")
+    print()

@@ -1,3 +1,5 @@
+# 26th Feb 2024
+
 # 10) reverse() : This method reverses any given list and modify the original list
 
 list1 = [4,7,92,8,1,12]
@@ -105,6 +107,10 @@ print("Output:",output)
 word_list = ["WE","ARE","LEARNING","PYTHON","PROGRAMMING"]
 result = [word for word in word_list if len(word)%2 == 0]
 print("Result :" ,result)       #Result : ['WE', 'LEARNING', 'PYTHON']
+
+# Python program to print a combination of 2 elements from the list whose sum is 10.
+
+# Done in PythonListPrograms.py
 
 
 

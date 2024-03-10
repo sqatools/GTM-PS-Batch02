@@ -1,7 +1,9 @@
+# PythonIfElseProgramPractice.py
+
 #WAP for authentication
 
-"""
-db_username = 'user123'                                                     ########################################
+
+db_username = 'user123'
 db_password = 'User@123'
 
 user_name = input("Please enter username :")
@@ -11,8 +13,8 @@ if user_name == db_username and password == db_password:
     print("Login Successful")
 else:
     print("Wrong username and password")
-"""
 
+"""
 user_details = [
     ('user1' , 'user@123'),
     ('user2' , 'user2_234'),
@@ -29,3 +31,5 @@ if user_entry in user_details:
    print("Login successful")
 else:
    print("Login not successful")
+   
+"""
