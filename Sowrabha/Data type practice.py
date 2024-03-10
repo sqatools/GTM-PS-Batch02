@@ -91,3 +91,4 @@ print(dict3)  # {'a': 333, 'b': 567, 'c': 789}
 num2 = 576892
 var2 = str(num2)
 print(var2, type(var2), var2[2])
+
