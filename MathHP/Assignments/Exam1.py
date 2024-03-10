@@ -60,7 +60,7 @@ if x > 3:
 for i in range(1, 6):
     if i == 3:
       continue
-      print(i)
+    print(i)
 
 # a) 1 2 4 5
 # b) 1 2 3 4 5
@@ -75,7 +75,7 @@ for key in my_dict:
     print(key)
 
 
-# a) grapes banana blue - berry
+# a) grapes banana blueberry
 # b) 1 2 3
 # c) 0 1 2
 # d) TypeError: ‘int’ object is not iterable
