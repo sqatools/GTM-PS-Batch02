@@ -44,7 +44,7 @@ print("new_value :", new_value)
 
 for k, v in school.items():
     for data in v:
-        if data['phone'] == per_phone:
+        if data['phone:'] == per_phone:
             data[new_key] = new_value
         else:
             continue
