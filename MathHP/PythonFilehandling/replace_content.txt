@@ -1,0 +1,7 @@
+1.Hello  good morning
+2.How are PYTHON you
+3.hope you PYTHON are doing good
+4.This function  returns true if the given string contains
+5.the specified substring, otherwise, it returns false.
+6.Here's an  example of how you PYTHON can use contains() in an XPath expression
+7.to find an element that PYTHON contains a specific text:
