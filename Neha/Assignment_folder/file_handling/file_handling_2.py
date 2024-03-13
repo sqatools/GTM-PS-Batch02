@@ -1,5 +1,4 @@
 # 2.  write a python program to find out all the mobile numbers from file.
-# 3.  write a python program to find out all the emails ids from file.
 
 
 def find_mobile_no(filename):
