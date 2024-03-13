@@ -97,3 +97,7 @@ print(year)
 # 01
 # 03
 # 2024
+
+
+@
+What is init file do..? -- to change the folder in package,its an blank file
