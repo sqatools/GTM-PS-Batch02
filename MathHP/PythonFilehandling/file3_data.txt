@@ -1,0 +1,13 @@
+a.Hello  good morning
+11.Hello  good morning
+b.How are you
+12.How are you
+c.hope you are doing good
+13.hope you are doing good
+d.This function returns true if the given string contains
+14.This function returns true if the given string contains
+e.the specified substring, otherwise, it returns false.
+15.the specified substring, otherwise, it returns false.
+f.Here's an example of how you can use contains() in an XPath expression
+16.Here's an example of how you can use contains() in an XPath expression
+g.to find an element that contains a specific text:17.to find an element that contains a specific text:
