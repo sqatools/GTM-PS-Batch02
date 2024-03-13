@@ -1,0 +1,5 @@
+Python works on different 8989897878 platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+Python has a simple syntax similar 7865432743 to the English language.
+Python has syntax that allows 9098765463 developers to 869554432156777 write programs with fewer lines than some other programming languages.
+Python runs on an interpreter 7684677543 system, meaning that code can be executed 76887589487367634873as soon as it is written. This means that prototyping can be very quick.
+Python can be treated in a 8708657549 procedural way, an 87896775856688object-oriented way or a functional way.

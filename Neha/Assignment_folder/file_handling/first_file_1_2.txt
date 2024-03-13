@@ -1,0 +1,10 @@
+A lambda function in Python is a small anonymous function that can take any number of arguments
+but only has one expression. It’s often used for creating small , one-time, and inline functions
+without the need to formally define a function using the def keyword.
+
+
+
+
+
+
+

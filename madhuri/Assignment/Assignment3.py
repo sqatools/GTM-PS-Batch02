@@ -31,7 +31,7 @@ print("_"*100)
 
 """
 3). If else program to assign grades as per total marks.
-    marks > 40: Fail
+    marks < 40: Fail
     marks 40 – 50: grade C
     marks 50 – 60: grade B
     marks 60 – 70: grade A

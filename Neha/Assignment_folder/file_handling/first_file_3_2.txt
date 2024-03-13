@@ -1,0 +1,8 @@
+A lambda gautam@gmail.comfunction in Python is a small anonymous nehakmr@gmail.com function that can take any number of arguments
+but only has one expression. It’s often niharika1kmr@gmail.comused for creating small , one-time, and ketankmr@gmail.cominline functions
+without the peeyush@gmail.comneed to formally define a function using the def keyword.
+
+
+
+
+
