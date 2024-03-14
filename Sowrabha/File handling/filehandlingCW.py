@@ -60,8 +60,14 @@ def read_line(filename,num_line):
         for i in range (num_line):
           line=file.readline()
           print(line)
-read_line("newfile.txt",4)
+#read_line("newfile.txt",4)
 
 #####read specific no of lines#####################
 
+def  line_specific(filename,num_line):
+    with open(filename,"r")as file:
+        line=file.readlines()
+        print(line)
+        print(line[num_line-1])
+line_specific("newfile.txt",3)
 
