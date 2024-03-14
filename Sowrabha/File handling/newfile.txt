@@ -1,5 +1,6 @@
-I am repeating the same
-task againI will practice
-I will practice I will practice
- I will practice I will practice
- I will practice
+OSError: [Errno 22] Invalid argument: 'E:\textfile5.txt': This part of
+the error message is indicating that the
+re was an operating system error
+(OSError), specifically with error number 22. The error message "Invalid
+argument" suggests that there's something wrong with the
+argument you passed to the function.
