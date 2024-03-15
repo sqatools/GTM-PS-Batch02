@@ -64,24 +64,60 @@ def read_line(filename,num_line):
 
 #####read specific no of lines#####################
 
-# def  line_specific(filename,num_line):
-#     with open(filename,"r")as file:
-# #         line=file.readlines()
-# #         print(line)
-# #         print(line[num_line-1])
-# # line_specific("newfile.txt",3)
+def  line_specific(filename,num_line):
+    with open(filename,"r")as file:
+        line=file.readlines()
+    print(line)
+    print(line[num_line-1])
+#line_specific("newfile.txt",3)
 
 
-#######find the current position#############
-# def cursor_position(filename):
-#     with open(filename,"r")as file:
-#         print("Current postion of th cursor",file.tell())
-#         char_20=file.read(20)
-#         print("current cursor position after 20",file.tell())
-#         char_40=file.read(40)
-#         print("cureent cursor position after 40",file.tell())
-# cursor_position("newfile.txt")
+#######find the current position tell() #############
+def cursor_position(filename):
+     with open(filename,"r")as file:
+         print("Current postion of th cursor",file.tell())
+         char_20= file.read(20)
+         print("first 20 character:",char_20)
+         print("current cursor position after 20",file.tell())
+         char_40= file.read(40)
+         print("40 characters after 20:",char_40)
+         print("cureent cursor position after 40",file.tell())
+#cursor_position("newfile.txt")
 
+
+##########################Seek()############################
+def cursor_current_position(filename):
+    with open(filename,"r")as file:
+         file.seek(30, 0)
+    print("cursor current position:",file.tell())
+    print("char_20:",file.read(20))
+    print("cursor position after 20:",file.tell())
+#cursor_current_position("newfile.txt")
+
+##############seek () end of the file#############
+def cursor_current_position(filename):
+    with open(filename,"rb")as file:
+          file.seek(-50, 2)
+    print("cursor current position:",  file.tell())
+    print("char_20:",file.read(20))
+    print("cursor position after 20:", file.tell())
+
+#cursor_current_position ("newfile5.txt")
+
+#############Seek() mid value###################
+def read_file_content_seek(filename):
+    with open(filename, "rb") as file:
+        # set cursor at 30 char
+        # file.seek(30,  0) : set cursor from begining of file
+        # set cursor from end of file
+        # file.seek(-50, 2)
+        print("cursor position :", file.tell())
+        print("20 char :", file.read(20))
+        file.seek(20, 1)
+        print("cursor position :", file.tell())
+
+
+#read_file_content_seek("newfile.txt.")
 
 ###################Json###################
 #
