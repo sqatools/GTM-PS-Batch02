@@ -9,9 +9,9 @@ def read_json_data(filename):
         return data
 
 
-output = read_json_data("test_data.json")
-print("name :", output["name"])
-print("email :", output["email"])
+# output = read_json_data("test_data.json")
+# print("name :", output["name"])
+# print("email :", output["email"])
 
 def write_content_json_file(filename, content):
     with open(filename, "w") as file:
@@ -32,9 +32,15 @@ company = {
     ]
 }
 
-print(company['IT'])
+#print(company['IT'])
 # write_content_json_file("new_json_content.json", company)
 
 #result = read_json_data("new_json_content.json")
 #print(result["IT"])
 
+def write_data_with_dump(filename, content):
+    with open(filename, "w") as file:
+        json.dump(content, file)
+
+dict1 = {"name" : 'Rahul', 'age' : 25, 'email' : 'rahul@gmail.com'}
+write_data_with_dump("dump_data.json", dict1)
