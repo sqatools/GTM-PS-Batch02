@@ -42,14 +42,15 @@
 """
 #4). Python file program to get the file’s first three and last three lines.
 
-# def first_three_lines(filename):
-#     with open(filename,"r") as file:
-#         filedata = file.readlines()
-#     #first three
-#     lines = filedata[:3]
-#     print(lines)
-#
-# first_three_lines("file_practice_data.txt")
+def first_three_lines(filename):
+    with open(filename,"r") as file:
+        filedata = file.readlines()
+    #first three
+    lines = filedata[:3]
+    for line in lines:
+        print(line)
+
+first_three_lines("file_practice_data.txt")
 
 # def last_three_lines(filename):
 #     with open(filename,"r") as file:
@@ -74,17 +75,17 @@
 
 #7). Python file program to get odd lines from files and append them to separate files.
 
-def odd_lines(filename):
-    with open(filename,"r") as file1:
-        filedata1 = file1.readlines()
-
-    with open (filename,"w") as file2:
-
-    #
-    for lines in range (1,(len(filedata1))
-        if lines[] % 2 == 0:
-            file2.write(filedata1[lines])
-        print("file2 content:",file2)
-
-odd_lines("file_practice_data.txt")
+# def odd_lines(filename):
+#     with open(filename,"r") as file1:
+#         filedata1 = file1.readlines()
+#
+#     with open (filename,"w") as file2:
+#
+#     #
+#     for lines in range (1,(len(filedata1))
+#         if lines[] % 2 == 0:
+#             file2.write(filedata1[lines])
+#         print("file2 content:",file2)
+#
+# odd_lines("file_practice_data.txt")
 
