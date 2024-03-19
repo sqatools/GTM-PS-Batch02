@@ -7,6 +7,8 @@ def write_content(filename,content):
         data = json.dumps(content)
         file.write(data)
 
+
+
 school = {
     'teacher': {
             'maths': [
@@ -58,4 +60,5 @@ school = {
 }
 
 
-write_content("Test_2_json_concept",school)
+output = write_content("Test_2_json_concept",school)
+print('name:', school[Students][name])

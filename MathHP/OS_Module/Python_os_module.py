@@ -1,4 +1,9 @@
+############################### Pending #############
+
+
 import os
+import shutil
+import sys
 
 # Get current working directory
 
@@ -22,4 +27,83 @@ print("Browser environment:" ,os.getenv("BROWSER"))        #Browser environment:
 
 print("Python version:",os.getenv("python_version"))      #Python version: None
 
+data_list = os.listdir(r"D:\\softwares")
+print(data_list)                 #######################################################
+
+#for data in data_list:
+#print(data)                          ##################
+
+# Create folder directory on target location
+#os.mkdir(r"filesdata")            ##################################################
+
+#remove folder from target loaction
+#os.remove()
+
+##### Check given path exists or not ####
+
+result  = os.path.exists(r"filesdata")          #######################
+#print("result:",result)
+
+result2  = os.path.exists(r"D:\\fold1\\fold2\\fold3")          #######################
+print("result2:",result2)
+
+
+########################Path operations ##########
+# combine two path
+path1 = r"D:\Hello.txt"
+path2 = r"D:\path2.txt"
+file_path = os.path.join(path1,path2)
+#print(file_path)
+
+#print("is file:",os.path.isfile(file_path))
+
+# check path is file or folder
+#print("is file:",os.path.isfile(file_path))
+
+#check for folder
+
+folder_path = ""
+#print("is folder:",os.path.isdir(folder_path))
+
+########## Copy files from source to destination
+
+src_location = " "
+tar_location = " "
+
+#shutil.copy(src_location,tar_location)
+
+############### execute local and cmd command
+
+# os.system("notepad.exe")
+# os.system("control")
+# os.system("appwiz.cpl")
+
+os.system("dir")
+
+##### Get size of file ####
+
+file_size = os.path.getsize("folder1")
+print("file size:",file_size)
+
+modify_time = os.path.getmtime("folder1")
+print("modify time:",modify_time)
+
+################### Create directory structure
+
+os.makedirs(f"D:\\fold1\\fold2\\fold3")
+
+# It will create all the directories in the entire path structure
+
+###
+
+print(sys.platform)                # import sys
+print(sys.version_info)
+
+#### get cpu count
+
+print("cpu count:",os.cpu_count())
+
+## rename folder directory
+
+os.rename("folder1","folder1_updated")
 

@@ -1,0 +1,11 @@
+General Purpose: Python is a high-level, interpreted programming language. It was created by Guido van Rossum and first released in 1991.
+Python is designed to be easy to read and write, which makes it suitable for a wide range of applications,
+including web development, data analysis, artificial intelligence, scientific computing, and more.
+
+Readability: Python emphasizes code readability and simplicity. Its syntax is designed to be clear and concise,
+using indentation to define code blocks (unlike other languages that use curly braces). This makes Python code easy to understand,
+even for beginners.
+
+Interpreted: Python is an interpreted language, meaning that code is executed line by line by an interpreter,
+rather than compiled into machine code beforehand. This allows for rapid development and prototyping,
+as code changes can be tested immediately without the need for compilation.
