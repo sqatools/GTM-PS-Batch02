@@ -198,7 +198,7 @@ for i in range(len(list1)):                      # IndexError: list index out of
 print("Output:",output)                         #Output: {'a': 123, 'b': 456, 'c': 78, 'd': 9} Nothing is there for e
 
 #################################################
-# Assignment  Questions
+# Assignment  Questions - A12
 # WAP to get below result
 
 #Q1)
