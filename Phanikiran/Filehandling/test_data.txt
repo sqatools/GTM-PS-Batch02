@@ -1,0 +1,8 @@
+1. Java is a high-level, class-based,
+2. object-oriented programming language
+3. that is designed to have as few
+4. implementation dependencies as possible.
+5. Java is a high-level, class-based,
+6. object-oriented programming language
+7. that is designed to have as few
+8. implementation dependencies as possible.
