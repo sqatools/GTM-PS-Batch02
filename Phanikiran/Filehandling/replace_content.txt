@@ -1,0 +1,8 @@
+1. Java is a PYTHON high-level, class-based,
+2. object-oriented programming language
+3. that is PYTHON designed to PYTHON have as few
+4. implementation dependencies as possible.
+5. Java is a high-level, PYTHON class-based,
+6. object-oriented programming language
+7. that PYTHON is designed to have as few
+8. implementation PYTHON dependencies as possible.
