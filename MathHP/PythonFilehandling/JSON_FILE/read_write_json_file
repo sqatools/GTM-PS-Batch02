@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################### pending ########## This will be automatically created
+
+def write_data_with_dump(filename,content):
+      with open(filename,"w") as file:
+           json.dump(content,file)
+
+
+dict1 = {"name":'Rahul','age' : 25,'email' : 'rahul@gmail.com'}
+write_data_with_dump("dump_data.json",dict1)
