@@ -40,4 +40,34 @@ print("*"*50)
 
 """
 4). Python function program to find the maximum of three numbers.
+
+Input: 17, 21, -9
+Output: 21
 """
+
+def maximum_num(num1,num2,num3=-9):
+    if num1 > num2 and num1 > num3:
+        print("4. Num1 is greater: ", num1)
+    elif num2 > num1 and num2 > num3:
+        print("4. Num2 is greater: ", num2)
+    else:
+        print("4. Num3 is greater: ", num3)
+
+
+
+maximum_num(17,21,-9)
+print()
+print("*"*50)
+
+"""
+5). Python function program to find the sum of all the numbers in a list.
+Input : 
+
+Output: 27
+"""
+
+def sum_three_number(listdata):
+    print(listdata)
+
+
+sum_three_number([6,9,4,5,3])
