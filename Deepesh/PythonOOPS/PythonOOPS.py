@@ -15,13 +15,14 @@ methods : When we create a function inside the class, then it becomes method.
                              instance method.
         2. class method : when we defined method with decorator @class_method, then it is know as class
                           class method, class method only deals with class variables
-        3. static method :
+        3. static method : static method is associated with class name, no need to create object of the class
+                          while calling the static method.
 
 variables : when we defined a variable inside the class, then it is known as class member
         1. Instance variable : The variable declare with self then it is known as instance variable.
         2. Class variable : The variable declare on the class level, it is known as class variable
 
-self
+self  : self is nothing but the object of the class where all required methods and attributes are created.
 inner class
 Inheritance
 Polymorphism
@@ -54,6 +55,7 @@ class XYZ:
 
     # Parametrize construction
     def __init__(self, num1, num2):
+        print("Welcome to XYZ")
         self.n1 = num1  # instance variable
         self.n2 = num2  # instance variable
         num3 = 500  # local variable
@@ -72,8 +74,35 @@ class XYZ:
     def show_class_name(cls):
         print(cls.name)
 
+    @staticmethod
+    def factorials(num):
+        fact = 1
+        for i in range(num, 0, -1):
+            fact = fact*i
+        return fact
 
-obj = XYZ(40, 50)
-obj.addition()
-obj.multiplication()
-obj.show_class_name()
+
+# obj = XYZ(40, 50)
+# obj.addition()
+# obj.multiplication()
+# obj.show_class_name()
+
+#print(obj.factorials(5))
+
+#print(XYZ.factorials(7))  # 5040
+
+
+class Car:
+    def __init__(self, car_name, car_company):
+        self.car_name = car_name
+        self.car_company = car_company
+
+    def show_car_name(self):
+        print(f"The car name is : {self.car_name}")
+
+    def show_car_company(self):
+        print(f"The car company name is :{self.car_company}")
+
+obj = Car("Harrier", "TATA")
+obj.show_car_name()
+Car.show_car_company(obj)
