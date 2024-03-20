@@ -12,12 +12,18 @@
 - each value of i in the loop will go in the next line by using print() for i loop.
 - print(ord("A"): This function is to find the ASCII value of that particular letter.
 - print(char("97")): This function is to find the character of particular ASCII value.
--
+- In python each python file is called as module
 
 Loops:
 - In for loop we can use below items after "in range" only.
    i. integer variables like "in range(var)"
    ii.String variables like "in range()"
+-     for key, value in kwargs.items(): # Here **kwargs parameter will take the values in the form of key and value.
+        print(key, ":", value)  # It prints key and value format.It will be used for dictionary.
+- In order to display all the dictionary values in the form key and values by using for as below
+    for key, value in abc.item():
+        print(key,value)
+
 
 Strings:
 - output= "Hello my name is" + name + "and my age is " + str(age) + "and living in" + city (Here we are converting integer age variable to string)
@@ -32,3 +38,21 @@ Strings:
 String slicing:
 - In slicing it is always from left to right but right to left is not possible.
 - In string slicing initial index element will be printed and last index element will be excluded.
+
+
+
+Functions:
+- Python file is called as a module and directory is called as package.
+- addition(2,4) # passing data to parameters with pass by value.
+- addition(x,y) # passing data to parameters with pass by reference.
+- division(var1=30, var2=10): division(2) # op:5  Here when we provide single value in called function then it will assign to first arguement in
+  defined function.(It doesn't matter how many arguments are declared ).
+- always non default parameters resides first and default parameters comes in the end.
+- "from pythonfunction import addition" (Here pythonfunction is package and addition is method) : Here we used in the same package.
+- "from pythonfunction.function import *" : Here we are importing all the modules inside of that directory.
+- * args : This is used for passing multiple values to single parameter in the functions.
+- square_value(var1, *args, var2)
+     square_value(2,4,3,4,3,5,var2=6) # Here 2 will be assigned to var1 and 6 will be assigned to var2, remaining will assign to args.
+- **kwargs - This parameter accepts in the form of dictionary like key: value [Ex: name: "phani"]
+
+
