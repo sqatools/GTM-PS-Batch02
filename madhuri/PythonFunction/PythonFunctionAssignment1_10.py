@@ -67,7 +67,70 @@ Output: 27
 """
 
 def sum_three_number(listdata):
-    print(listdata)
+    addition = 0
+    for val in listdata:
+        addition = addition + val
+    print("5. sum of all the numbers in a list: ", addition)
 
 
 sum_three_number([6,9,4,5,3])
+print()
+print("*"*50)
+
+
+"""
+6). Python function program to multiply all the numbers in a list.
+Input : [-8, 6, 1, 9, 2]
+Output: -864
+"""
+
+def multiply_all_numbers(numlist):
+    multiplication = 1
+    for val in numlist:
+        multiplication = val * multiplication
+    print("6. Multiply all numbers in a list: ", multiplication)
+
+
+multiply_all_numbers([-8, 6, 1, 9, 2])
+print()
+print("*"*50)
+
+
+"""
+7). Python function program to reverse a string.
+Input: Python1234
+Output: 4321nohtyp
+"""
+
+def reverse_string(input_str):
+    print("7. To reverse a string: ", input_str[::-1])
+
+reverse_string('Python1234')
+print()
+print("*"*50)
+
+"""
+8). Python function program to check whether a number is in a given range.
+Input : num = 7, range = 2 to 20
+Output: 7 is in the range
+"""
+
+
+def number_in_range(num,range_start,range_end):
+    if num in range(range_start, range_end):
+        print("8. ", True)
+    else:
+        print("8. ", False)
+
+
+number_in_range(7,2,20)
+print()
+print("*"*50)
+
+"""
+9). Python function program that takes a list and returns a new list with unique elements of the first list.
+Input : [2, 2, 3, 1, 4, 4, 4, 4, 4, 6]
+Output : [2, 3, 1, 4, 6 ]
+"""
+print()
+print("*"*50)
