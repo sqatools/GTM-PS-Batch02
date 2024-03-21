@@ -1,6 +1,7 @@
 """
-inner class
-Inheritance
+inner class : The class which declare inside the another class, then it is known as inner class.
+Inheritance : When one class aquire the property of another class, then it is known as inheritance.
+
 Polymorphism
 Encapsulation
 Abstraction
