@@ -188,6 +188,7 @@ Str1 = "We are Learning Python Programming"
 Output = {"wE" : "2We2", "AE" : "3are3", "lG": "8Learning8", "pN" : "6Python6", "pG" : "11Programming11"}
 
 word_list = Str1.split(" ")
+
 output2 = {}
 for word in word_list:
     key = word[0].swapcase() + word[-1].swapcase()

@@ -1,0 +1,139 @@
+"""# Question
+# Write a python program to get below result
+# Question1
+list1 = [5, 7, 9, 3, 17, 2]
+output = {'A' : 5, 'B' : 7, 'C': 9, 'D': 3, 'E' : 17, 'F' : 2}
+
+# Question2
+Str1 = "We are Learning Python Programming"
+Output = {"wE" : "2We2", "AE" : "3are3", "lG": "8Learning8", "pN" : "6Python6", "pG" : "11Programming11"}"""
+
+#que1:-
+"""
+list1 = [5, 7, 9, 3, 17, 2]
+str1="ABCDEF"
+#output = {'A' : 5, 'B' : 7, 'C': 9, 'D': 3, 'E' : 17, 'F' : 2}
+output={}
+for i in range(len(str1)):
+    output[str1[i]]=list1[i]
+print(output)
+
+Or
+
+list1 = [5, 7, 9, 3, 17, 2]
+output1 = {}
+temp = 65
+
+for i in range(len(list1)):
+    output1[chr(temp+i)] = list1[i]
+
+print("output : ",output1)
+"""
+
+"""stra = "We are Learning Python Programming"
+#Output = {"wE" : "2We2", "AE" : "3are3", "lG": "8Learning8", "pN" : "6Python6", "pG" : "11Programming11"}
+
+
+word_list = Str1.split(" ")
+output2 = {}
+for word in word_list:
+    key = word[0].swapcase() + word[-1].swapcase()
+    value = f"{len(word)}{(word)}{len(word)}"
+    output2[key] = value
+    """
+
+school = {
+    'teacher': {
+        'maths': [
+            {'t_id': 1, 't-name': 'radha', 't_email': 'radha@gmail.com', 't_phone': 123456, 't_address': 'pune'},
+            {'t_id': 2, 't_name': 'radha1', 't_email': 'radha1@gmail.com', 't_phone': 1234567, 't_address': 'sangamer'}
+        ],
+        'physics': [
+            {'t_id': 1, 't_name': 'ram', 't_email': 'ram@gmail.com', 't_phone': 23456, 't_address': 'nashik'},
+            {'t_id': 2, 't_name': 'ram1', 't_email': 'ram1@gmail.com', 't_phone': 234567, 't_address': 'Pune'},
+        ],
+        'chemistry': [
+            {'t_id': 1, 't_name': 'raj', 't_email': 'raj@gmail.com', 't_phone': 741258, 't_address': 'nashik'},
+            {'t_id': 2, 't_name': 'raj1', 't_email': 'raj1@gmail.com', 't_phone': 852369, 't_address': 'Pune'},
+
+        ],
+        'english': [],
+        'Hindi': []
+    },
+    'student': {
+        '10th': [
+            {'roll_no': 1, 's_name': 'swamini', 'email': 'swamini@gmail.com', 'phone': 741963, 'address': 'pune'},
+            {'roll_no': 2, 's_name': 'dipti', 'email': 'dipti@gmail.com', 'phone': 963741, 'address': 'mumbai'},
+        ],
+        '11th': [
+            {'roll_no': 1, 's_name': 'deepa', 'email': 'deepa@gmail.com', 'phone': 852369, 'address': 'mumbai'},
+        ],
+        '12th': [
+            {'roll_no': 1, 's_name': 'tara', 'email': 'tara@gmail.com', 'phone': 854796, 'address': 'pune'},
+        ],
+    },
+    'Admin': {
+        'account': [
+            {'name': 'siya', 'email': 'siya@gmail.com', 'phone': 25698743, 'department': 'account'},
+            {'name': 'jiya', 'email': 'jiya@gmail.com', 'phone': 589647, 'department': 'account'}
+        ],
+        'registration': [
+            {'name': 'ammu', 'email': 'ammu@gmail.com', 'phone': 98766544, 'department': 'Reg'},
+            {'name': 'indra', 'email': 'indra@gmail.com', 'phone': 98766544, 'department': 'Reg'},
+
+        ]
+    }
+}
+
+
+"""
+# Question 4: assignment to design dictionary structure of school institute
+# write a program to update student info with phone
+# write a program to get any person details with phone
+# write a program to update teachers details with email
+"""
+"""#1. write a program to get any person details with phone
+phone_num=int(input('Enter phone number '))
+student = school.get('student')
+for key,value in student.items():
+    for data in value:
+        if data["phone"]==phone_num:
+            print(data["roll_no"],data["s_name"],data["email"],data["address"])
+        else:
+            continue"""
+
+
+"""# 2.write a program to update student info with phone
+phone_mob = int(input("Please enter mobile the number :"))
+new_data = input("Please enter new details of with this format : phone,12386 :")
+new_key = new_data.split(",")[0]
+new_value = new_data.split(",")[1]
+print("new_key :", new_key)
+print("new_value :", new_value)
+student = school.get('student')
+for key,values in student.items():
+    for data in values:
+        if data['phone'] == phone_mob:
+            data[new_key] = new_value
+        else:
+            continue
+
+
+print("students:",school["student"])"""
+
+# 3.write a program to update teachers details with email
+email_de= input("enter email id")
+new_data = input("Please enter new details of with this format : phone,12386 :")
+new_key = new_data.split(",")[0]
+new_value = new_data.split(",")[1]
+print("new_key :", new_key)
+print("new_value :", new_value)
+teacher = school.get('teacher')
+for key,values in teacher.items():
+    for data in values:
+        if data['t_email'] == email_de:
+            data[new_key] = new_value
+        else:
+            continue
+
+print(school["teacher"])
