@@ -23,6 +23,11 @@ class father:
         print(f"Father owns : {self.fhouse}")
 
 
+    @staticmethod
+    def show_greeting():
+        print("Welcome to the OOPS Concept")
+
+
 class Son(father):
     def __init__(self, sname, sjob, fname, fbusiness, fhouse):
         self.sname = sname
@@ -33,11 +38,38 @@ class Son(father):
         print(f"Son name : {self.sname}")
         print(f"Son job : {self.sjob}")
 
+    def show_family_details(self):
+        self.show_father_name()
+        self.show_father_business()
+        self.show_father_house()
+        self.show_son_details()
 
 
-obj = Son("Mohit", "Engineer", "Mohan", "Construction", "4 BHK")
 
-obj.show_father_business()
-obj.show_son_details()
-obj.show_father_house()
+if __name__ == '__main__':
+    obj = Son("Mohit", "Engineer", "Mohan", "Construction", "4 BHK")
 
+    # obj.show_father_business()
+    # obj.show_son_details()
+    # obj.show_father_house()
+    obj.show_greeting()
+    obj.show_family_details()
+    print("_"*50)
+
+    print("son name :", obj.sname)
+    obj.sname = "Rohan"
+    print("son name :", obj.sname)
+    print("_"*50)
+    obj.show_family_details()
+
+
+
+#obj = Son("Mohit", "Engineer", "Mohan", "Construction", "4 BHK")
+
+# obj.show_father_business()
+# obj.show_son_details()
+# obj.show_father_house()
+#obj.show_family_details()
+# this show the module name of the file
+#print(__name__)  # __main__
+#print("module of file1 :", obj.__module__)  # __main__
