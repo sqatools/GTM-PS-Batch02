@@ -1,9 +1,9 @@
 """
  Inner Class:
-     Class declared inside another class is the inner class
+     Class declared inside another class   is the inner class
 
 
-Inheritance
+
 Polymorphism
 Encapsulation
 Abstraction
