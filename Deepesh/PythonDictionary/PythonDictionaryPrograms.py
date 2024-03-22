@@ -58,7 +58,7 @@ for k, v in company.items():
         else:
             continue
 
-# print("company :", company)
+print("company :", company)
 
 # Get details
 for key, values in company.items():

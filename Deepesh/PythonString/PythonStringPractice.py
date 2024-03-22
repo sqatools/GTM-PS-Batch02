@@ -416,6 +416,7 @@ for word in word_list:
 print("_"*50)
 # Program2 : Write a Python program to find out the longest word in the given string.
 print("_"*50)
+
 str_input = "User properties become part of the test reportfdsdfgfdgdsf and are available to the configuredvalues reporters"
 
 longest_word = ''
@@ -430,6 +431,7 @@ for word in word_list:  # User,  properties, become
     #print(long_len, longest_word, ":", word)
 
 print("Longest word :", longest_word)
+
 
 
 print("_"*50)
@@ -473,3 +475,6 @@ elif number_unit > 250:
 
 total_bill = total_bill + total_bill*0.17
 print(" Total bill :", total_bill)
+
+
+
