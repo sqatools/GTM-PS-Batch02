@@ -29,7 +29,7 @@ class QA:
 class Company(Engineer, QA):
     def __init__(self, comp_name, comp_address, comp_worth, proj_manager, team_lead, total_resource,QA_Head, QA_Lead, QA_Engineer ):
         super().__init__(comp_name, comp_address, comp_worth)
-        #super().__init__(m_name, m_business)
+       
         self.comp_name = comp_name
         self.comp_address = comp_address
         self.comp_worth = comp_worth
