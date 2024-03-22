@@ -28,8 +28,13 @@ class QA(engineer):
         print("QA Engineer Name : ", self.QA_Engineer)
 
 class company(QA):
-    def __init__(self, Com_Name,Com_Address,Com_worth,QA_head, QA_Lead, QA_Engineer,project_manager, team_lead, total_resource):
-        super().__init__(QA_head, QA_Lead, QA_Engineer,project_manager, team_lead, total_resource)
+    def __init__(self, Com_Name,Com_Address,
+                 Com_worth, QA_head, QA_Lead,
+                 QA_Engineer, project_manager=None,
+                 team_lead=None, total_resource=None):
+        super().__init__(QA_head, QA_Lead, QA_Engineer,
+                         project_manager,
+                         team_lead, total_resource)
         self.Company_Name = Com_Name
         self.Company_Add = Com_Address
         self.Company_Worth = Com_worth
@@ -40,7 +45,12 @@ class company(QA):
         print("Company Worth : ", self.Company_Worth)
 
 if __name__ == '__main__':
-     obj = company("XYZ limited","Plot No.2 Vasant kunj,New Delhi","970 Cr","Nakul Singh", "Asmita Sharma", "Chinmayi","Shalini Sinha","Rakesh Nayak",10)
+     obj = company("XYZ limited",
+                   "Plot No.2 Vasant kunj,"
+                   "New Delhi","970 Cr",
+                   "Nakul Singh",
+                   "Asmita Sharma",
+                   "Chinmayi")
      obj.show_engineer_team_detail()
      obj.show_QA_team_detail()
      obj.show_company_detail()

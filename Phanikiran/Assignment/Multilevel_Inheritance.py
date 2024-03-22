@@ -1,4 +1,4 @@
-import self as self
+#import self as self
 
 
 class  Engineer:
@@ -7,7 +7,7 @@ class  Engineer:
         self.team_lead = team_lead
         self.total_resource = total_resource
 
-    def show_Engineer_details(self):4
+    def show_Engineer_details(self):
         print(f"proj_manager name : {self.proj_manager}")
         print(f"team_lead name : {self.team_lead}")
         print(f"total_resource name : {self.total_resource}")
@@ -19,10 +19,9 @@ class QA:
         self.QA_Engineer = QA_Engineer
 
     def show_QA_details(self):
-
-    print(f"QA_Head name : {self.QA_Head}")
-    print(f"QA_Lead name : {self.QA_Lead}")
-    print(f"QA_Engineer name : {self.QA_Engineer}")
+        print(f"QA_Head name : {self.QA_Head}")
+        print(f"QA_Lead name : {self.QA_Lead}")
+        print(f"QA_Engineer name : {self.QA_Engineer}")
 
 
 # MRO : Method Resolution Order
@@ -41,7 +40,7 @@ class Company(Engineer, QA):
 
     def show_QA_details(self):
         self.show_Engineer_details()
-        self.show_QA_details()
+        #self.show_QA_details()
 
 
 
