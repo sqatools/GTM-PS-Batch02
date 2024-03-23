@@ -41,7 +41,7 @@ class Father:
 class Son(Father, Mother):
     def __init__(self, sname, sjob, fname, fbusiness, fhouse, m_name, m_business):
         super().__init__(fname, fbusiness, fhouse)
-        #super().__init__(m_name, m_business)
+        # super().__init__(m_name, m_business)
         self.sname = sname
         self.sjob = sjob
         self.mobj = Mother(m_name, m_business)

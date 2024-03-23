@@ -31,12 +31,16 @@ class QA(Engineer):
 
 
 class Company(QA):
-    def __init__(self, project_manager, team_lead, total_resource, qa_head, qa_lead, qa_engineer, comp_name, comp_address, comp_worth):
-        super().__init__(project_manager, team_lead, total_resource, qa_head, qa_lead, qa_engineer)
+    def __init__(self, project_manager, team_lead, total_resource,
+                 qa_head, qa_lead, qa_engineer,
+                 comp_name, comp_address,
+                 comp_worth, **kwargs):
+        super().__init__(project_manager, team_lead, total_resource,
+                         qa_head, qa_lead, qa_engineer)
         self.comp_name = comp_name
         self.comp_address = comp_address
         self.comp_worth = comp_worth
-        # self.kwargs = kwargs
+        self.comp_details = kwargs
         #
         # for key, val in kwargs.items():
         #     print("args val: ", key, '=', val)
@@ -50,6 +54,9 @@ class Company(QA):
         print("\n 2. Company Address: ", self.comp_address)
         print("\n 3. Company Worth: ", self.comp_worth)
 
+    def show_kwargs_values(self):
+        print(self.comp_details)
+
 
 if __name__ == '__main__':
     dict_company = {
@@ -60,18 +67,21 @@ if __name__ == '__main__':
                 'employee_name': 'madhuri',
                 'employee_phone': 9860138618,
                 'employee_status': True,
-                # 'employee_aadhar': 'm "C:\\Users\madhu\Pictures\Profile_Pic.webp"'
+                'employee_aadhar': "C:\\Users\\madhu\\Pictures\\Profile_Pic.webp"
             },
             {
                 'employee_id': 121,
                 'employee_name': 'Ridhaa',
                 'employee_phone': 8609138618,
                 'employee_status': True,
-                # 'employee_aadhar': 'm "C:\\Users\madhu\Pictures\Profile_Pic.webp"'
+                'employee_aadhar': "C:\\Users\\madhu\\Pictures\\Profile_Pic.webp"
             }
         ]
     }
-    obj = Company("Rahul Sharma", "Asif", 10, "Aishwarya", "Sarika Jain", "jr. Abhishek", "TCS", "Pune", "100Cr")
-    obj.project_manager_details()
-    obj.qa_details()
-    obj.company_details()
+    obj = Company("Rahul Sharma", "Asif", 10, "Aishwarya",
+                  "Sarika Jain", "jr. Abhishek", "TCS",
+                  "Pune", "100Cr", cmp_details=dict_company)
+    # obj.project_manager_details()
+    # obj.qa_details()
+    # obj.company_details()
+    obj.show_kwargs_values()
