@@ -12,7 +12,8 @@ class School(Teaching):
 
 if __name__ == '__main__':
     obj = School('Emrald', "Sharma Ji", "Bhatiya", "Gujjar")
-    obj.show_acc_name()
-    obj.show_admin_name()
-    obj.show_school_name()
+    obj.show_school_data()
+    # obj.show_acc_name()
+    # obj.show_admin_name()
+    # obj.show_school_name()
     obj.add_school()
