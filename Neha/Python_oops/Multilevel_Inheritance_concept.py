@@ -29,7 +29,7 @@ class Father(Grandfather):
         print(f"Father name : {self.f_name}")
 
     def show_father_profession(self):
-        print(f"Father prosfession: {self.f_profession}")
+        print(f"Father profession: {self.f_profession}")
 
     def show_father_property(self):
         print(f"Father property: {self.f_property}")
