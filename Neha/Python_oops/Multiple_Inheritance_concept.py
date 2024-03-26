@@ -5,7 +5,7 @@ Inheritance : When one class aquire the property of another class, then it is kn
 """
 class Mother:
 
-    def __int__(self, mname, mprofession):
+    def __init__(self, mname, mprofession):
         self.mname = mname
         self.mprofession = mprofession
 

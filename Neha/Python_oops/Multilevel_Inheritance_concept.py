@@ -7,7 +7,7 @@ Inheritance : When one class aquire the property of another class, then it is kn
 
 class Grandfather:
 
-    def __int__(self, gf_name, gf_profession, gf_property):
+    def __init__(self, gf_name, gf_profession, gf_property):
         self.gf_name = gf_name
         self.gf_profession = gf_profession
         self.gf_property = gf_property

@@ -55,6 +55,6 @@ class Son(father):
         print("Son Job :", self.sjob)
 
 
-# if __name__ == '__main__':
-#     obj = Son("Mohit", "Engineer", "Mohan", "Construction", "4 BHK"
-#     obj.show_total_worth()
+if __name__ == '__main__':
+    obj = Son("Mohit", "Engineer", "Mohan", "Construction", "4 BHK")
+    obj.show_total_worth()
