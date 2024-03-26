@@ -33,7 +33,7 @@ Abstraction
 
 # class
 class ABC:
-
+/cla
     # default constructor
     def __init__(self):
         print("Welcome OOPS concept")
