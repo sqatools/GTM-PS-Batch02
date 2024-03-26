@@ -132,5 +132,33 @@ print("*"*50)
 Input : [2, 2, 3, 1, 4, 4, 4, 4, 4, 6]
 Output : [2, 3, 1, 4, 6 ]
 """
-print()
-print("*"*50)
+def unique_list():
+    input_list = [2, 2, 3, 1, 4, 4, 4, 4, 4, 6]
+    output = list(dict.fromkeys(input_list))
+    print('9 ', output)
+    print()
+    print("*"*50)
+
+
+unique_list()
+
+"""
+10). Python function program that take a number as a parameter and checks whether the number is prime or not.
+Input : 7
+Output : True
+"""
+
+def number_prime_or_not(num):
+    count = 0
+    for i in range(2, num):
+        if num % i == 0:
+            count = count + 1
+
+    if count > 0:
+        print("10. Num is not prime: ", num)
+    else:
+        print("10. Num is prime: ", num)
+    print()
+    print("*"*50)
+
+number_prime_or_not(7)

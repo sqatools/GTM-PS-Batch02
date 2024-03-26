@@ -3,60 +3,82 @@ import os
 
 
 class Admin:
-    def __init__(self, admin_name="Mohan"):
+    def __init__(self, admin_name="Madhuri", admin_username="madhuri", admin_password='1234'):
         self.admin_name = admin_name
+        self.username = admin_username
+        self.password = admin_password
+
+    def admin_details(self):
+        print("username: ", self.username)
+        print("password: ", self.password)
 
 
-    def show_admin_name(self):
-        print("Admin name :", self.admin_name)
-
-    def add_school(self, add_new = None):
+    def add_school(self, add_new=None):
         """
         :return:true if data added /updated sucessfully
         :param: school_name, school_address, school_phone, add_new
         """
 
         print("----- Enter School Details ------- ")
-        school_name = str(input("Enter School Name: "))
-        school_address = str(input("Enter School Address: "))
-        school_phone = int(input("Enter School Phone: "))
-        if add_new == 0:
-            add_new = int(input("Do you Want to Add/Update School? 1/0: "))
+        try:
+            school_name = str(input("Enter School Name: "))
+            school_address = str(input("Enter School Address: "))
+            school_phone = int(input("Enter School Phone: "))
 
-        sc_dict = {
-            'name': school_name,
-            'address': school_address,
-            'phone': school_phone
-        }
+            if add_new == 0:
+                add_new = int(input("Do you Want to Replace/Add New School? 1/0: "))
 
-        if add_new == 1:
-            school_dict = {
-                'school':
-                    [
-                        sc_dict
-                    ]
-            }
-            self.__write_school_data_file(school_dict)
-        else:
-            # get file data and append new
             filepath = 'school_data.json'
             filesize = os.path.getsize(filepath)
-            print('filesize: ', filesize)
-            with open(str(filepath), 'r') as file:
-                file_data = file.read()
-                data = json.loads(file_data)
-                data['school'].append(sc_dict)
 
-            self.__write_school_data_file(data)
+            if filesize == 0:
+                add_new = 1
+            else:
+                add_new = 0
 
-        print("Data Saved Successfully.")
-        self.show_school_data()
-        # print(json.dumps(data))
+            sc_dict = {
+                'name': school_name,
+                'address': school_address,
+                'phone': school_phone
+            }
+
+            if add_new == 1:
+                school_dict = {
+                    'school':
+                        [
+                            sc_dict
+                        ]
+                }
+                self.__write_school_data_file(school_dict)
+            else:
+                # get file data and append new
+                filepath = 'school_data.json'
+                filesize = os.path.getsize(filepath)
+                print('filesize: ', filesize)
+                with open(str(filepath), 'r') as file:
+                    file_data = file.read()
+                    data = json.loads(file_data)
+                    data['school'].append(sc_dict)
+
+                self.__write_school_data_file(data)
+
+            print("Data Saved Successfully.")
+            self.show_school_data()
+            # print(json.dumps(data))
+
+        except Exception as e:
+            print("Input Error: ", e)
+
+
 
     def __write_school_data_file(self, school_dict):
-        with open('school_data.json', 'w') as file:
-            json_data = json.dumps(school_dict)
-            file.write(json_data)
+        try:
+
+            with open('school_data.json', 'w') as file:
+                json_data = json.dumps(school_dict)
+                file.write(json_data)
+        except Exception as e:
+            print("Failed to write into file school_data.json: ", e)
 
     def show_school_data(self):
         print('_' * 20, 'School Details', '_' * 20)
@@ -67,9 +89,11 @@ class Admin:
 
             if filesize == 0:
                 print("----- No School Found ------")
-                add_new = int(input("Do you want to add school 1/0? : "))
+
+                add_new = int(input("Do you want to add new school 1/0? : "))
+                print(add_new)
                 if add_new == 1:
-                    self.add_school(add_new)
+                    self.add_school(add_new=1)
                     print("")
                 else:
                     print("----- Thank You -------")
