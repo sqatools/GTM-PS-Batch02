@@ -1,4 +1,5 @@
 from class_file1 import Admin
+from class_file1 import filepath
 import json
 import os
 
@@ -26,11 +27,12 @@ class School(Admin):
             'admin_id': 1
         }
 
-        with open('school_data.json', 'r') as file:
+        with open(filepath, 'r') as file:
             file_data = file.read()
             if not file_data:
                 data = {
                     'school':
+
                         [
                             sc_dict
                         ]
@@ -49,7 +51,7 @@ class School(Admin):
     def __write_school_data_file(self, school_dict):
         try:
 
-            with open('school_data.json', 'w') as file:
+            with open(filepath, 'w') as file:
                 print(school_dict)
                 json_data = json.dumps(school_dict)
                 file.write(json_data)
@@ -58,8 +60,6 @@ class School(Admin):
 
     def show_school(self):
         print('_' * 20, 'School Details', '_' * 20)
-        filepath = 'school_data.json'
-
         try:
             filesize = os.path.getsize(filepath)
             if filesize == 0:
@@ -70,7 +70,7 @@ class School(Admin):
                 else:
                     print("----- Thank You -------")
             else:
-                with open('school_data.json', 'r') as file:
+                with open(filepath, 'r') as file:
                     file_data = file.read()
                     data = json.loads(file_data)
                     if data.get('school') is not None:

@@ -1,4 +1,5 @@
 from class_file2 import School
+from class_file1 import filepath
 import json
 import os
 
@@ -33,7 +34,7 @@ class Teacher(School):
             }
 
             #check school_data.json contains any data
-            with open("school_data.json", 'r') as file:
+            with open(filepath, 'r') as file:
                 file_data = file.read()
                 if not file_data:
                     data = {
@@ -58,7 +59,7 @@ class Teacher(School):
             print("Update Teacher")
 
     def show_teachers(self):
-        with open('school_data.json', 'r') as file:
+        with open(filepath, 'r') as file:
             filedata = file.read()
             if not filedata:
                 print("----- No Data Found -----")
