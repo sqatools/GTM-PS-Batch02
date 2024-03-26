@@ -9,5 +9,5 @@ print(list2)
 output_dict={}
 
 for i in range (len(list2)):
-    output_dict[(list2[i])*2]= list1[i]
+    output_dict[(list2[i])*2] = list1[i]
 print(output_dict)
