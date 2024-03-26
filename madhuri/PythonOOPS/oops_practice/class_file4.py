@@ -1,5 +1,5 @@
 import json
-
+from class_file1 import filepath
 from class_file3 import Teacher
 
 class Student(Teacher):
@@ -18,7 +18,7 @@ class Student(Teacher):
             'student_class': student_class,
             'student_school_name': student_school_name
         }
-        with open('school_data.json', 'r') as file:
+        with open(filepath, 'r') as file:
             filedata = file.read()
             if not filedata:
                 data = {
@@ -39,7 +39,7 @@ class Student(Teacher):
                 self._School__write_school_data_file(data)
                 self.show_students()
     def show_students(self):
-        with open('school_data.json', 'r') as file:
+        with open(filepath, 'r') as file:
             filedata = file.read()
             if not filedata:
                 print("----- No Data Found -----")
