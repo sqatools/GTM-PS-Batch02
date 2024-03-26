@@ -58,17 +58,31 @@ Output = [5, 7, 11, 17, 19, 2, 8, 12, 22]
 # print(sum(list4))
 
 #4). Python program to find a product of all elements from a given list.
+#
+# list5=[1,2,3,4,9,3,6,7,1]
+# val=1
+#
+# for i in list5:
+#     val = val*i
+# print(val)
+#
+# #5). Python program to find the minimum and maximum elements from the list.
+#
+# print(max(list5))
+# print(min(list5))
+# print(sorted(list5))
+# print(list5)
 
-list5=[1,2,3,4,9,3,6,7,1]
-val=1
+#write the python code for all the values count
+#in the list and then remove the duplicates
 
-for i in list5:
-    val = val*i
-print(val)
+list = [1, 2, 3, 2, 1, 3, 2, 4, 5, 4]
 
-#5). Python program to find the minimum and maximum elements from the list.
+#count value
+values_count = {value:list.count(value) for value in list}
+#remove duplicates
+unique_list = (set(list))
 
-print(max(list5))
-print(min(list5))
-print(sorted(list5))
-print(list5)
+print(f'Count of all values:{values_count}')
+print(f"Unique list:{unique_list}")
+
