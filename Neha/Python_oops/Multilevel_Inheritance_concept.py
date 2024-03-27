@@ -7,7 +7,7 @@ Inheritance : When one class aquire the property of another class, then it is kn
 
 class Grandfather:
 
-    def __int__(self, gf_name, gf_profession, gf_property):
+    def __init__(self, gf_name, gf_profession, gf_property):
         self.gf_name = gf_name
         self.gf_profession = gf_profession
         self.gf_property = gf_property
@@ -53,6 +53,6 @@ class son(Father):
         self.show_father_property()
         self.show_son_details()
 
-if __name__ == '__main__':
-    obj1 = son('Rahul','engineer','Dindayal','Farmer','Land','Motilal','Pilot','Flat')
-    print(obj1.family_details())
+# if __name__ == '__main__':
+#     obj1 = son('Rahul','engineer','Dindayal','Farmer','Land','Motilal','Pilot','Flat')
+#     print(obj1.family_details())
