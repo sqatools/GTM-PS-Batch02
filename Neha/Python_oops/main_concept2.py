@@ -4,7 +4,7 @@ class IRIS:
     def __init__(self, Enterprise, admin_head, Location_head):
         self.ent_obj = Enterprise
         self.Company_obj = self.Company(admin_head)
-        # self.Company_obj1 = self.Company(account_head)
+        # self.Company_obj = self.Company(account_head)
         self.Location_obj = self.Location(Location_head)
 
     def show_enterprise_name(self):
@@ -33,6 +33,6 @@ if __name__ == "__main__":
     obj = IRIS("Reliance" , "Kanchan Rai" , "Jyoti Pandey")
     obj.show_enterprise_name()
     obj.Company_obj.show_admin_depart_head()
-    # obj.Company_obj1.show_account_depart_head()
+    # obj.Company_obj.show_account_depart_head()
     obj.Location_obj.show_location_head()
 

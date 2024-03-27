@@ -101,3 +101,9 @@ print(year)
 
 @
 What is init file do..? -- to change the folder in package,its an blank file
+
+#arr=[["a", 2],["d", 4],["g", 2],["b",4]]
+#[["a", 2],["g", 2],["b", 4],["d", 4]]
+
+#Need to create the parent object in polymorphism concept(overriding)
+#Concept of args and kwargs
