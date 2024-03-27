@@ -53,6 +53,6 @@ class son(Father):
         self.show_father_property()
         self.show_son_details()
 
-if __name__ == '__main__':
-    obj1 = son('Rahul','engineer','Dindayal','Farmer','Land','Motilal','Pilot','Flat')
-    print(obj1.family_details())
+# if __name__ == '__main__':
+#     obj1 = son('Rahul','engineer','Dindayal','Farmer','Land','Motilal','Pilot','Flat')
+#     print(obj1.family_details())
