@@ -1,8 +1,16 @@
+import itertools
+
+
 """
 Properties :
 -> List is mutable data type, we can modify at any point of time.
 -> List can contains all type of data.
 -> List follows the positive and negative indexing as like string.
+"""
+
+print(dir(list))
+"""
+'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
 """
 
 
@@ -115,6 +123,43 @@ Output = [5, 7, 11, 17, 19, 2, 8, 12, 22]
 # print(list_d2)
 
 #8). Python program to print a combination of 2 elements from the list whose sum is 10.
+# list_b = [ 2, 5, 4, 5, 6,8]
+#
+# list = []
+#
+# for i in range (len(list_b)):
+#     for comb in itertools.combinations(list_b,i):
+#         if sum(comb) == 10:
+#             list.append(comb)
+#
+# print(list)
+
+#9). Python program to print squares of all even numbers in a list.
+# list_b = [ 2, 5, 4, 5, 6,8]
+# list_9 = []
+#
+# for i in list_b:
+#     if i%2 ==0:
+#         list_9.append(i**2)
+#
+# print(list_9)
+
+#10 Python program to split the list into two-part, the left side all odd values and the right side all even values.
+Input = [5, 7, 2, 8, 11, 12, 17, 19, 22]
+# Output = [5, 7, 11, 17, 19, 2, 8, 12, 22]
+
+odd = [ ]
+even = [ ]
+
+for i in Input:
+    if i % 2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+
+odd.extend(even)
+print(odd)  #[5, 7, 11, 17, 19, 2, 8, 12, 22]
+
 
 
 
