@@ -150,9 +150,39 @@ company = {
 }
 write_content_json_file("new_json_content.json", company)
 
+######################excel file#####################
+import openpyxl
 
+def work_book_read(filename,row_num,col_num):
+    wb=openpyxl.load_workbook(filename)
+    Excel_sheet=wb.active
+    cell_value=Excel_sheet.cell(row=row_num,column=col_num).value
+    print(cell_value)
+#work_book_read("sampleexcel.xlsx",row_num=1,col_num=1)
 
+###############read excel file#######################3
+import openpyxl
 
+def read_workbook(filename,row_num,col_num,sheet_name):
+   wb= openpyxl.load_workbook(filename)
+   excel_sheet=wb[f'{sheet_name}']
+   cell=excel_sheet.cell(row=row_num,column=col_num)
+   print(cell.value)
+
+#read_workbook("RCBteam.xlsx",row_num=1,col_num=1,sheet_name="Sheet2")
+
+#############cell name################
+import openpyxl
+
+def read_workbook(filename,sheet_name,cell_name):
+   wb= openpyxl.load_workbook(filename)
+   excel_sheet=wb[f'{sheet_name}']
+   cell=excel_sheet[f'{cell_name}']
+   print(cell.value)
+read_workbook("RCBteam.xlsx",sheet_name="Sheet2",cell_name="B1")
+
+#for i in range(1,3):
+     #read_workbook("RCBteam.xlsx",sheet_name="Sheet2",cell_name=f"B{i}")
 
 
 
