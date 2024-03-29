@@ -107,3 +107,6 @@ What is init file do..? -- to change the folder in package,its an blank file
 
 #Need to create the parent object in polymorphism concept(overriding)
 #Concept of args and kwargs
+#itertools.combinations
+#13). Python program to reverse a list with a while loop.
+#18). Python program to print a specific list after removing the 1st, 3rd, and 6th elements from the list.

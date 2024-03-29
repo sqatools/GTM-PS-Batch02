@@ -87,20 +87,20 @@ def cursor_position(filename):
 
 ##########################Seek()############################
 def cursor_current_position(filename):
-    with open(filename,"r")as file:
-         file.seek(30, 0)
-    print("cursor current position:",file.tell())
-    print("char_20:",file.read(20))
-    print("cursor position after 20:",file.tell())
+    with  open(filename,"r")as file:
+          file.seek(30,-0)
+          print("cursor current position:",file.tell())
+          print("char_20:",file.read(20))
+          print("cursor position after 20:",file.tell())
 #cursor_current_position("newfile.txt")
 
 ##############seek () end of the file#############
 def cursor_current_position(filename):
     with open(filename,"rb")as file:
           file.seek(-50, 2)
-    print("cursor current position:",  file.tell())
-    print("char_20:",file.read(20))
-    print("cursor position after 20:", file.tell())
+          print("cursor current position:",  file.tell())
+          print("char_20:",file.read(20))
+          print("cursor position after 20:", file.tell())
 
 #cursor_current_position ("newfile5.txt")
 
@@ -118,34 +118,71 @@ def read_file_content_seek(filename):
 
 
 #read_file_content_seek("newfile.txt.")
+###################Json program#####
+import json
+def json_file_read(filename):
+    with open(filename,"r")as file:
+        file_data=file.read()
+        data=json.loads(file_data)
+        print(data)
+#json_file_read("newfile1.json")
 
-###################Json###################
-#
-# import json
-# def read_json_data(fileame):
-#     with open(fileame,"r")as file:
-#         file_data=file.read()
-#         data=json.loads(file_data)
-#         print(data)
-# read_json_data("newfile1.json")
-#
-# def write_content_json(filename,content):
-#     with open(filename,"w")as file:
-#         json_data=json.dumps(content)
-#         file.write(json_data)
-#
-# company = {
-#     'IT': [
-#         {'name': 'sanjay', 'email': 'sanjay@gmail.com', 'phone': 5654645, 'address': 'mumbai'},
-#         {'name': 'Neha', 'email': 'neha@gmail.com', 'phone': 434343, 'address': 'Pune'},
-#         {'name': 'Saumya', 'email': 'Saumya@gmail.com', 'phone': 33333232, 'address': 'Bangalore'},
-#     ],
-#     'HR': [
-#         {'name': 'priyanka', 'email': 'priyanka@gmail.com', 'phone': 8767657, 'address': 'Chennai'},
-#         {'name': 'swamini', 'email': 'swamini@gmail.com', 'phone': 98978998, 'address': 'Indore'},
-#         {'name': 'Bharath', 'email': 'Bharath@gmail.com', 'phone': 2332423432, 'address': 'Bhopal'},
-#     ]
-# }
-#
-# write_content_json("newfile10.txt.json",company)
+# *******************************************************************************
+
+import json
+def write_content_json_file(filename, content):
+    with open(filename, "w") as file:
+        # dumps method convert the dictionary data into json string
+        json_data = json.dumps(content)
+        file.write(json_data)
+
+company = {
+    'IT': [
+        {'name': 'sanjay', 'email': 'sanjay@gmail.com', 'phone': 5654645, 'address': 'mumbai'},
+        {'name': 'Neha', 'email': 'neha@gmail.com', 'phone': 434343, 'address': 'Pune'},
+        {'name': 'Saumya', 'email': 'Saumya@gmail.com', 'phone': 33333232, 'address': 'Bangalore'},
+    ],
+    'HR': [
+        {'name': 'priyanka', 'email': 'priyanka@gmail.com', 'phone': 8767657, 'address': 'Chennai'},
+        {'name': 'swamini', 'email': 'swamini@gmail.com', 'phone': 98978998, 'address': 'Indore'},
+        {'name': 'Bharath', 'email': 'Bharath@gmail.com', 'phone': 2332423432, 'address': 'Bhopal'},
+    ]
+}
+write_content_json_file("new_json_content.json", company)
+
+######################excel file#####################
+import openpyxl
+
+def work_book_read(filename,row_num,col_num):
+    wb=openpyxl.load_workbook(filename)
+    Excel_sheet=wb.active
+    cell_value=Excel_sheet.cell(row=row_num,column=col_num).value
+    print(cell_value)
+#work_book_read("sampleexcel.xlsx",row_num=1,col_num=1)
+
+###############read excel file#######################3
+import openpyxl
+
+def read_workbook(filename,row_num,col_num,sheet_name):
+   wb= openpyxl.load_workbook(filename)
+   excel_sheet=wb[f'{sheet_name}']
+   cell=excel_sheet.cell(row=row_num,column=col_num)
+   print(cell.value)
+
+#read_workbook("RCBteam.xlsx",row_num=1,col_num=1,sheet_name="Sheet2")
+
+#############cell name################
+import openpyxl
+
+def read_workbook(filename,sheet_name,cell_name):
+   wb= openpyxl.load_workbook(filename)
+   excel_sheet=wb[f'{sheet_name}']
+   cell=excel_sheet[f'{cell_name}']
+   print(cell.value)
+read_workbook("RCBteam.xlsx",sheet_name="Sheet2",cell_name="B1")
+
+#for i in range(1,3):
+     #read_workbook("RCBteam.xlsx",sheet_name="Sheet2",cell_name=f"B{i}")
+
+
 
