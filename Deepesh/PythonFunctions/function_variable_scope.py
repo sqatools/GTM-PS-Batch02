@@ -1,12 +1,7 @@
 """
-global variable :  the variable declare outside the function is known as global variable
-                   and the scope of variable is across the modules.
-
-local variable : The variable declare inside the function is known as local variable
-                 and the scope of the variable is limited to function only.
-
-non local variable : The variable we declare inside the outer function and the scope of the
-                variable is limited all the inner function.
+global variable
+local variable
+non local variable
 
 """
 
