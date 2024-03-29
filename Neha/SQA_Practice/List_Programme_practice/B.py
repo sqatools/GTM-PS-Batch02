@@ -1,35 +1,3 @@
-"""
-11).  Python program to get common elements from two lists.
-Input =
-list1 = [4, 5, 7, 9, 2, 1]
-list2 = [2, 5, 8, 3, 4, 7]
-Outputt : [4, 5, 7, 2]
-
-12). Python program to reverse a list with for loop.
-
-13). Python program to reverse a list with a while loop.
-
-14). Python program to reverse a list using index slicing.
-
-15). Python program to reverse a list with reversed and reverse methods.
-
-16). Python program to copy or clone one list to another list.
-
-17). Python program to return True if two lists have any common member.
-
-18). Python program to print a specific list after removing the 1st, 3rd, and 6th elements from the list.
-
-Solution
-19). Python program to remove negative values from the list.
-
-Solution
-20). Python program to get a list of all elements which are divided by 3 and 7.
-
-Solution
-21). Python program to check whether the given list is palindrome or not. (should be equal from both sides).
-
-Solution
-"""
 
 #11 Python program to get common elements from two lists.
 
@@ -45,7 +13,7 @@ Solution
 #
 # print(list3)
 
-#Python program to reverse a list with for loop.
+#12 Python program to reverse a list with for loop.
 
 # list12 = [2, 5, 8, 3, 4, 7]
 #
@@ -81,10 +49,47 @@ Solution
 
 #16). Python program to copy or clone one list to another list.
 
-list_16 = [8, 7, 6, 55,1]
+# list_16 = [8, 7, 6, 55,1]
+#
+# clone_list16 = list_16.copy()
+# print(clone_list16)
 
-clone_list16 = list_16.copy()
-print(clone_list16)
+#17 Python program to return True if two lists have any common member.
+
+# lista = [4, 5, 7, 9, 2, 1]
+# listb = [2, 5, 8, 3, 4, 7]
+#
+# for i in lista:
+#     for j in listb:
+#         if i == j:
+#             print (f"{i} is common value in both list hence printing {True}")
+
+#18). Python program to print a specific list after removing the 1st, 3rd, and 6th elements from the list.
+#Need answers
+# list18 = [2, 5, 8, 3, 4, 7,8]
+# output_list18 = [ ]
+#
+# if list18.pop(1) for i in list18:
+#     list18.pop()
+
+#19 Python program to remove negative values from the list.
+# list19 = [2, 5, -18, 3,0, 4, -7,8]
+#
+# for i in list19:
+#     if i >= 0:
+#         print(i, end=" ")
+
+#20). Python program to get a list of all elements which are divided by 3 and 7.
+# list20 = [2, 49, 18, 3,21, 4, 7,8]
+# output_list20 = []
+#
+# for i in list20:
+#     if i%3 == 0 or i%7==0:
+#         output_list20.append(i)
+# print(f"print the final list of elements which divisible by 3 and 7: {output_list20}")
+
+
+
 
 
 
