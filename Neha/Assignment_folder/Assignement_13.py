@@ -57,32 +57,64 @@ print(school)
 
 ## write a program to update student info with phone
 
-print(school['Students']['10th'][0]['phone']) #67854322
-
-school['Students']['10th'][0]['phone'] =1234
-print(school)
+# print(school['Students']['10th'][0]['phone']) #67854322
+#
+# school['Students']['10th'][0]['phone'] =1234
+# print(school)
 
 # write a program to update student info with phone
 # Get specified person details with mobile number
 per_phone = 67854322
-for key, values in school.items():
+Student_details = school.get('Students')['10th'][0]
+for key, values in Student_details.items():
     print(values)
-    for key1,values1 in values:
-         print(data['name'])
-         if data['phone'] == per_phone:
-            print(data['name'],data['email'])
-    #     else:
-    #         continue
+    for data in values:
+        if data ['phone'] == per_phone:
+            input_Name = input("Please enter Name :")
+            input_email = input("Please enter new details of with this format : email,id@gmail.com :")
+            input_Rollno = input("Enter Student rollno: ")
+            input_mobile = input("Enter Student Mobile: ")
+            data['student_name'] = input_Name
+            data['student_email'] = input_email
+            data['Student_add'] = input_Rollno
+            data['student_mobile'] = input_mobile
+        else:
+            continue
 
-# print("#" * 50)
-# Add/update person information on the basis of mobile number
-# write a program to get any person details with phone
-# per_phone = int(input("Please enter mobile the number :"))
-# new_data = input("Please enter new details of with this format : email,id@gmail.com :")
-# new_key = new_data.split(",")[0]
-# new_value = new_data.split(",")[1]
-# print("new_key :", new_key)
-# print("new_value :", new_value)
+print("student details :", school['Students'])
+
+
+"""
+input_phone = int(input('Enter phone number you want to update: '))
+flag = 0
+flag2 = 0
+output = {}
+
+students = school.get('Students')
+for key, values in students.items():
+    for data in values:
+        if data['phone'] == input_phone:
+            # flag = 1
+            # break
+            input_name = input("Enter student Name: ")
+            input_email = input("Enter Student Email: ")
+            input_address = input("Enter Student Address: ")
+            input_mobile = input("Enter Student Mobile: ")
+            data['student_name'] = input_name
+            data['email'] = input_email
+            data['address'] = input_address
+            data['phone'] = input_mobile
+        else:
+            continue
+
+print("student details :", school['Students'])
+"""
+
+
+print("#" * 50)
+# # Add/update person information on the basis of mobile number
+# # write a program to get any person details with phone
+
 #
 # for k, v in company.items():
 #     for data in v:
@@ -90,10 +122,10 @@ for key, values in school.items():
 #             data[new_key] = new_value
 #         else:
 #             continue
-
+#
 # print("company :", company)
-
-# Get details
+#
+# #Get details
 # for key, values in company.items():
 #     # print(values)
 #     for data in values:
