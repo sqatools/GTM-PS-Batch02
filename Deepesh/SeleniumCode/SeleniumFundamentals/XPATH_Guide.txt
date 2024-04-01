@@ -1,0 +1,41 @@
+XPATH:
+
+1). Absolute xpath: absolute xpath follows the entire dom structure to locate the element.
+                    absolute xpath in not recommended to use, as it can change any point of time.
+    /html/body/div[3]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[2]/div[10]/input[1]
+
+2). Relative xpath: Relative xpath does not follow the entire dom structure to locate the element
+                it starts with // and target to specific element as per properties mentioned.
+
+i) Basic XPATH
+               1) //tagname[@attribute='value']
+                  //input[@id="billing_name"]
+                  //input[@placeholder="Where are you going?"]
+
+                2) //*[@attribute="value"]
+                   //*[@data-testid="herobanner-cta"]
+                   //*[@aria-label="Explore Brussels"]
+
+
+ii) Text Method :  //tagname[text()='text value']
+                   //span[text()='Sign in or register']
+                   //li//a[text()='Home']
+
+
+iii). contains method : This method search the element with the help of partial text or partial attribute value
+                    //tagname[contains(@attribute, 'value')]
+                    //tagname[contains(text(), 'text value')]
+
+                    # https://automationbysqatools.blogspot.com/p/code-practice.html
+                    //a[contains(text(), 'Python Basic')]
+                    //a[contains(@href, 'basic-program')]
+
+                    # https://www.goibibo.com/
+                    //a//span[contains(text(), 'Hotels')]
+
+iv) indexing in the xpath: if any element xpath is matching multiple places then we use indexing on the xpath
+                    (//a[@href= '/hotels/'])[1]
+                    # https://automationbysqatools.blogspot.com/2021/05/dummy-website.html
+                    (//input[@id="firstname"])[1]
+
+
