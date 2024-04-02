@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################ Advance XPath Methods ###############
+
+https://automationbysqatools.blogspot.com/2021/05/dummy-website.html
+
+1)Following: When we follow,  try to identify any web element with the help of following element.
+
+             Eg) //tagname[@attribute = 'value']//following::tagname[@attribute='value']
+             //h3[contains(text(),'Dummy Website')]//following::input[@id ='firstname'][1]
+             //h3[contains(text(),'Dummy Website')]//following::input[@id ='male']
+
+2)Preceding: This method look for all the elements coming before the reference element.
+
+              Eg) //tagname[@attribute = 'value']//preceding::tagname[@attribute='value']
+              //td[text()='Mumbai']//preceding::td[text()='6001']
+              //td[text()='Mumbai']//preceding::input[@id='street_address1']
+
+
+3)Following_sibling : Has same parent , different siblings , younger siblings
+
+              Eg) //td[text()='6001']//following-sibling::td[text()='Mumbai']
+
+4)Preceding-sibling: Has same parent , different siblings , elder siblings of the reference element
+
+              Eg) //td[text()='Mumbai']//preceding-sibling::td[text()='6001']
+              //td[text()='5666']//preceding-sibling::td//input[@type='checkbox']
+
+5) parent : This method identify the parent with the help of child elements
+
+              Eg)
+
+6) ancestor
+
+7) descendent
+
+8) Child
