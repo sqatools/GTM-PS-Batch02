@@ -33,9 +33,44 @@ iii). contains method : This method search the element with the help of partial 
                     # https://www.goibibo.com/
                     //a//span[contains(text(), 'Hotels')]
 
-iv) indexing in the xpath: if any element xpath is matching multiple places then we use indexing on the xpath
+iv) Indexing in the xpath: if any element xpath is matching multiple places then we use indexing on the xpath
                     (//a[@href= '/hotels/'])[1]
+
                     # https://automationbysqatools.blogspot.com/2021/05/dummy-website.html
                     (//input[@id="firstname"])[1]
 
 
+##### Advance XPATH Methods #####:
+
+1) Following: When we follow try to identify any web element with the help of following element.
+              e.g //tagname[@attribute='value']//following::tagname[@attribute='value']
+              //h2[text()=' Travel Details ' ]//following::input[@id='billing_name']
+              //h3[contains(text(),'Dummy Website')]//following::input[@name="firstname"][1]
+              //h3[contains(text(),'Dummy Website')]//following::input[@id='male']
+
+2). preceding: preceding method look for all the element coming before the reference element
+                //tagname[@attribute='value']//preceding::tagname[@attribute='value']
+                //td[text()='Mumbai']//preceding::td[text()='6001']
+                //td[text()='Mumbai']//preceding::input[@id='street_address1']
+
+
+3) Following-sibling: This method deals with all the younger sibling of reference element
+            //tagname[@attribute='value']//following-sibling::tagname[@attribute='value']
+            //td[text()='6001']//following-sibling::td[text()='Mumbai']
+
+
+4). preceding-sibling : This method deals with all the elder sibling of the reference element
+             //td[text()='Mumbai']//preceding-sibling::td[text()='6001']
+             //td[text()='5666']//preceding-sibling::td/input[@type='checkbox']
+
+
+
+5) parent : This method identify the parent with the help of child element
+
+
+
+6) ancestor
+
+5) descendent
+
+6) Child
