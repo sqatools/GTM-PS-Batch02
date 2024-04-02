@@ -12,7 +12,7 @@ Logo= driver.find_element(By.XPATH, "//img[@alt = 'SQA Tools : Online Learning P
 print(f"Logo text: {Logo}")
 driver.implicitly_wait(3)
 #
-driver.find_element(By.XPATH,"//h3 [text( ) = 'Dummy Website']").text #Wrong xpath
+driver.find_element(By.XPATH,"//h3[contains(text( ) ,'Dummy Website')]").text #Wrong xpath
 
 #Radio button main heading--Choose the correct option:
 driver.find_elements(By.XPATH,"//div//h3[contains(text(), 'Choose the correct option:')]")
