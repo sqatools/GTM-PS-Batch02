@@ -1,10 +1,12 @@
+XPATH:
 
-
-
-
-
-
-
+1) Absolute Xpath: Absolute xpath follows the entire DOM structure to locate the element
+                   DOM - Document Object Model
+                   Starts from the root node
+                   Its not recommended to use, as it can change any point of time
+                   if the developer changes the code, it will get affected
+                   Starts with /
+                   Very fast
 
 
 
