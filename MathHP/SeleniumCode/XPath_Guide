@@ -27,7 +27,11 @@ XPATH:
  b) Text Method:
 
                  //tagname[text()='value']
+
+                 https://www.booking.com/
                  //span[text()='Sign in or register']
+
+                 https://automationbysqatools.blogspot.com/p/code-practice.html
                  //li//a[text()='Home']
 
  iii). contains method : This method search the element with the help of partial text or partial attribute value
@@ -35,10 +39,12 @@ XPATH:
                     //tagname[contains(text(), 'text value')]
 
                     # https://automationbysqatools.blogspot.com/p/code-practice.html
+
                     //a[contains(text(), 'Python Basic')]
                     //a[contains(@href, 'basic-program')]
 
                     # https://www.goibibo.com/
+
                     //a//span[contains(text(), 'Hotels')]
 
 iv) Indexing in the xpath: if any element xpath is matching multiple places then we use indexing on the xpath
