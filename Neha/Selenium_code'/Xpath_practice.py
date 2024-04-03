@@ -12,7 +12,7 @@ Logo= driver.find_element(By.XPATH, "//img[@alt = 'SQA Tools : Online Learning P
 print(f"Logo text: {Logo}")
 driver.implicitly_wait(3)
 #
-driver.find_element(By.XPATH,"//h3[contains(text( ) ,'Dummy Website')]").text #Wrong xpath
+driver.find_element(By.XPATH,"//h3[contains(text() ,'Dummy Website')]").text()
 
 #Radio button main heading--Choose the correct option:
 driver.find_elements(By.XPATH,"//div//h3[contains(text(), 'Choose the correct option:')]")
@@ -52,6 +52,15 @@ driver.implicitly_wait(3)
 driver.find_element(By.XPATH,"//input[@id = 'oneway']").click()
 #Round trip
 driver.find_element(By.XPATH,"//input[@id = 'Round Trip']").click()
+#Delivery Details
+driver.find_element.(By.XPATH,"//h2[contains (text(), 'Delivery Option')]")
+#Visa Date
+driver.find_element(By.XPATH,"//h2[contains (text(), 'Delivery Option')]//following::input[@id = 'whatsapp']//preceding::input[@name = 'visadate']").click()
+#radio button
+driver.find_element(By.Xpath,"//h2[contains (text(), 'Delivery Option')]//following::input[@id = 'whatsapp']").click()
+
+
+
 
 
 
