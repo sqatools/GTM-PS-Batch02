@@ -26,7 +26,7 @@ driver.find_element(By.XPATH, "//div[@class='widget-content']//following-sibling
 driver.find_element(By.XPATH, "//div[@class='widget-content']//following-sibling::a[text()='Robot Framework']").click()
 driver.find_element(By.XPATH, "//div[@class='widget-content']//following-sibling::a[text()='Home']").click()
 
-(//td[@align='center'])[1]
+# (//td[@align='center'])[1]
 
 time.sleep(20)
 driver.close()
