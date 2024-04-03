@@ -7,6 +7,28 @@ XPATH:
                    if the developer changes the code, it will get affected
                    Starts with /
                    Very fast
+   /html/body/div[3]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[1]/div/div/div/div[1]/div/div/div/div[1]/div[2]/div[10]/input[1]
+
+2) Relative Xpath: Relative xpath does not follow entire DOM structure to locate the element
+                   It directly locates the desired element rather than starting from the root node
+                   Starts with //
+                   Recommended to use
+                   Targets to specific element as per properties mentioned
+
+ a) Basic Xpath
+                 1) //tagname[@attribute = 'value']
+                 2) //input[@id='billing_name']         # Billing name
+                 3) (//input[@type='text'])[1]          # First name
+
+                 A) //*[@attribute="value"]
+                    //*[@fdprocessedid="aw6rdo"]
+                    //*[@id="street_address2"]
+
+ b) Text Method:
+
+                 //tagname[text()='value']
+
+
 
 
 
