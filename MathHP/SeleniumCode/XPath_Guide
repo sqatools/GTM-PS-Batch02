@@ -80,11 +80,24 @@ https://automationbysqatools.blogspot.com/2021/05/dummy-website.html
               Eg) //td[text()='Mumbai']//preceding-sibling::td[text()='6001']
               //td[text()='5666']//preceding-sibling::td//input[@type='checkbox']
 
+                https://automationbysqatools.blogspot.com/p/home.html
+
+              //td[text()='Indore']//preceding-sibling::td//input[@type='checkbox']
+
+              (//span[text()='WhatsApp']//preceding-sibling::input)[2]
+
 5) parent : This method identify the parent with the help of child elements
 
-              Eg)
+             https://automationbysqatools.blogspot.com/p/home.html
 
-6) ancestor
+             //childtag[@attribute='value']//parent::parenttag[@attribute='value']
+
+              Eg)//div[contains(text(),' Python Selenium')]//parent::a
+              //td[text()='Indore']//parent::tr//input[@type='checkbox']
+
+6) ancestor : This method helps to identify ancestor element with the help of grand child.
+
+               //childtag[@attribute='value']//ancestor::ancestor_tag[@attribute='value']
 
 7) descendent
 
