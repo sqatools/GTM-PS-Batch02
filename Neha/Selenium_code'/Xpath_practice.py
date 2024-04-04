@@ -54,10 +54,12 @@ driver.find_element(By.XPATH,"//input[@id = 'oneway']").click()
 driver.find_element(By.XPATH,"//input[@id = 'Round Trip']").click()
 #Delivery Details
 driver.find_element.(By.XPATH,"//h2[contains (text(), 'Delivery Option')]")
-#Visa Date
+#Visa Date (combination of preceding and following)
 driver.find_element(By.XPATH,"//h2[contains (text(), 'Delivery Option')]//following::input[@id = 'whatsapp']//preceding::input[@name = 'visadate']").click()
 #radio button
-driver.find_element(By.Xpath,"//h2[contains (text(), 'Delivery Option')]//following::input[@id = 'whatsapp']").click()
+driver.find_element(By.XPATH,"//h2[text()='Billing Details']//preceding::input[@id='eamil']") ##preceding
+driver.find_element(By.Xpath,"//h2[contains (text(), 'Delivery Option')]//following::input[@id = 'whatsapp']").click() ##following
+
 
 
 

@@ -1,0 +1,48 @@
+CSS Selector:
+
+ID
+CLASS
+ATTRIBUTE
+
+#########################################################
+
+ID
+
+https://automationbysqatools.blogspot.com/2021/05/dummy-website.html
+
+#### ID is #
+# value of ID
+
+#fromcity
+
+##### TAG with ID
+
+textarea#APjFqb
+
+#### CLASS
+
+CLASS is .
+
+##############################################       https://www.google.co.in/
+
+.gLFyf
+
+##### TAGNAME WITH CLASS
+
+textarea.gLFyf
+
+###### ATTRIBUTE
+
+https://www.google.co.in/
+
+tagname[attribute='value']
+
+textarea[title='Search']
+
+####### Combinations of multiple Attribute
+
+textarea[name='q'][aria-label='Search']
+
+####### substring of attribute value
+
+textarea[aria-label*='Sear']
