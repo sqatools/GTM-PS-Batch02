@@ -18,6 +18,10 @@ print("Title of the page:",title)
 #### Get list of elements
 
 web_elements = driver.find_elements(By.XPATH,"//input[@type='checkbox']")
+print(web_elements)
+web_elements[2].click()
+length = web_elements.__len__()             # len(web_elements)
+print("Length of the checkbox:", length)
 
 for element in web_elements:
     enabled = element.is_enabled()
