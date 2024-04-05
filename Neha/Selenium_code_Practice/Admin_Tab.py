@@ -1,7 +1,13 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome import webdriver
 
-driver.find_ele
+from behave import *
 
-//div//label[contains(text(), 'Username')]//ancestor::div[@id = 'app']//preceding::input[@class = 'oxd-input oxd-input--active'][2]
 
+@given ('Launch the browser')
+def launch_browser(context):
+    context.driver = webdriver.Chrome()
+
+@when('Open the Application')
+@When ('Enter the username')
+def Enter_username(context):
+    cont
