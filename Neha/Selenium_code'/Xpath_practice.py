@@ -18,6 +18,7 @@ driver.find_element(By.XPATH,"//h3[contains(text() ,'Dummy Website')]").text()
 driver.find_elements(By.XPATH,"//div//h3[contains(text(), 'Choose the correct option:')]")
 ?? if i want to find the list of all elements in the main heading
 #Radio button sub heading--
+first_checkboxes = (By.XPATH, "//input[@type = 'radio']")
 sub_heading = driver.find_element(By.XPATH,"//li//span[contains(text(),'Dummy hotel booking ticket - $400 ')]").text #third option
 print(f"sub heading of radio button options:,{sub_heading}")
 
@@ -25,18 +26,18 @@ print(f"sub heading of radio button options:,{sub_heading}")
 driver.find_element(By.XPATH,"//h2[contains(text() , 'Passenger Details')]").click()
 driver.implicitly_wait(3)
 #Firstname
-driver.find_element(By.XPATH,"//input[@id = 'firstname'][1]").send_keys("Neha")
+Firstname= (By.XPATH,"//input[@id = 'firstname'][1]").send_keys("Neha")
 driver.implicitly_wait(3)
 #LastName
-driver.find_element(By.XPATH,"//input[@id = 'firstname'][2]").send_keys("Kumari")
+LastName= (By.XPATH,"//input[@id = 'firstname'][2]").send_keys("Kumari")
 driver.implicitly_wait(3)
 #DOB
-driver.find_element(By.XPATH,"//input[@id = 'birthday']").click()
+DOB= (By.XPATH,"//input[@id = 'birthday']").click()
 driver.implicitly_wait(3)
 #Radio button-Sex
-driver.find_element(By.XPATH,"//input[contains(@id , 'male')]").click() #for male radio button
+male_rdbtn= (By.XPATH,"//input[contains(@id , 'male')]").click() #for male radio button
 driver.implicitly_wait(3)
-driver.find_element(By.XPATH,"//span[contains(text(), 'Female')]").click() #for female radio button
+female_rdbtn= (By.XPATH,"//span[contains(text(), 'Female')]").click() #for female radio button
 driver.implicitly_wait(3)
 
 #additional Passenger details
