@@ -60,6 +60,7 @@ driver.find_element(By.XPATH,"//h2[contains (text(), 'Delivery Option')]//follow
 #radio button
 driver.find_element(By.XPATH,"//h2[text()='Billing Details']//preceding::input[@id='eamil']") ##preceding
 driver.find_element(By.Xpath,"//h2[contains (text(), 'Delivery Option')]//following::input[@id = 'whatsapp']").click() ##following
+driver.find_element(By.XPATH,"//span[contains(text(), 'Both')]")
 
 
 

@@ -1,3 +1,6 @@
 Firstname = "Neha"
 LastName = "Kumari"
 DOB = "08/04/2024"
+from_city = "Bengaluru"
+destination_city = "Delhi"
+Visa_interview_date = "09/04/2024"

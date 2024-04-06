@@ -27,3 +27,7 @@ def send_data(data , locator):
     element = get_element(locator)
     element.send_keys(data)
 
+def get_text(locator):
+    element = get_element(locator)
+    return element.text
+
