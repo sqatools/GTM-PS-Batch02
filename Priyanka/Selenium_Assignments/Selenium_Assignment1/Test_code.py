@@ -11,12 +11,12 @@ get_driver(website_url, "Chrome", timeout=30)
 click_element(loct_choose_option)
 
 # Passenger Details
-send_data(first_name,loct_first_name)
-send_data(last_name,loct_last_name)
+send_data(first_name, loct_first_name)
+send_data(last_name, loct_last_name)
 click_element(loct_female)
 
 # Number of Additional Passangers
-select_Value_dropdown(loct_number_passangers,"only one traveler")
+#select_Value_dropdown(loct_number_passangers,"only one traveler")
 
 # Travel Details
 click_element(loct_trip)
@@ -37,7 +37,7 @@ send_data(postcode, loct_postcode)
 send_data(Prefecture, loct_Prefecture)
 send_data(address1, loct_street_address1)
 send_data(address2, loct_street_address2)
-
+time.sleep(20)
 #Most Visited Cities
 
 
