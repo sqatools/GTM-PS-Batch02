@@ -12,4 +12,5 @@ postcode = "87654"
 Prefecture = "ABC"
 address1 = "address 1"
 address2 = "address2 "
+Additional_Passangers = " Add 1 more passenger (100%) "
 

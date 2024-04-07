@@ -1,5 +1,6 @@
 import time
 
+from selenium.webdriver import Keys
 from Locators import *
 from Function_Lib import *
 from Test_data import *
@@ -16,7 +17,10 @@ send_data(last_name, loct_last_name)
 click_element(loct_female)
 
 # Number of Additional Passangers
-#select_Value_dropdown(loct_number_passangers,"only one traveler")
+# select_Value_dropdown(loct_number_passangers,"only one traveler")
+# element = wait.until(ec.visibility_of_element_located(By.XPATH, "//select[@id='admorepass']//option[text()="+Additional_Passangers+"]"))
+# element.click()
+click_element(loct_number_passangers)
 
 # Travel Details
 click_element(loct_trip)
@@ -37,7 +41,17 @@ send_data(postcode, loct_postcode)
 send_data(Prefecture, loct_Prefecture)
 send_data(address1, loct_street_address1)
 send_data(address2, loct_street_address2)
-time.sleep(20)
+
+
 #Most Visited Cities
+click_element(loct_Most_Visited_Cities)
 
+# Date of birth*
+element = get_element(loct_birthday)
+element.click()
+element.send_keys("13")
+element.send_keys("6")
+element.send_keys(Keys.TAB)
+element.send_keys("2000")
 
+time.sleep(20)
