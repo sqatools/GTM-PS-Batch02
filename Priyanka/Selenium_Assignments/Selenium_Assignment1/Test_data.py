@@ -1,0 +1,15 @@
+website_url = "https://automationbysqatools.blogspot.com/2021/05/dummy-website.html"
+
+first_name = "Priyanka"
+last_name = "Gowda"
+source_city_name = "Bangalore"
+dest_city_name = "Mumbai"
+billing_name = "Priya"
+billing_phone = "123456789"
+billing_email = "abc@gmail.com"
+billing_address = "Pune"
+postcode = "87654"
+Prefecture = "ABC"
+address1 = "address 1"
+address2 = "address2 "
+
