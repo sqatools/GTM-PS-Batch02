@@ -36,3 +36,15 @@ Visa_interview_locator = (By.XPATH,"//h2[contains (text(), 'Delivery Option')]//
 Email_locator = (By.XPATH,"//h2[text()='Billing Details']//preceding::input[@id='eamil']")
 whatsapp_locator = (By.XPATH,"//h2[contains (text(), 'Delivery Option')]//following::input[@id = 'whatsapp']")
 Both_locator = (By.XPATH,"//span[contains(text(), 'Both')]")
+
+#Billing Details
+
+Billing_name_locator = (By.ID,"billing_name")
+Billing_phone_locator = (By.ID,"billing_phone")
+Email_id_locator = (By.ID, "billing_email")
+Street_Address_locator = (By.ID,"billing_address")
+Country_locator = (By.ID , "billing_country")
+Postal_Locator = (By.ID,"postcode")
+prefecture_locator = (By.ID,"Prefecture")
+Street_add1_locator = (By.ID,"street_address1")
+Street_add2_locator = (By.ID,"street_address2")
