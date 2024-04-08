@@ -32,13 +32,11 @@ def get_text(locator):
     return element.text
 
 def click_radio_option(locator):
-    elements = wait.until(ec.visibility_of_element_located(locator))
-    print(elements)
-    # for element in locator:
-    #     radio_value = element.get_attribute("value")
-    #     print('attr value: ', radio_value)
-    #     if radio_value == 'radio_123':
-    #         element.click()
-    #         print("is selected: ", element.is_selected())
-    #         break
-    return elements
+    elements = wait.until(ec.visibility_of_all_elements_located(locator))
+    for element in elements:
+        radio_value = element.get_attribute("value")
+        if radio_value == 'radio_123':
+            element.click()
+            print("is selected: ", element.is_selected())
+            break
+

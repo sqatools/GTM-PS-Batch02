@@ -8,7 +8,7 @@ driver, wait = get_driver()
 
 #Ticket Booking Options
 
-# click_radio_option(choose_ticket_option_locator)
+click_radio_option(choose_ticket_option_locator)
 
 # Passenger Details
 ec_passenger_heading= get_text(passenger_heading_locator)
