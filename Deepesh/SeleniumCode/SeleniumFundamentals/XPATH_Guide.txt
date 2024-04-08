@@ -46,7 +46,7 @@ iv) Indexing in the xpath: if any element xpath is matching multiple places then
 
 1) Following: When we follow try to identify any web element with the help of following element.
               e.g //tagname[@attribute='value']//following::tagname[@attribute='value']
-              //h2[text()=' Travel Details ' ]//following::input[@id='billing_name']
+                  //h2[text()=' Travel Details ' ]//following::input[@id='billing_name']
               //h3[contains(text(),'Dummy Website')]//following::input[@name="firstname"][1]
               //h3[contains(text(),'Dummy Website')]//following::input[@id='male']
 
