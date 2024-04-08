@@ -25,12 +25,11 @@ ticket_by_both_locator = (By.ID, "//span[contains(text(), 'Both')]")
 
 # Billing Locators
 billing_heading_locator = (By.XPATH, "//h2[contains(text(), 'Billing Details')]")
-billing_name_locator = (By.XPATH, "//input[@id='billing_name']")
-# billing_name_locator = (By.ID, "billing_name")
-# billing_phone_locator = (By.ID, "billing_phone")
-# billing_email_locator = (By.ID, "billing_email")
-# billing_address_locator = (By.ID, "billing_address")
-# billing_country_locator = (By.ID, "billing_country")
+billing_name_locator = (By.ID, "billing_name")
+billing_phone_locator = (By.ID, "billing_phone")
+billing_email_locator = (By.ID, "billing_email")
+billing_address_locator = (By.ID, "billing_address")
+billing_country_locator = (By.ID, "billing_country")
 
 
 
