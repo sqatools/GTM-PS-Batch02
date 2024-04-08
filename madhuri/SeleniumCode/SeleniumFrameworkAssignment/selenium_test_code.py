@@ -43,12 +43,13 @@ send_data(billing_phone, billing_phone_locator)
 send_data(billing_email, billing_email_locator)
 send_data(billing_address, billing_address_locator)
 send_data(billing_country, billing_country_locator)
-
+send_data(billing_postcode, billing_postcode_locator)
+send_data(billing_prefecture, billing_prefecture_locator)
+send_data(billing_street_address1, billing_street_address1_locator)
+send_data(billing_street_address2, billing_street_address2_locator)
 
 
 # Most Visited Cities
-
-
 time.sleep(5)
 
 

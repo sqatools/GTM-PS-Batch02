@@ -30,6 +30,12 @@ billing_phone_locator = (By.ID, "billing_phone")
 billing_email_locator = (By.ID, "billing_email")
 billing_address_locator = (By.ID, "billing_address")
 billing_country_locator = (By.ID, "billing_country")
+billing_postcode_locator = (By.ID, "postcode")
+billing_prefecture_locator = (By.ID, "Prefecture")
+billing_street_address1_locator = (By.ID, "street_address1")
+billing_street_address2_locator = (By.ID, "street_address2")
+
+
 
 
 
