@@ -13,10 +13,20 @@ longest_word_file("first_file_1.txt")
 
 #when we have paragraph in any files
 
-def find_largest_word(file_name):
-    with open(file_name, 'r') as file:
-        words = file.read().split()
-        largest_word = max(words, key=len)
-    print(largest_word)
+# def find_largest_word(file_name):
+#     with open(file_name, 'r') as file:
+#         words = file.read().split()
+#         largest_word = max(words, key=len)
+#     print(largest_word)
+#
+# find_largest_word("first_file_1_2.txt")
 
-find_largest_word("first_file_1_2.txt")
+
+def small_word (filename):
+    with open(filename,'r') as file :
+        word = file.read().split()
+        small_word = min(word ,key =len)
+    print(small_word)
+
+small_word("first_file_1_2.txt")
+

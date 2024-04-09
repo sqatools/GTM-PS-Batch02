@@ -18,7 +18,9 @@ i) Basic XPATH
 
 
 ii) Text Method :  //tagname[text()='text value']
+                   https://www.booking.com/
                    //span[text()='Sign in or register']
+                    https://automationbysqatools.blogspot.com/p/home.html
                    //li//a[text()='Home']
 
 
@@ -44,7 +46,7 @@ iv) Indexing in the xpath: if any element xpath is matching multiple places then
 
 1) Following: When we follow try to identify any web element with the help of following element.
               e.g //tagname[@attribute='value']//following::tagname[@attribute='value']
-              //h2[text()=' Travel Details ' ]//following::input[@id='billing_name']
+                  //h2[text()=' Travel Details ' ]//following::input[@id='billing_name']
               //h3[contains(text(),'Dummy Website')]//following::input[@name="firstname"][1]
               //h3[contains(text(),'Dummy Website')]//following::input[@id='male']
 
@@ -58,19 +60,25 @@ iv) Indexing in the xpath: if any element xpath is matching multiple places then
             //tagname[@attribute='value']//following-sibling::tagname[@attribute='value']
             //td[text()='6001']//following-sibling::td[text()='Mumbai']
 
-
 4). preceding-sibling : This method deals with all the elder sibling of the reference element
              //td[text()='Mumbai']//preceding-sibling::td[text()='6001']
              //td[text()='5666']//preceding-sibling::td/input[@type='checkbox']
 
+             # https://automationbysqatools.blogspot.com/2021/05/dummy-website.html
+             //td[text()='Indore']//preceding-sibling::td//input[@type='checkbox']
+             (//span[text()='WhatsApp']//preceding-sibling::input)[2]
 
 
-5) parent : This method identify the parent with the help of child element
+5) parent : This method identify the parent with the help of child element.
+            //childtag[@attribute='value']//parent::parent_tag[@attribute='value']
+
+            https://automationbysqatools.blogspot.com/p/home.html
+            //div[text()=' Python Selenium ']//parent::a
+
+            https://automationbysqatools.blogspot.com/2021/05/dummy-website.html
+            //td[text()='Indore']//parent::tr//input[@type='checkbox']
 
 
+6) ancestor : This method help to identify ancestor element with the help of grand child.
+              //childtag[@attribute='value']//ancestor::ancestor_tag[@attribute='value']
 
-6) ancestor
-
-5) descendent
-
-6) Child
