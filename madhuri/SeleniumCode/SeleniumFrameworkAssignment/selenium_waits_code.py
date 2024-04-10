@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as ec
 website_url = "https://automationbysqatools.blogspot.com/2021/05/dummy-website.html"
 wait = None
 
+
 def get_driver(url=website_url, browser='chrome', timeout=15):
     if browser.lower() == 'chrome':
         driver = webdriver.Chrome()
@@ -18,18 +19,22 @@ def get_driver(url=website_url, browser='chrome', timeout=15):
     driver.get(url)
     return driver, wait
 
+
 def click_element(locator):
     element = wait.until(ec.visibility_of_element_located(locator))
     element.click()
     return element
 
+
 def send_data(data, locator):
     element = wait.until(ec.visibility_of_element_located(locator))
     element.send_keys(data)
 
+
 def get_text(locator):
     element = wait.until(ec.visibility_of_element_located(locator))
     return element.text
+
 
 def click_radio_option(locator):
     elements = wait.until(ec.visibility_of_all_elements_located(locator))

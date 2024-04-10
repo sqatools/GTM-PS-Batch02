@@ -3,6 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
 
+
 web_URL = "https://automationbysqatools.blogspot.com/2021/05/dummy-website.html"
 wait = None
 def get_driver(web_URL , Browser , timeout):
@@ -19,9 +20,17 @@ def get_element(locator):
     element = wait.until(ec.visibility_of_element_located(locator))
     return element
 
+def get_elements(locator):
+    elements = wait.until(ec.visibility_of_element_located(locator))
+    return elements
+
 def click_element(locator):
     element = get_element(locator)
     element.click()
+
+def click_elements(locator):
+    elements = get_elements(locator)
+    elements.click()
 
 def send_data(data , locator):
     element = get_element(locator)
@@ -30,4 +39,8 @@ def send_data(data , locator):
 def get_text(locator):
     element = get_element(locator)
     return element.text
+
+
+
+
 
