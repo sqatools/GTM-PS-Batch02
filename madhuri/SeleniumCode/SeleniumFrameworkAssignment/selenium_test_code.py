@@ -49,11 +49,9 @@ send_data(billing_street_address1, billing_street_address1_locator)
 send_data(billing_street_address2, billing_street_address2_locator)
 
 
+click_citi_options(cities_checkbox_options_locator)
+
 # Most Visited Cities
 time.sleep(5)
 
 
-## doubts
-# 1. multiple choose radio option
-# 2. radio_element = driver.find_elements(By.XPATH, "//input[@type='radio']//parent::li") cant get value of radio button
-# 3. short-cut key to rename multiple variables

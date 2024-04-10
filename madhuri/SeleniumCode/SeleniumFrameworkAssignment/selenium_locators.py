@@ -35,6 +35,7 @@ billing_prefecture_locator = (By.ID, "Prefecture")
 billing_street_address1_locator = (By.ID, "street_address1")
 billing_street_address2_locator = (By.ID, "street_address2")
 
+cities_checkbox_options_locator = (By.XPATH, "//table//input[@type='checkbox']")
 
 
 

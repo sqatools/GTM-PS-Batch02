@@ -45,3 +45,14 @@ def click_radio_option(locator):
             print("is selected: ", element.is_selected())
             break
 
+
+def click_citi_options(locator):
+    elements = wait.until(ec.visibility_of_all_elements_located(locator))
+    i = 1
+    for element in elements:
+        checkbox_value = element.get_attribute("value")
+        if i == 2:
+            element.click()
+            break
+
+        i = i + 1
