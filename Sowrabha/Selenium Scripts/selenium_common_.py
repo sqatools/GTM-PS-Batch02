@@ -42,3 +42,8 @@ def send_data(data, locator):
 def get_text(locator):
     element = get_element(locator)
     return element.text
+
+def select_dropdown_value(locator, value):
+    element = get_element(locator)
+    select_obj = Select(element)
+    select_obj.select_by_visible_text(value)
