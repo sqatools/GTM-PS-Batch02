@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 # from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.select import Select
 
 
 website_url = "https://automationbysqatools.blogspot.com/2021/05/dummy-website.html"
@@ -42,3 +43,9 @@ def send_data(data, locator):
 def get_text(locator):
     element = get_element(locator)
     return element.text
+
+def select_dropdown_value(locator, value):
+    element = get_element(locator)
+    select_obj = Select(element)
+    select_obj.select_by_visible_text(value)
+
