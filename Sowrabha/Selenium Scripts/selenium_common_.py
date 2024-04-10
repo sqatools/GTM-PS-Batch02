@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 # from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.select import Select
 
 
 website_url = "https://automationbysqatools.blogspot.com/2021/05/dummy-website.html"
