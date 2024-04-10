@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
-website_url = "https://automationbysqatools.blogspot.com/2021/05/dummy-website.html"
+website_url = "https://www.goibibo.com/"
 wait = None
 
 
@@ -45,14 +45,3 @@ def click_radio_option(locator):
             print("is selected: ", element.is_selected())
             break
 
-
-def click_citi_options(locator):
-    elements = wait.until(ec.visibility_of_all_elements_located(locator))
-    i = 1
-    for element in elements:
-        checkbox_value = element.get_attribute("value")
-        if i == 2:
-            element.click()
-            break
-
-        i = i + 1

@@ -1,12 +1,12 @@
 from selenium.webdriver.common.by import By
 
 # Ticket Booking Options
-choose_ticket_option_locator = (By.XPATH, "//input[@type = 'radio']")
+choose_ticket_option_locator = (By.XPATH, "//li//input[@type = 'radio']")
 
 # Passenger Details
 passenger_heading_locator = (By.XPATH, "//h2[contains(text(), 'Passenger Details')]")
-first_name_locator = (By.XPATH, "//input[@id='firstname'][1]")
-last_name_locator = (By.XPATH, "//input[@id='firstname'][2]")
+first_name_locator = (By.XPATH, "(//input[@id='firstname'])[1]")
+last_name_locator = (By.XPATH, "(//input[@id='firstname'])[2]")
 male_locator = (By.ID, "male")
 female_locator = (By.ID, "female")
 
@@ -35,6 +35,7 @@ billing_prefecture_locator = (By.ID, "Prefecture")
 billing_street_address1_locator = (By.ID, "street_address1")
 billing_street_address2_locator = (By.ID, "street_address2")
 
+cities_checkbox_options_locator = (By.XPATH, "//table//input[@type='checkbox']")
 
 
 

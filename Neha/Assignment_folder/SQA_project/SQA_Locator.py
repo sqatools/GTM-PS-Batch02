@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 
 #Radio button sub heading--
 first_checkboxes = (By.XPATH, "//input[@type = 'radio']")
@@ -16,6 +17,9 @@ DOB_locator = (By.XPATH,"//input[@id = 'birthday']")
 male_rdbtn_locator = (By.XPATH,"//input[contains(@id , 'male')]")
 #for female radio button
 female_rdbtn_locator = (By.XPATH,"//span[contains(text(), 'Female')]")
+
+#additional passenger details
+dropdown_locator = (By.ID ,"admorepass")
 
 ##Travel Details
 Travel_details_locator = (By.XPATH,"//h2[contains(text() , ' Travel Details ')]")
@@ -48,3 +52,6 @@ Postal_Locator = (By.ID,"postcode")
 prefecture_locator = (By.ID,"Prefecture")
 Street_add1_locator = (By.ID,"street_address1")
 Street_add2_locator = (By.ID,"street_address2")
+
+#Most visited cities
+most_visited_cities_locator = (By.ID,"cities")
