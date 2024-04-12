@@ -30,6 +30,9 @@ send_data(dest_city_name, destination_locator)
 send_data(Birthday,DOB_locator)
 click_element(checkbox_locator)
 select_dropdown_value(country_dropdown_locator, country_name)
+select_screenshot(screenshot_locator,2,abc)
+# page_screenshot("web3.png")
+select_screenshot(screenshot1_locator,xyz")
 time.sleep(5)
 
 

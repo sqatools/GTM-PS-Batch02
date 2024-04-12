@@ -10,7 +10,7 @@ from selenium.webdriver.support.select import Select
 
 website_url = "https://automationbysqatools.blogspot.com/2021/05/dummy-website.html"
 wait = None
-
+driver = webdriver.Chrome()
 
 def get_driver(URL, BROWSER, timeout):
     if BROWSER.lower() == 'chrome':
@@ -48,4 +48,17 @@ def select_dropdown_value(locator, value):
     element = get_element(locator)
     select_obj = Select(element)
     select_obj.select_by_visible_text(value)
+
+def select_screenshot(locator,value):
+    element =get_element(locator)
+    screenshot_obj=Select(element)
+    screenshot_obj.select_by_index(value)
+    element.screenshot("addmorepassenger2.png")
+
+
+
+def page_screenshot("filename"):
+    element =get_element()
+
+    element.driver.save_screenshot("filename")
 
