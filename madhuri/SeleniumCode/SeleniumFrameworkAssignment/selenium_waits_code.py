@@ -52,6 +52,13 @@ def select_radio_option(value, locator):
             break
 
 
+def select_checkboxes(values, locator):
+    elements = wait.until(ec.visibility_of_all_elements_located(locator))
+    print(values)
+    for element in elements:
+        checkbox_value = element.get_attribute("value")
+        print('checkbox value: ', checkbox_value)
+
 def click_citi_options(locator):
     elements = wait.until(ec.visibility_of_all_elements_located(locator))
     i = 1

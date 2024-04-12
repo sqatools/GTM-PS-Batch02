@@ -33,4 +33,5 @@ billing_prefecture = "Xyz"
 billing_street_address1 = "Mumbai"
 billing_street_address2 = "Kanjur Marg East"
 
-
+# Most Visited Cities
+select_checkboxes_values = ["1", "2"]
