@@ -74,6 +74,6 @@ time.sleep(2)
 
 # Most Visited Cities
 click_citi_options(cities_checkbox_options_locator)
-
+# select_checkboxes(select_checkboxes_values, cities_checkbox_options_locator)
 
 
