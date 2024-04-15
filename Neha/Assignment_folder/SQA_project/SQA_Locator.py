@@ -1,11 +1,12 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
-#Radio button sub heading--
-first_checkboxes = (By.XPATH, "//input[@type = 'radio']")
+# Ticket Booking Options
+choose_ticket_option_locator = (By.XPATH, "//li//input[@type = 'radio']")
 
 
 ##Passenger Details
+passenger_heading_locator = (By.XPATH, "//h2[contains(text(), 'Passenger Details')]")
 #Firstname
 Firstname_locator = (By.XPATH,"//input[@id = 'firstname'][1]")
 #LastName
@@ -22,7 +23,8 @@ female_rdbtn_locator = (By.XPATH,"//span[contains(text(), 'Female')]")
 dropdown_locator = (By.ID ,"admorepass")
 
 ##Travel Details
-Travel_details_locator = (By.XPATH,"//h2[contains(text() , ' Travel Details ')]")
+
+Travel_details_heading_locator = (By.XPATH,"//h2[contains(text() , ' Travel Details ')]")
 #One way Radio button
 Oneway_locator = (By.ID , 'oneway')
 #Round trip
@@ -33,7 +35,8 @@ fromcity_locator = (By.ID , "fromcity")
 destcity_locator = (By.ID , "destcity")
 
 #Delivery details
-Deliveryoption_locator = (By.XPATH,"//h2[contains (text(), 'Delivery Option')]")
+delivery_option_heading_locator = (By.XPATH, "//h2[contains(text(), 'Delivery Option')]")
+
 #Visa Date (combination of preceding and following)
 Visa_interview_locator = (By.XPATH,"//h2[contains (text(), 'Delivery Option')]//following::input[@id = 'whatsapp']//preceding::input[@name = 'visadate']")
 #radio button for ticket receiving mode
@@ -42,7 +45,7 @@ whatsapp_locator = (By.XPATH,"//h2[contains (text(), 'Delivery Option')]//follow
 Both_locator = (By.XPATH,"//span[contains(text(), 'Both')]")
 
 #Billing Details
-
+billing_option_heading_locator = (By.XPATH, "//h2[contains(text(), 'Billing Details')]")
 Billing_name_locator = (By.ID,"billing_name")
 Billing_phone_locator = (By.ID,"billing_phone")
 Email_id_locator = (By.ID, "billing_email")
@@ -54,4 +57,5 @@ Street_add1_locator = (By.ID,"street_address1")
 Street_add2_locator = (By.ID,"street_address2")
 
 #Most visited cities
-most_visited_cities_locator = (By.ID,"cities")
+
+most_visited_cities_locator = (By.XPATH, "//table//input[@type='checkbox']")

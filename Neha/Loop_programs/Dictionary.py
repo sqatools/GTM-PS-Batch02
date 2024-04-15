@@ -16,7 +16,6 @@ print(output_dict)
 #String into dictionary
 car = "'make':'BMW','model':'1100','Year':'2010'"
 # output ={ 'make':'BMW','model':'1100','Year':'2010' }
-
 car_dict = {}
 
 # Split the string by comma and iterate over each key-value pair
