@@ -1,10 +1,92 @@
 
 
-def read_file(filename):
-    with open (filename,"r") as file:
-        fileread = file.read()
+# def read_file(filename):
+#     with open (filename,"r") as file:
+#         fileread = file.read()
 
-what is class:
-    its a blueprint of any object
-what is object
-Object is entity or module for any class through which we ca access all the methods and function of it
+#     filedata_1 = filedata.split(" ")
+#     longest_word = max(filedata_1, key = len)
+#     print(longest_word)
+#
+# longest_word_file("first_file_1.txt")
+#
+# what is class:
+#     its a blueprint of any object
+# what is object
+# Object is entity or module for any class through which we ca access all the methods and function of it
+
+#patternProgram
+
+# for i in range (1,4):
+#     for j in range(i):
+#         print("*", end = " ")
+#     print( )
+#
+# for i in range (4,0,-1):
+#     for j in range(i):
+#         print("*", end = " ")
+#     print( )
+
+#fibnocci
+# n1 = 0
+# n2 = 1
+#
+# for i in range(2,10):
+#     sum = n1+n2
+#     print(sum)
+#     n1 = n2
+#     n2 = sum
+#
+# #Prime
+#
+# num= int(input("enter the number"))
+# count =0
+#
+#
+# for i in range(1, num+1):
+#     if (num % i) == 0:
+#             count += 1
+# if count == 2:
+#     print("prime")
+# else:
+#     print("not prime")
+#
+#
+#
+# ##Factorial
+#
+# num = int(input("enter the input number:"))
+# factorial = 1
+#
+# if num < 0:
+#     print("no factorial")
+# elif num == 0:
+#     print("factorial of 0 is 1")
+# else:
+#     for i in range(1, num+1):
+#         factorial = factorial*i
+#     print(factorial,"is the factorial for number",num)
+
+#Split str
+str = "My name is neha"
+
+word =str.split(" ")[-1::-1]
+final_output = " ".join(word)
+print(final_output)
+
+#6  Python Dictionary Program to create a dictionary from two lists.
+list1 = ['a', 'd', 'e']
+list2 = [12, 23, 24]
+# # Output :
+# # output dict: {'a': 12, 'd': 23, 'e': 24}
+output = {}
+#
+# for i in range (len(list1)):
+#     if i < len(list2):
+#         output[list1[i]] = list2[i]
+#     else:
+#         output[list1[i]] = None
+#
+# print ('output dict:',output)
+
+
