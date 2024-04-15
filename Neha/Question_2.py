@@ -89,4 +89,15 @@ output = {}
 #
 # print ('output dict:',output)
 
+#list program
+list = [1, 2, 3, 2, 1, 3, 2, 4, 5, 4]
+
+#count value
+values_count = {value:list.count(value) for value in list}
+#remove duplicates
+unique_list = (set(list))
+
+print(f'Count of all values:{values_count}')
+print(f"Unique list:{unique_list}")
+
 

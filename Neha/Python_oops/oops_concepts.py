@@ -20,11 +20,22 @@ constructor :  A constructor is a special method that is automatically invoked w
 methods : When we create a function inside the class, then it becomes method.
         1. Instance method : any method that we write self as first parameter then it is known as
                              instance method.
-        2. class method :  Class methods are associated with the class itself, not an instance.
+        2. class method :  Class methods are associated with the class itself as first arguments,
                            when we defined method with decorator @class_method, then it is know as class
                           class method, class method only deals with class variables
-        3. static method :static method is associated with class name, no need to create object of the class
+        3. static method :A static method does not receive any special first argument.
+                        It behaves like a regular function but is defined within the scope of a class.
+                        static method is associated with class name, no need to create object of the class
                           while calling the static method.
+
+        eg:
+        Both class methods and static methods can be called on the class itself,
+        without needing an instance of the class.
+
+MyClass.class_method()  # Calling a class method
+MyClass.static_method()  # Calling a static method
+In summary, class methods are used to work with the class itself and can access class-level variables,
+ while static methods are used for methods that don't depend on class or instance state.
 
 variables : when we defined a variable inside the class, then it is known as class member
         1. Instance variable : The variable declare with self then it is known as instance variable.
