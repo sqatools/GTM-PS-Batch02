@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.select import Select
+from datetime import  datetime
 
 """
 implicit wait : This wait will apply on all the web element of the website.
@@ -36,7 +37,9 @@ def get_element(locator):
     except Exception as e:
         print(e)
         print(f"Unable to find element with the locator: {locator}")
-        driver.save_screenshot("element_not_found.png")
+        file_name = datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
+        driver.save_screenshot(f"element_not_found_{file_name}.png")
+
 
 
 def click_element(locator):
@@ -70,3 +73,4 @@ def select_dropdown_value(locator, value):
         select_obj.select_by_visible_text(value)
     else:
         print(f"No element found :{locator}")
+
