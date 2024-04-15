@@ -50,6 +50,7 @@ def select_radio_option(value, locator):
             element.click()
             print("is selected: ", element.is_selected())
             break
+    return element
 
 
 def select_checkboxes(values, locator):
