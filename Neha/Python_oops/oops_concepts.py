@@ -10,8 +10,9 @@ constructor :  A constructor is a special method that is automatically invoked w
                They can be defined inside or outside the class declaration.
 
 
-        1. Default constructor : default constructor which initialize the memory of the object
-           and it calls which creating object of the class.
+        1. Default constructor : classes can have constructors, which are special methods called __init__ methods.
+         These constructors are used to initialize new objects created from the class.
+        If you don't explicitly define a constructor in your class, Python provides a default constructor.
 
         2. Parameterize constructor: when we pass parameters to the constructor, then it is known as
           Parameterize constructor.
@@ -22,7 +23,8 @@ methods : When we create a function inside the class, then it becomes method.
         2. class method :  Class methods are associated with the class itself, not an instance.
                            when we defined method with decorator @class_method, then it is know as class
                           class method, class method only deals with class variables
-        3. static method :
+        3. static method :static method is associated with class name, no need to create object of the class
+                          while calling the static method.
 
 variables : when we defined a variable inside the class, then it is known as class member
         1. Instance variable : The variable declare with self then it is known as instance variable.
