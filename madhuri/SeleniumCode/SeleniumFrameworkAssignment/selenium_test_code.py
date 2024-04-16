@@ -6,8 +6,13 @@ from selenium_test_data import *
 
 driver, wait = get_driver()
 
+# driver.save_screenshot("screenshots\webpage2.png")
+
 #Ticket Booking Options
-select_radio_option(radio_option, choose_ticket_option_locator)
+element_dd = select_radio_option(radio_option, choose_ticket_option_locator)
+# to take element screenshot
+# element_dd.screenshot("screenshots\web_element.png")
+
 # click_radio_option(choose_ticket_option_locator)
 time.sleep(2)
 
@@ -75,5 +80,5 @@ time.sleep(2)
 # Most Visited Cities
 click_citi_options(cities_checkbox_options_locator)
 # select_checkboxes(select_checkboxes_values, cities_checkbox_options_locator)
-
+# driver.save_screenshot("screenshots\webpage.png")
 

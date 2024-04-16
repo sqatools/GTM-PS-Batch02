@@ -16,6 +16,9 @@ driver.find_element(By.XPATH, "//div[contains(text(),'Dummy Website')]//parent::
 
 # dummy website home page
 
+driver.find_elements(By.XPATH, "//body//div[@class='body-fauxcolumns']")
+# driver.save_screenshot("dummyweb.png")
+
 # get title to page
 page2_title = driver.title
 print('title of dummy page:', page2_title)
