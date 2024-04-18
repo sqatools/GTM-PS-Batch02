@@ -48,6 +48,12 @@ Polymorphism
 Encapsulation
 Abstraction
 
+__main__ is a special variable and a concept related to how Python scripts are executed.
+When a Python script is run directly as the main program, the interpreter sets the special variable
+__name__ to "__main__". This allows you to distinguish between when a script is run directly versus
+
+ when it is imported as a module into another script.
+
 """
 
 # class IRIS():
