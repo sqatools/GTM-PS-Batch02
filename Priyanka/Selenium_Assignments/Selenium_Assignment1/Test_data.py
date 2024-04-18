@@ -13,4 +13,8 @@ Prefecture = "ABC"
 address1 = "address 1"
 address2 = "address2 "
 Additional_Passangers = " Add 1 more passenger (100%) "
-
+Country = 'India'
+Birthday = "13/06/1997"
+Departure_Date = "1/1/2024"
+Return_Date = "1/10/2024"
+visa_Date = "11/25/2023"
