@@ -113,6 +113,8 @@ What is init file do..? -- to change the folder in package,its an blank file
 #13). Python program to reverse a list with a while loop.
 #18). Python program to print a specific list after removing the 1st, 3rd, and 6th elements from the list.
 #dic: 11Input = {'d' : 21, 'b' : 53, 'a': 13, 'c': 41}
+#list SQA
+#28). Python program to generate all sublists with 5 or more elements in it from the given list.
 
 # # Output =
 # # (‘a’, 13)
