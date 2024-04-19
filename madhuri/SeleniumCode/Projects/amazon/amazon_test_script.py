@@ -24,4 +24,5 @@ send_data(phone_number_locator, mobile_number)
 send_data(password_locator, password)
 element = click_element(verify_mobile_btn_locator)
 
-time.sleep(5)
+time.sleep(15)
+
