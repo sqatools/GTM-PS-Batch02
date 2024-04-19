@@ -41,7 +41,7 @@
 # #Prime
 #
 # num= int(input("enter the number"))
-# count =0
+# count = 0
 #
 #
 # for i in range(1, num+1):
