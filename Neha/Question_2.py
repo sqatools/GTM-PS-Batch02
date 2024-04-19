@@ -113,6 +113,20 @@
 #
 # print (list)
 
+list1 = [5, 7, 8, 2, 3]
+#output = [25, 49, 64, 4, 9]
+
+output = []
+for val in list1:
+    sqr = val**2
+    output.append(sqr)
+print("output :", output)
+
+# loop with list comprehesion
+result = [x**2 for x in list1]
+print("result :", result)
+
+
 
 
 
