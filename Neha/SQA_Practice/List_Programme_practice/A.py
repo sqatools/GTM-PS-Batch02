@@ -13,6 +13,11 @@ print(dir(list))
 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
 """
 
+"""
+List Comprehension-Python list comprehensions are a concise way to create lists. 
+[expression for item in iterable if condition]
+"""
+
 
 """1 Python program to calculate the square of each number from the given list.
 

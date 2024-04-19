@@ -123,8 +123,11 @@ for val in list1:
 print("output :", output)
 
 # loop with list comprehesion
-result = [x**2 for x in list1]
+result = [x**2 for x in list1 if x%2 == 0]
 print("result :", result)
+
+out_dict = { x:x**2 for x in list1 if x%2 == 0 }
+print(out_dict)
 
 
 

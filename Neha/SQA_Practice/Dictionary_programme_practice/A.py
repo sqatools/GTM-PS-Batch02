@@ -1,4 +1,25 @@
+"""
+
+{key_expression: value_expression for item in iterable if condition}
+eg;
+square_dict = {x: x**2 for x in range(1, 6)}
+print(square_dict)
+
+Here's a breakdown of the components:
+key_expression: An expression that defines the keys of the dictionary.
+value_expression: An expression that defines the values of the dictionary.
+item: The variable representing each element in the iterable.
+iterable: The sequence (like a list, tuple, string, etc.) that you're iterating over.
+condition (optional): An optional condition that filters the items. Only items for which this condition is true will be included in the resulting dictionary.
+"""
+
+
+
+
 #Python Dictionary program to add elements to the dictionary.
+
+
+
 
 # dict= {}
 # dict['Name'] = 'Neha'
