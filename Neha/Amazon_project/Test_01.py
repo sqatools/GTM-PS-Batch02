@@ -26,3 +26,12 @@ Go to orders page and click on your last ordered product and give 5
 star ratings
 15 Reach till cart page without login in amazon application
 """
+
+from function_file import *
+from Locators_file import *
+
+get_driver(web_URL,'Chrome' ,10 )
+click_element(Start_here_hyperlink)
+send_keys( Name_field , 'customer_name')
+send_keys(Phone_no_field,"")
+send_keys(reg_pass)
