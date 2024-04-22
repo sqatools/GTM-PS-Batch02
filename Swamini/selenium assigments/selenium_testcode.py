@@ -32,7 +32,7 @@ click_element(checkbox_locator)
 select_dropdown_value(country_dropdown_locator, country_name)
 select_screenshot(screenshot_locator,2,abc)
 # page_screenshot("web3.png")
-select_screenshot(screenshot1_locator,xyz")
+select_screenshot(screenshot1_locator,)
 time.sleep(5)
 
 
