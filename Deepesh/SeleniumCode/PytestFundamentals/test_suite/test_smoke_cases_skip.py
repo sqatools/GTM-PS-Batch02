@@ -3,39 +3,39 @@ command to install pytest
 
 """
 import pytest
-from logging_module import logger
+from test_data import *
 
 
 @pytest.mark.smoke
+@pytest.mark.xfail
 def test_function1():
     a = 50
     b = 60
-    logger.info(f"test function1 value a:{a}, b:{b}")
     assert a + b == 110
 
 
 @pytest.mark.smoke
+@pytest.mark.xfail
 def test_function2():
     a = 50
     b = 20
-    logger.error(f"test function2 value a:{a}, b:{b}, test failed")
     assert a - b == 40
 
 
 @pytest.mark.smoke
 @pytest.mark.sanity
+@pytest.mark.skip
 def test_function3():
     a = 50
     b = 3
-    logger.info(f"test function3 value a:{a}, b:{b}")
     assert a * b == 150
 
 
 @pytest.mark.sanity
+@pytest.mark.skipif(browser == 'Chrome', reason="can not execute on chrome")
 def test_function4():
     a = 50
     b = 3
-    logger.info(f"test function4 value a:{a}, b:{b}")
     assert a * b == 150
 
 
@@ -43,7 +43,6 @@ def test_function4():
 def test_function5():
     a = 50
     b = 3
-    logger.info(f"test function5 value a:{a}, b:{b}")
     assert a * b == 150
 
 
@@ -51,5 +50,4 @@ def test_function5():
 def test_function6():
     a = 50
     b = 3
-    logger.warning(f"test function6 value a:{a}, b:{b}")
     assert a * b == 150

@@ -7,3 +7,9 @@ python -m pytest -v -s .\test_smoke_selenium_fixture.py
 
 #  command to execute the test with markers
 python -m pytest -v -m smoke .\test_suite\test_smoke_cases.py
+
+# command to install pytest-html package
+pip install pytest-html
+
+# command to generate the html report.
+ python -m pytest -v .\test_smoke_cases_skip.py --html=report.html
