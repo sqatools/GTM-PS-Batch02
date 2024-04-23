@@ -13,3 +13,6 @@ pip install pytest-html
 
 # command to generate the html report.
  python -m pytest -v .\test_smoke_cases_skip.py --html=report.html
+
+# command to execute the specific test function from class
+ python -m pytest -v .\test_math_operation_class.py::TestMathOperation::test_addition
