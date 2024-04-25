@@ -4,7 +4,7 @@ mobile_number = '9860138618'
 password = 'Test@123'
 
 # login data
-login_title = 'Amazon Sign In'
+login_title: str = 'Amazon Sign In'
 
 # After Login Home page
 home_page_title = 'Amazon.in Shopping Cart'
