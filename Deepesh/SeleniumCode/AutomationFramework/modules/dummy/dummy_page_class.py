@@ -12,6 +12,9 @@ class DummyWebsite(SeleniumBase):
     def enter_last_name(self, last_name):
         self.enter_value(last_name_locator, last_name)
 
+    def select_number_of_passenger(self, select_option):
+        self.select_value_from_dropdown(select_number_of_passenger, select_option)
+
     def enter_dob(self, dob):
         self.enter_value(dob_locator, dob)
 
@@ -28,11 +31,13 @@ class DummyWebsite(SeleniumBase):
                                 first_name: str,
                                 last_name: str,
                                 dob: str,
+                                num_of_passenger: str,
                                 from_city: str,
                                 dest_city: str):
         self.enter_first_name(first_name)
         self.enter_last_name(last_name)
         self.enter_dob(dob)
+        self.select_number_of_passenger(num_of_passenger)
         self.select_male_radio()
         self.enter_from_city(from_city)
         self.enter_destination_city(dest_city)
