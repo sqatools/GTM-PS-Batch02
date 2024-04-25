@@ -1,3 +1,4 @@
+import pytest
 import time
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
@@ -30,20 +31,6 @@ def get_element(locator):
     return element
 
 
-def rate_by_star(locator, label, count):
-    print('locator: ', locator)
-    elements = wait.until(ec.visibility_of_all_elements_located(locator))
-    print(elements)
-    for element in elements:
-        print("before count: ", count)
-        if count > 0:
-            element.click()
-            time.sleep(2)
-        count = count - 1
-        print("after count: ", count)
-    return element
-
-
 def click_element(locator):
     element = get_element(locator)
     element.click()
@@ -58,6 +45,7 @@ def send_data(locator, data):
 def get_text(locator):
     element = get_element(locator)
     return element.text
+
 
 
 def move_to_element(locator):
