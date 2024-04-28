@@ -2,6 +2,7 @@ user_details = {
     "first_name" : "John",
     "last_name" : "Doe",
     "DOB" : "04/24/2024",
+    "select_pass" : "Add 2 more passenger (200%)",
     "from_city" : "Mumbai",
     "dest_city" : "Bangalore",
 
