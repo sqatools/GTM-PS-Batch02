@@ -1,0 +1,16 @@
+from selenium.webdriver.common.by import By
+
+email_txtbox_loc = (By.XPATH, "//input[@name = 'email']")
+continue_btn_loc = (By.XPATH, "//input[@id = 'continue']")
+password_txtbox_loc = (By.XPATH, "//input[@name = 'password']")
+signin_btn_loc = (By.ID, "signInSubmit")
+navigate_signin_loc = (By.XPATH, "//a[@id='nav-link-accountList']")
+create_new_btn_loc = (By.ID, "createAccountSubmit")
+new_username_loc = (By.XPATH, "//input[@name='customerName']")
+new_mobile_loc = (By.XPATH, "//input[@id='ap_phone_number']")
+new_pw_loc = (By.XPATH, "//input[@id='ap_password']")
+verify_mobile_no_btn_loc = (By.XPATH, "//input[@id='continue']")
+incorrect_email_msg_loc = (By.XPATH, "//div[@id='auth-error-message-box']//span")
+search_txtbox_loc = (By.XPATH, "//input[@id='twotabsearchtextbox']")
+search_btn_loc = (By.ID, "nav-search-submit-button")
+search_result_loc = (By.XPATH, "//span[@data-component-type='s-result-info-bar']//span[3]")
