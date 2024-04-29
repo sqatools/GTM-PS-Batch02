@@ -10,7 +10,7 @@ class AmazonBase:
         self.timeout = timeout
         self.wait = WebDriverWait.until(self.driver , timeout= self.timeout)
 
-    def get_element(self):
+    def get_element(self,locator):
         try:
             element = self.wait.until(ec.visibility_of_element_located(locator))
             return element
@@ -33,12 +33,16 @@ class AmazonBase:
             print(f"element Not found exception:{locator}")
 
     def mousehover_click_to_element(self,locator):
+        element = self.get_element(locator)
         action = ActionChains(self.driver)
-        action.click(locator)
+        action.click(element)
         action.perform()
 
     def mousehover_move_to_element(self,locator):
+        element = self.get_element(locator)
         action = ActionChains(self.driver)
-        action.move_to_element(locator)
+        action.move_to_element(element)
         action.perform()
+
+
 
