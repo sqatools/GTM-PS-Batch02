@@ -1,0 +1,19 @@
+# command to execute the pytest code
+python -m pytest -v .\test_smoke_cases.py
+
+# command to execute the pytest code with print statement
+python -m pytest -v -s .\test_smoke_selenium_fixture.py
+
+
+#  command to execute the test with markers
+python -m pytest -v -m smoke .\test_suite\test_smoke_cases.py
+
+# go to settings -> interpreter -> click on + icon -> then install package pytest-html
+or
+pip install pytest-html
+
+# https://grotechminds.com/automate-me/
+# python behave framework BDD
+xpass
+xfailed : expected to be passed
+xpassed : expected to be failed
