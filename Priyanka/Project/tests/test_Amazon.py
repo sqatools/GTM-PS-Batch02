@@ -10,14 +10,14 @@ class TestcasesAmazon:
         self.Amazon = Amazon_modules(self.driver)
 
     # 1. Test if new user can successfully register
-    def new_user_registartion(self):
-        self.Amazon.register_new_user(username=Amazon_data['new_username'],
-                                     mobile=Amazon_data['new_mobile'],
-                                      password=Amazon_data['new_pw']
+    def test_new_user_registartion(self):
+        self.Amazon.register_new_user(new_username=Amazon_data['new_username'],
+                                     new_mobile=Amazon_data['new_mobile'],
+                                      new_pw=Amazon_data['new_pw']
                                     )
 
     # 2. Verify login successful with correct email and Pw
-    def login_amazon_successful(self):
+    def test_login_amazon_successful(self):
         self.Amazon.enter_login_data(email=Amazon_data['email'],
                                      passwoed=Amazon_data['password']
                                     )

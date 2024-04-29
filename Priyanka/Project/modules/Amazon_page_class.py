@@ -1,5 +1,5 @@
 from base.base_functions import SeleniumBase
-from Amazon_locater import *
+from .Amazon_locater import *
 from utilities.get_logger import logger
 log = logger
 
