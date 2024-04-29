@@ -41,7 +41,11 @@ class TestcasesAmazon:
                                                 price_range=Amazon_data['price_range'])
 
     # 7. Product details page display all necessary info(price, reviews, description)
+    def product_details_page(self):
+        self.Amazon.check_all_product_details()
 
-
+    # 9. Verify that item can be added to the shopping cart
+    def add_item_to_shopping_cart(self):
+        self.Amazon.shopping_cart_add_item()
 
 

@@ -70,6 +70,33 @@ class Amazon_modules(SeleniumBase):
     def choose_price_range(self, price_range):
         self.click_element("//a//span[text()="+price_range+"]")
 
+    def get_price(self):
+        price = self.get_text(price_txt_loc)
+        log.info(f"Product Price : {price}")
+
+    def get_description(self):
+        description = self.get_text(description_txt_loc)
+        log.info(f"Product Description : {description}")
+
+    def get_review(self):
+        review = self.get_text(reviews_txt_loc)
+        log.info(f"Product Review : {review}")
+
+    def get_name(self):
+        name = self.get_text(name_txt_loc)
+        log.info(f"Product Name : {name}")
+
+    def click_add_to_cart(self):
+        self.click_element(add_to_cart_btn_loc)
+
+    def verify_item_added_to_cart(self):
+        element = self.get_element(cart_txt_loc)
+        if element:
+            log.info("Item added to cart successfully")
+        else:
+            log.error("Item not added to cart")
+
+
 
 
 #------------------------------------------------------------------------------
@@ -100,5 +127,16 @@ class Amazon_modules(SeleniumBase):
         self.choose_category(category)
         self.choose_brand(brand)
         self.choose_price_range(price_range)
+
+    def check_all_product_details(self):
+        self.get_name()
+        self.get_price()
+        self.get_description()
+        self.get_review()
+
+    def shopping_cart_add_item(self):
+        self.click_add_to_cart()
+        self.verify_item_added_to_cart()
+
 
 
