@@ -9,7 +9,6 @@ from utilities.utils import *
 log = logger
 
 
-
 class SeleniumBase:
     def __init__(self, driver, timeout=30):
         self.driver = driver
