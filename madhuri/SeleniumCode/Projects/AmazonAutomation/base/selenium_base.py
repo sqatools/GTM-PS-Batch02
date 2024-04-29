@@ -16,6 +16,13 @@ class SeleniumBase:
             print(e)
             print(f"Element not found, {locator}")
 
+    def get_elements(self, locator):
+        try:
+            elements = self.wait.until(ec.visibility_of_all_elements_located(locator))
+            return elements
+        except Exception as e:
+            print(f"Element not found, {locator}")
+
     def click_element(self, locator):
         element = self.get_element(locator)
         if element:
@@ -46,6 +53,16 @@ class SeleniumBase:
         action.click(element)
         action.perform()
 
+    def rate_by_star(self, locator, label, count):
+        elements = self.get_elements(locator)
+        print(elements)
+        for element in elements:
+            print("before count: ", count)
+            if count > 0:
+                element.click()
+            count = count - 1
+            print("after count: ", count)
+        return element
 
 
 

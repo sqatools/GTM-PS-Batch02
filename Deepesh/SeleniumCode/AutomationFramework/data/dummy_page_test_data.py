@@ -1,3 +1,7 @@
+from faker import Faker
+fk = Faker()
+#print(dir(fk))
+
 user_details = {
     "first_name" : "John",
     "last_name" : "Doe",
@@ -6,12 +10,12 @@ user_details = {
     "from_city" : "Mumbai",
     "dest_city" : "Bangalore",
 
-    "billing_name" : "John",
-    "billing_phone" : 65445645645,
-    "billing_email" : "john@gmail.com",
-    "billing_address" : "Mumbai, Bandra",
-    "billing_postal_code" : 6452342,
-    "billing_prefecture" : 645644645
+    "billing_name" : fk.user_name(),
+    "billing_phone" : fk.phone_number(),
+    "billing_email" : fk.email(),
+    "billing_address" : fk.address(),
+    "billing_postal_code" : fk.zipcode(),
+    "billing_prefecture" : fk.zipcode_in_state()
 
 }
 

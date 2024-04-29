@@ -14,6 +14,7 @@ class TestDummyWebsite:
         self.dw.provide_journey_details(
             first_name=user_details['first_name'],
             last_name=user_details['last_name'],
+            num_of_passenger=user_details['select_pass'],
             dob=user_details['DOB'],
             from_city=user_details['from_city'],
             dest_city=user_details['dest_city']
