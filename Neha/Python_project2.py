@@ -37,7 +37,7 @@ try:
     sign_in_button.click()
     driver.implicitly_wait(3)
     phone_number_input = driver.find_element(By.ID, "ap_email")  # Replace with the actual ID of the phone input field
-    phone_number_input.send_keys("+917503308660")  # Replace with the desired phone number
+    phone_number_input.send_keys("c")  # Replace with the desired phone number
     driver.implicitly_wait(3)
     continue_button = driver.find_element(By.XPATH, "//input[@id = 'continue']")
     continue_button.click()

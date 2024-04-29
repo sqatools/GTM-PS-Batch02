@@ -12,6 +12,7 @@ def get_driver(web_URL , Browser , timeout):
         driver = webdriver.Chrome()
     elif Browser.lower() == 'firefox':
         driver = webdriver.Firefox()
+
     global wait
     wait = WebDriverWait(driver,timeout, poll_frequency=0.5)
     driver.maximize_window()

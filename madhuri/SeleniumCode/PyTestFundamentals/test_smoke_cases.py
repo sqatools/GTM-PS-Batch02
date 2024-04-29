@@ -1,9 +1,3 @@
-"""
-command to install pytest
-
-"""
-
-
 def test_function1():
     a = 50
     b = 60
