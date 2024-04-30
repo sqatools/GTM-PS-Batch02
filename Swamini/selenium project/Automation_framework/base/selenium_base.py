@@ -26,7 +26,7 @@ class selenium_base:
             raise
 
     def click_element(self,locator):
-        element=self.get_elemtnt()
+        element=self.get_element(locator)
         log.info("got element with the locator:",locator)
         if element:
             element.click()

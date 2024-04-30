@@ -1,5 +1,6 @@
 from base.selenium_base import selenium_base
 from .simple_locator import *
+import time
 
 class amazonwebsite(selenium_base):
     def __init__(self,driver):
@@ -16,6 +17,23 @@ class amazonwebsite(selenium_base):
 
     def enter_password(self,password):
         self.enter_value(enter_password_locator,password)
+
+    def click_submit(self):
+        self.click_element(signin_locator)
+
+
+    def login_page(self,email_id:str,
+                   password:str):
+        self.click_signin_button()
+        self.enter_emailid(email_id)
+        time.sleep(5)
+        self.click_continue()
+        self.enter_password(password)
+        time.sleep(5)
+        self.click_submit()
+        time.sleep(5)
+
+
 
 
 
