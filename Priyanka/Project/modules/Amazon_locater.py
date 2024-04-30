@@ -20,4 +20,4 @@ reviews_txt_loc = (By.XPATH, "//span[@data-hook='rating-out-of-text']")
 name_txt_loc = (By.XPATH, "//span[@id='productTitle']")
 add_to_cart_btn_loc = (By.ID, "add-to-cart-button")
 cart_txt_loc = (By.XPATH, "//div[@class='a-fixed-left-grid-inner']//h1[contains(text(),'Added to Cart')]")
-
+product_link_loc = (By.XPATH, "(//div[@data-component-type='s-search-result']//img[@class='s-image'])[1]")

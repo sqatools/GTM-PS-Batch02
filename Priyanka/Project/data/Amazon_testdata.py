@@ -11,7 +11,7 @@ Amazon_data = {
                 "incorrect_email": "priya@gmail.",
 
                 "product_name": "shoe",
-                "category": "shoe",
+                "category": "Shoes",
                 "brand": "adidas",
                 "price_range": "₹1,000 - ₹2,500"
 

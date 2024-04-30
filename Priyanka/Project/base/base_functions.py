@@ -14,6 +14,9 @@ class SeleniumBase:
         self.timeout = timeout
         self.wait = WebDriverWait(self.driver, timeout=self.timeout)
 
+    def navigate_to_url(self, URL):
+        self.driver.get(URL)
+
     def get_element(self, locator):
         try:
             element = self.wait.until(ec.visibility_of_element_located(locator))
@@ -21,6 +24,7 @@ class SeleniumBase:
         except Exception as e:
             log.info(e)
             log.info(f"element not found {locator}")
+            raise
 
     def click_element(self, locator):
         try:

@@ -1,7 +1,9 @@
 from base.base_functions import SeleniumBase
 from .Amazon_locater import *
 from utilities.get_logger import logger
+import time
 log = logger
+
 
 class Amazon_modules(SeleniumBase):
 
@@ -62,13 +64,15 @@ class Amazon_modules(SeleniumBase):
             log.error(f"Product search failed: {ele_txt}")
 
     def choose_category(self, category):
-        self.click_element("//div[@id='departments']//span[text()="+category+"]")
+        #self.click_element(("//div[@id='departments']//span[text()="+category+"]"))
+        self.click_element(("//div[@id='departments']//span[text()='Shoes']"))
 
     def choose_brand(self, brand):
-        self.click_element("//span[text()="+brand+"]//..//..//input[@type='checkbox'")
+        #self.click_element(("//span[text()="+brand+"]//..//..//input[@type='checkbox'"))adidas
+        self.click_element(("//span[text()='adidas']//..//..//input[@type='checkbox']"))
 
     def choose_price_range(self, price_range):
-        self.click_element("//a//span[text()="+price_range+"]")
+        self.click_element(("//a//span[text()='"+price_range+"']"))
 
     def get_price(self):
         price = self.get_text(price_txt_loc)
@@ -96,8 +100,14 @@ class Amazon_modules(SeleniumBase):
         else:
             log.error("Item not added to cart")
 
+    def click_on_product(self):
+        self.click_element(product_link_loc)
+        time.sleep(10)
 
-
+    def windows_handle(self):
+        window_list = self.driver.window_handlers
+        self.driver.switch_to.window(window_list[1])
+        time.sleep(10)
 
 #------------------------------------------------------------------------------
     def register_new_user(self, new_username, new_mobile, new_pw):
@@ -107,32 +117,48 @@ class Amazon_modules(SeleniumBase):
         self.enter_new_phone(new_mobile)
         self.enter_new_password(new_pw)
         self.click_verify_mobile_no()
+        time.sleep(10)
 
-    def enter_login_data(self, email, password):
+
+    def enter_login_data(self, URL, email, password):
+        self.driver.get(URL)
+        self.navigate_to_signin()
         self.enter_email(email)
         self.click_continue()
         self.enter_password(password)
         self.click_signin()
+        time.sleep(10)
 
-    def enter_incorrect_login_data(self, incorrect_email):
+    def enter_incorrect_login_data(self, URL, incorrect_email):
+        self.driver.get(URL)
+        self.navigate_to_signin()
         self.enter_email(incorrect_email)
         self.click_continue()
         self.varify_incorrect_email_error_msg()
+        time.sleep(10)
 
-    def search_for_product(self,product_name):
+    def search_for_product(self, URL, product_name):
+        self.driver.get(URL)
         self.enter_product_name_and_search(product_name)
         self.varify_search_result(product_name)
+        time.sleep(10)
 
     def search_product_with_filters(self, category, brand, price_range):
         self.choose_category(category)
+        time.sleep(5)
         self.choose_brand(brand)
+        time.sleep(5)
         self.choose_price_range(price_range)
+        time.sleep(10)
 
     def check_all_product_details(self):
+        self.click_on_product()
+        self.windows_handle()
         self.get_name()
         self.get_price()
         self.get_description()
         self.get_review()
+        time.sleep(10)
 
     def shopping_cart_add_item(self):
         self.click_add_to_cart()
