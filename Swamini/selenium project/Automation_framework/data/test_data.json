@@ -1,0 +1,14 @@
+{
+  "amazon" : {
+    "test1" : {
+            "full_name" : "swamini kumthekar",
+            "mob_no" : "7387022324",
+            "password" : "Swamini@123"
+
+      },
+    "test2" : {
+            "email_id" : "swaminikumthekar77@gmail.com"
+
+      }
+  }
+}

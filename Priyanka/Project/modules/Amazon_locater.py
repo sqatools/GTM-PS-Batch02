@@ -1,0 +1,23 @@
+from selenium.webdriver.common.by import By
+
+email_txtbox_loc = (By.XPATH, "//input[@name = 'email']")
+continue_btn_loc = (By.XPATH, "//input[@id = 'continue']")
+password_txtbox_loc = (By.XPATH, "//input[@name = 'password']")
+signin_btn_loc = (By.ID, "signInSubmit")
+navigate_signin_loc = (By.XPATH, "//a[@id='nav-link-accountList']")
+create_new_btn_loc = (By.ID, "createAccountSubmit")
+new_username_loc = (By.XPATH, "//input[@name='customerName']")
+new_mobile_loc = (By.XPATH, "//input[@id='ap_phone_number']")
+new_pw_loc = (By.XPATH, "//input[@id='ap_password']")
+verify_mobile_no_btn_loc = (By.XPATH, "//input[@id='continue']")
+incorrect_email_msg_loc = (By.XPATH, "//div[@id='auth-error-message-box']//span")
+search_txtbox_loc = (By.XPATH, "//input[@id='twotabsearchtextbox']")
+search_btn_loc = (By.ID, "nav-search-submit-button")
+search_result_loc = (By.XPATH, "//span[@data-component-type='s-result-info-bar']//span[3]")
+price_txt_loc = (By.XPATH, "//div[@id='apex_desktop']//span[@class='a-price-whole']")
+description_txt_loc = (By.XPATH, "//div[@id='productDescription']//span")
+reviews_txt_loc = (By.XPATH, "//span[@data-hook='rating-out-of-text']")
+name_txt_loc = (By.XPATH, "//span[@id='productTitle']")
+add_to_cart_btn_loc = (By.ID, "add-to-cart-button")
+cart_txt_loc = (By.XPATH, "//div[@class='a-fixed-left-grid-inner']//h1[contains(text(),'Added to Cart')]")
+
