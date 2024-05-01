@@ -34,10 +34,9 @@ class amazonwebsite(selenium_base):
     #     time.sleep(5)
 
 class login(amazonwebsite):
-    def __init__(self,driver, email_id, password):
+    def __init__(self,driver):
         super().__init__(driver)
-        self.email_id = email_id
-        self.password = password
+
     def login_page(self, email_id: str,
                    password:str):
         self.click_signin_button()
