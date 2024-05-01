@@ -22,7 +22,23 @@ class amazonwebsite(selenium_base):
         self.click_element(signin_locator)
 
 
-    def login_page(self,email_id:str,
+    # def login_page(self,email_id:str,
+    #                password:str):
+    #     self.click_signin_button()
+    #     self.enter_emailid(email_id)
+    #     time.sleep(5)
+    #     self.click_continue()
+    #     self.enter_password(password)
+    #     time.sleep(5)
+    #     self.click_submit()
+    #     time.sleep(5)
+
+class login(amazonwebsite):
+    def __init__(self,driver, email_id, password):
+        super().__init__(driver)
+        self.email_id = email_id
+        self.password = password
+    def login_page(self, email_id: str,
                    password:str):
         self.click_signin_button()
         self.enter_emailid(email_id)
@@ -32,8 +48,5 @@ class amazonwebsite(selenium_base):
         time.sleep(5)
         self.click_submit()
         time.sleep(5)
-
-
-
 
 
