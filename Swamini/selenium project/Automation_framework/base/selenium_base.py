@@ -1,4 +1,3 @@
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from utilities.get_logger import logger
@@ -8,17 +7,15 @@ from utilities.utils import *
 
 log = logger
 
+class selenium_base:
+    def __init__(self,driver,timeout=30):
+        self.driver=driver
+        self.timeout=timeout
+        self.wait=WebDriverWait(self.driver,timeout=self.timeout)
 
-
-class SeleniumBase:
-    def __init__(self, driver, timeout=30):
-        self.driver = driver
-        self.timeout = timeout
-        self.wait = WebDriverWait(self.driver, timeout=self.timeout)
-
-    def get_element(self, locator):
+    def get_element(self,locator):
         try:
-            element = self.wait.until(ec.visibility_of_element_located(locator))
+            element=self.wait.until(ec.visibility_of_element_located(locator))
             return element
         except Exception as e:
             log.info(f"{e}")
@@ -28,21 +25,21 @@ class SeleniumBase:
             self.driver.save_screenshot(f"/logs/{filename}.png")
             raise
 
-    def click_element(self, locator):
-        element = self.get_element(locator)
-        log.info(f"Got element with the locator : {locator}")
+    def click_element(self,locator):
+        element=self.get_element(locator)
+        log.info("got element with the locator:",locator)
         if element:
             element.click()
         else:
-            print("Element not found")
+            print("element not found")
 
-    def enter_value(self, locator, data):
-        element = self.get_element(locator)
-        log.info(f"Got element with the locator:{locator}")
+    def enter_value(self,locator,value):
+        element=self.get_element(locator)
+        log.info("got element with locator:",locator)
         if element:
-            element.send_keys(data)
+            element.send_keys(value)
         else:
-            log.error(f"Element not found with the locator:{locator}")
+            log.error("element not found")
 
     def get_text(self, locator):
         element = self.get_element(locator)
@@ -60,7 +57,6 @@ class SeleniumBase:
             obj.select_by_visible_text(data_select)
         else:
             print("Element not found")
-
             return element.text
 
     def get_attribute(self, locator, attribute_name):
@@ -70,6 +66,11 @@ class SeleniumBase:
             return element.get_attribute(attribute_name)
         else:
             log.error("Element not found")
+
+
+
+
+
 
 
 
