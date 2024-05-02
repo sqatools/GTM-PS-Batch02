@@ -67,3 +67,12 @@ class Login(SeleniumBase):
         self.submit_password()
         self.verify_incorrect_password()
 
+
+    def login_success(self,
+                      correct_username:str,
+                      correct_password:str):
+        self.open_login_page()
+        self.enter_username(correct_username)
+        self.submit_username()
+        self.enter_password(correct_password)
+        self.submit_password()
