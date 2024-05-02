@@ -11,3 +11,11 @@ def initiate_driver(request):
     yield
     driver.close()
 
+
+@pytest.fixture(scope="function")
+def initiate_driver2(request):
+    wf2 = WebDriverFactory(BROWSER, URL)
+    driver = wf2.get_driver()
+    request.cls.driver = driver
+    yield
+    driver.close()
