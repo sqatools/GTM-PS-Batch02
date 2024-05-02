@@ -17,7 +17,7 @@ def get_api_call():
     for data in response.json():
         print(data)
 
-#get_api_call()
+get_api_call()
 
 
 def get_api_call_specific_ids():
@@ -79,6 +79,7 @@ def post_api_call():
 
 # {"id":"ff8081818f28dba8018f343fd46f2133","name":"Apple MacBook Pro 20","createdAt":"2024-05-01T13:02:29.487+00:00","data":{"year":2020,"price":100000,"CPU model":"Intel Core i10","Hard disk size":"2 TB"}}
 # {"id":"ff8081818f28dba8018f343fd46f2133","name":"Apple MacBook Pro 20","updatedAt":"2024-05-01T13:05:15.810+00:00","data":{"year":2020,"price":200000,"CPU model":"Intel Core i11","Hard disk size":"3 TB"}}
+# {"id":"ff8081818f28dba8018f3995b2962f8b","name":"Apple MacBook Pro 20","createdAt":"2024-05-02T13:54:22.998+00:00","data":{"year":2020,"price":100000,"CPU model":"Intel Core i10","Hard disk size":"2 TB"}}
 
 def put_method_call(object_id):
     url = f"https://api.restful-api.dev/objects/{object_id}"
@@ -99,8 +100,9 @@ def put_method_call(object_id):
     print(response.status_code)
     print(response.text)
 
-#put_method_call("ff8081818f28dba8018f343fd46f2133")
+# put_method_call("ff8081818f28dba8018f3995b2962f8b")
 # {"id":"ff8081818f28dba8018f343fd46f2133","name":"Apple MacBook Pro 20","updatedAt":"2024-05-01T13:05:15.810+00:00","data":{"year":2020,"price":200000,"CPU model":"Intel Core i11","Hard disk size":"3 TB"}}
+# {"id":"ff8081818f28dba8018f3995b2962f8b","name":"Apple MacBook Pro 20","updatedAt":"2024-05-02T13:57:30.715+00:00","data":{"year":2020,"price":200000,"CPU model":"Intel Core i11","Hard disk size":"3 TB"}}
 
 def patch_method_call(object_id):
     url = f"https://api.restful-api.dev/objects/{object_id}"
@@ -115,22 +117,23 @@ def patch_method_call(object_id):
     print(response.status_code)
     print(response.text)
 
-patch_method_call("ff8081818f28dba8018f343fd46f2133")
+# patch_method_call("ff8081818f28dba8018f3995b2962f8b")
 # {"id":"ff8081818f28dba8018f343fd46f2133","name":"Apple MacBook Pro 21","updatedAt":"2024-05-01T13:11:42.575+00:00","data":{"year":2020,"price":200000,"CPU model":"Intel Core i11","Hard disk size":"3 TB"}}
 # {"error":"The Object with id = ff8081818f28dba8018f343fd46f2133 doesn't exist. Please provide an object id which exists or generate a new Object using POST request and capture the id of it to use it as part of PATCH request after that."}
-
+# {"id":"ff8081818f28dba8018f3995b2962f8b","name":"Apple MacBook Pro 21","updatedAt":"2024-05-02T13:59:14.222+00:00","data":{"year":2020,"price":200000,"CPU model":"Intel Core i11","Hard disk size":"3 TB"}}
 
 def delete_api_call(object_id):
     url = f"https://api.restful-api.dev/objects/{object_id}"
 
     payload = {
               }
-    headers = {"Content-Type": "application/json"}
+    headers = {}
 
     response = requests.request("DELETE", url, headers=headers, data=payload)
 
     print(response.status_code)
     print(response.text)
 
-# delete_api_call("ff8081818f28dba8018f343fd46f2133")
+#delete_api_call("ff8081818f28dba8018f3995b2962f8b")
 # {"message":"Object with id = ff8081818f28dba8018f343fd46f2133 has been deleted."}
+# {"message":"Object with id = ff8081818f28dba8018f3995b2962f8b has been deleted."}
