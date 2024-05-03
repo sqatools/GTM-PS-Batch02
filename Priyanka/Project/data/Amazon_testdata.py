@@ -13,7 +13,9 @@ Amazon_data = {
                 "product_name": "shoe",
                 "category": "Shoes",
                 "brand": "adidas",
-                "price_range": "₹1,000 - ₹2,500"
+                "price_range": "₹1,000 - ₹2,500",
+    
+                "qty": "3",
 
 
 

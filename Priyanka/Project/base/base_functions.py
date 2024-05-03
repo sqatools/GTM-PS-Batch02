@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.select import Select
@@ -68,5 +69,17 @@ class SeleniumBase:
         else:
             log.error("Element not found")
 
+    def windows_handle(self):
+        window_list = self.driver.window_handles
+        return self.driver.switch_to.window(window_list[1])
+
+    def get_elements(self, locator):
+        web_elements = self.driver.find_elements(locator)
+        return web_elements
+
+    def switch_to_default_windows(self):
+        window_list = self.driver.window_handles
+        self.driver.close()
+        return self.driver.switch_to.window(window_list[0])
 
 
