@@ -1,0 +1,9 @@
+1. locator file should be only one for entire framewrok
+2. login page should be common or not ?
+
+ => 1 test case -> 1 locator file -> 1 locator function -> 1 test case file ?
+ or
+ => 1 test case -> common locator file -> common locator function -> different test case file
+
+
+
