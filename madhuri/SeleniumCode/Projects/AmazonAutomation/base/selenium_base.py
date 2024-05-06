@@ -41,6 +41,11 @@ class SeleniumBase:
         element = self.get_element(locator)
         return element.text
 
+    def clear_input(self, locator):
+        element = self.get_element(locator)
+        element.clear()
+
+
     def move_to_element(self, locator):
         element = self.get_element(locator)
         action = ActionChains(self.driver)

@@ -12,4 +12,6 @@ remember_me_locator = (By.XPATH, "//label//following::input[@name='rememberMe']"
 send_otp_button_locator = (By.XPATH, "(//span[@class='a-button-inner']//input[@type='submit'])[2]")
 incorrect_email_div_locator = (By.XPATH, "//div[@id='auth-error-message-box']//h4")
 incorrect_email_pwd_msg_locator = (By.XPATH, "//div[@id='auth-error-message-box']//span")
+amazon_logo_locator = (By.CLASS_NAME, "a-link-nav-icon")
+
 

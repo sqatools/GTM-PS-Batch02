@@ -7,6 +7,9 @@ class Login(SeleniumBase):
     def __init__(self, driver):
         super().__init__(driver)
 
+    def click_on_logo(self):
+        self.click_element(amazon_logo_locator)
+
     def open_login_page(self):
         self.move_to_element(home_page_signup_locator)
         self.click_to_element(sign_in_locator)
@@ -23,6 +26,9 @@ class Login(SeleniumBase):
 
     def submit_password(self):
         self.click_element(sign_in_final_submit_btn_locator)
+
+    def clear_username(self):
+        self.clear_input(email_input_locator)
 
     def verify_incorrect_email(self):
         invalid_email_txt = self.get_text(incorrect_email_pwd_msg_locator)
@@ -46,6 +52,7 @@ class Login(SeleniumBase):
             print(f"Error")
             raise
 
+
 # ------------------------------------ Function Start Here ------------------------------------------------#
 
     def incorrect_email_login(self,
@@ -55,11 +62,14 @@ class Login(SeleniumBase):
         self.enter_username(incorrect_username)
         self.submit_username()
         self.verify_incorrect_email()
+        # self.driver.navigate().refresh();
 
     def incorrect_password_login(self,
                                  correct_username:str,
                                  incorrect_password:str):
-        self.open_login_page()
+        self.driver.refresh()
+        self.clear_username()
+        time.sleep(1)
         self.enter_username(correct_username)
         self.submit_username()
         time.sleep(2)
@@ -71,6 +81,7 @@ class Login(SeleniumBase):
     def login_success(self,
                       correct_username:str,
                       correct_password:str):
+        self.click_on_logo()
         self.open_login_page()
         self.enter_username(correct_username)
         self.submit_username()

@@ -18,6 +18,7 @@ class TestLogin:
             correct_password = correct_password
         )
 
+
     def test_invalid_pwd_login(self):
         self.lg.incorrect_password_login(
             correct_username = correct_mobile,
@@ -29,6 +30,7 @@ class TestLogin:
             correct_username = correct_mobile,
             correct_password = correct_password
         )
+        time.sleep(10)
 
 
 
