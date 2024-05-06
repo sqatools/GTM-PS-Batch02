@@ -10,6 +10,23 @@ class TestAuthAPI:
 
     def test_verify_number_of_users(self):
         response = self.ap.get_all_users_details()
-        print(response.text)
         assert response.status_code == 200
+        assert response.text != []
+
+    def test_verify_number_of_posts(self):
+        response = self.ap.get_all_posts_details()
+        assert response.status_code == 200
+        assert response.text != []
+
+    def test_verify_number_of_comments(self):
+        response = self.ap.get_all_comments()
+        assert response.status_code == 200
+        assert response.text != []
+
+    def test_verify_do_list(self):
+        response = self.ap.get_all_to_do_list()
+        assert response.status_code == 200
+        assert response.text != []
+
+
 
