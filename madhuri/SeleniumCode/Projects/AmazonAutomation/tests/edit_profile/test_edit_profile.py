@@ -1,8 +1,6 @@
 import time
-
 import pytest
-from data.edit_profile_data import *
-from data.login_data import *
+from data.amazon_data import *
 from modules.edit_profile.edit_profile import EditProfile
 from modules.login.login_class import Login
 
@@ -15,13 +13,14 @@ class TestEditProfile:
         self.lg = Login(self.driver)
 
     def test_login_before_edit(self):
-        self.lg.login_success(
-            correct_username=correct_mobile,
-            correct_password=correct_password
+        self.rp.login_user(
+            username=amazon_test_data['login']['correct_mobile'],
+            password=amazon_test_data['login']['correct_password']
         )
+        assert self.driver.title == amazon_test_data['page_title']['home_page_title']
 
     def test_update_profile_information(self):
-        self.ep.edit_profile_info(fullname=fullname)
+        self.ep.edit_profile_info(fullname=amazon_test_data['edit_profile']['fullname'])
         time.sleep(10)
 
 
