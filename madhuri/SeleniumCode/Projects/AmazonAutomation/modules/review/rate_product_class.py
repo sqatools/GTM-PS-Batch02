@@ -24,6 +24,9 @@ class ReviewProduct(SeleniumBase):
     def submit_password(self):
         self.click_element(sign_in_final_submit_btn_locator)
 
+
+# ------------------------------------ Function Start Here ------------------------------------------------#
+
     def login_user(self,
                    username: str,
                    password: str):

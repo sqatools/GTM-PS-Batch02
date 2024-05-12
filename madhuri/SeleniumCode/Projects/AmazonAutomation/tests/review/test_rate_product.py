@@ -1,7 +1,6 @@
 import time
-
 import pytest
-from data.review_page_data import *
+from data.amazon_data import *
 from modules.review.rate_product_class import ReviewProduct
 
 
@@ -14,16 +13,10 @@ class TestReviewProduct:
 
     def test_login_user(self):
         self.rp.login_user(
-            username=mobile_number,
-            password=password
+            username= amazon_test_data['login']['correct_mobile'],
+            password= amazon_test_data['login']['correct_password']
         )
-        # assert self.driver.title == home_page_title
-        # self.rp.view_orders()
-
-    def test_login_success(self):
-        # assert self.driver.title == login_title  #failed test case
-        assert self.driver.title == home_page_title
-        time.sleep(2)
+        assert self.driver.title == amazon_test_data['page_title']['home_page_title']
 
     def test_view_orders(self):
         self.rp.view_orders()

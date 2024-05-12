@@ -38,4 +38,10 @@ review_title_locator = (By.ID, "scarface-review-title-label")
 review_text_card_locator = (By.ID, "scarface-review-text-card-title")
 submit_review_locator = (By.XPATH, "//span[@data-hook='ryp-review-submit-button']//button")
 
+# 5. Search product using its name in search bar
+search_bar_locator = (By.ID, "twotabsearchtextbox")
+search_icon_locator = (By.ID, "nav-search-submit-button")
+# filter_by_category_locator = (By.XPATH, "//span[contains(text(),'Women's Running Shoes")]")
+filter_by_price_locator = (By.XPATH, "//span[contains(text(),'Under ₹500')]")
+# filter_by_color_locator = (By.XPATH, "")
 
