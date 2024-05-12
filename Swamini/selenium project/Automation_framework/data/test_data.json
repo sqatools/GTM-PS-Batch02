@@ -3,7 +3,9 @@
     "test1" : {
             "full_name" : "swamini kumthekar",
             "mob_no" : "7387022324",
-            "password" : "Swamini@123"
+            "password" : "Swamini@123",
+            "incorrect_username": "swamini",
+            "incorrect_password": "Swami123"
 
       },
     "test2" : {
