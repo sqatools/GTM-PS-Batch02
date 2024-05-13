@@ -69,8 +69,56 @@ class SearchProduct(SeleniumBase):
 
     def click_to_buy_item(self):
         self.click_element(buy_now_locator)
+#     ----------------- select adddres and payment menthod-------------------
 
-# ------------------------------------ Function Start Here ------------------------------------------------#
+    def close_business_po_number(self):
+        self.click_element(continue_business_order_info_locator)
+
+    def get_address(self):
+        address_line1 = self.get_text(deliver_address_line1_locator)
+        address_line2 = self.get_text(deliver_address_line2_locator)
+        address_line3 = self.get_text(deliver_address_line3_locator)
+        address_line4 = self.get_text(deliver_address_line4_locator)
+        if address_line1 and address_line2 and address_line3 and address_line4:
+            log.info(f"address found")
+        else:
+            log.error(f"address not found")
+
+    def get_payment(self):
+        payment_element = self.get_element(payment_locator)
+        if payment_element:
+            print("pyment section found")
+            log.info("pyment section found")
+        else:
+            log.error("pyment section not found")
+
+    def get_order_summary(self):
+        order_element = self.get_element(order_summary_locator)
+        if order_element:
+            print("order summary section found")
+            log.info("order summary section found")
+        else:
+            log.error("order summary section not found")
+
+    def select_payment(self):
+        default_debit_card = self.click_element(default_debit_card_locator)
+        credit_debit_card = self.click_element(credit_debit_card_locator)
+        net_banking = self.click_element(net_banking_locator)
+        other_upi_apps = self.click_element(other_upi_apps_locator)
+        emi_apps = self.click_element(emi_apps_locator)
+        cash_on_delivery_apps = self.click_element(cash_on_delivery_apps_locator)
+
+    def submit_payment(self):
+        print('click to payment')
+        # self.click_element(payment_button_locator)
+
+    def apply_coupon(self, coupon_code):
+        self.enter_values(apply_coupon_code_locator, coupon_code)
+
+    def submit_coupon_code(self):
+        self.click_element(apply_coupon_code_btn_locator)
+
+    # ------------------------------------ Function Start Here ------------------------------------------------#
 
     def search_product_with_filters(self, product_name):
         self.select_category(product_name)
@@ -114,5 +162,16 @@ class SearchProduct(SeleniumBase):
         # self.payment_method()
         # self.order_review()
 
+    def validate_address_payment_process(self):
+        self.close_business_po_number()
+        self.get_address()
+        self.get_payment()
+        self.get_order_summary()
 
+    def apply_coupon_code(self, coupon_code):
+        self.apply_coupon(coupon_code)
+        self.submit_coupon_code()
+        time.sleep(5)
 
+    def select_each_payment_method(self):
+        self.select_payment()

@@ -29,4 +29,8 @@ review_title_locator = (By.ID, "scarface-review-title-label")
 review_text_card_locator = (By.ID, "scarface-review-text-card-title")
 submit_review_locator = (By.XPATH, "//span[@data-hook='ryp-review-submit-button']//button")
 
-
+# New Your Order:
+select_order_year_locator = (By.ID, "orderFilter")
+product_review_locator = (By.XPATH, "//a[@id='Write-a-product-review_1']")
+star_rating_locator = (By.XPATH, "(//button[@class='ryp__star__button'])[5]")
+submit_review_btn_locator = (By.XPATH, "//span[@data-hook='ryp-review-submit-button']//button")

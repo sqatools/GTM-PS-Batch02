@@ -87,3 +87,23 @@ class Login(SeleniumBase):
         self.submit_username()
         self.enter_password(correct_password)
         self.submit_password()
+
+    def payment_login(self,
+                      correct_username: str,
+                      correct_password: str):
+        self.enter_username(correct_username)
+        self.submit_username()
+        self.enter_password(correct_password)
+        self.submit_password()
+
+    def home_page_login(self,
+                        correct_username: str,
+                        correct_password: str):
+        self.open_login_page()
+        self.enter_username(correct_username)
+        self.submit_username()
+        time.sleep(3)
+        self.enter_password(correct_password)
+        self.submit_password()
+        time.sleep(2)
+

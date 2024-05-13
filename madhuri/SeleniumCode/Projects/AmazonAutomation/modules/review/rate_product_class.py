@@ -82,6 +82,24 @@ class ReviewProduct(SeleniumBase):
             print(write_product_review_locator)
             self.click_element(write_product_review_locator)
 
+    def click_to_your_orders(self):
+        self.move_to_element(profile_edit_nav_locator)
+        self.click_to_element(your_orders_nav_locator)
+        time.sleep(3)
+
+    def select_order_year(self, order_year):
+        self.select_dropdown(select_order_year_locator, order_year)
+
+    def click_Write_product_review(self):
+        self.click_element(product_review_locator)
+
+    def click_rating(self):
+        self.click_element(star_rating_locator)
+
+    def submit_rating(self):
+        self.click_element(submit_review_btn_locator)
+
+    # --------------------------------- function ----------------------------------------
     def view_orders(self):
         self.your_orders()
         self.view_order_list()
@@ -101,3 +119,15 @@ class ReviewProduct(SeleniumBase):
         time.sleep(2)
         # self.click_element(submit_review_locator)
         time.sleep(2)
+
+    def give_rating(self, order_year):
+        # self.switch_to_default_windows()
+        # self.windows_handle()
+        self.click_to_your_orders()
+        time.sleep(10)
+        self.select_order_year(order_year)
+        self.click_Write_product_review()
+        self.click_rating()
+        self.submit_rating()
+        time.sleep(5)
+

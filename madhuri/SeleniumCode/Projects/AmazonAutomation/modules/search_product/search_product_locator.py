@@ -24,3 +24,26 @@ select_qanty_dropdown_locator = (By.XPATH, "//select[@id='quantity']")
 delete_item_locator = (By.XPATH, "//input[@value='Delete']")
 buy_now_locator = (By.XPATH, "//input[@id='buy-now-button']")
 
+# checkout Page
+continue_business_order_info_locator = (By.ID, "a-autoid-2")
+deliver_address_line1_locator = (By.XPATH, "//ul[@class='displayAddressUL']//li[1]")
+deliver_address_line2_locator = (By.XPATH, "//ul[@class='displayAddressUL']//li[2]")
+deliver_address_line3_locator = (By.XPATH, "//ul[@class='displayAddressUL']//li[3]")
+deliver_address_line4_locator = (By.XPATH, "//ul[@class='displayAddressUL']//li[4]")
+payment_locator = (By.XPATH, "//div[contains(@class, 'pay-desktop')]")
+order_summary_locator = (By.XPATH, "//div[contains(@class, 'order-summary')]")
+
+# payment method
+default_debit_card_locator = (By.XPATH, "(//input[@name='ppw-instrumentRowSelection'])[1]")
+credit_debit_card_locator = (By.XPATH, "(//input[@name='ppw-instrumentRowSelection'])[2]")
+net_banking_locator = (By.XPATH, "(//input[@name='ppw-instrumentRowSelection'])[3]")
+other_upi_apps_locator = (By.XPATH, "(//input[@name='ppw-instrumentRowSelection'])[4]")
+emi_apps_locator = (By.XPATH, "(//input[@name='ppw-instrumentRowSelection'])[5]")
+cash_on_delivery_apps_locator = (By.XPATH, "(//input[@name='ppw-instrumentRowSelection'])[6]")
+payment_button_locator = (By.ID, "pp-iCgUg5-195-announce")
+apply_coupon_code_locator = (By.XPATH, "//input[@name='ppw-claimCode']")
+apply_coupon_code_btn_locator = (By.XPATH, "//input[@name='ppw-claimCodeApplyPressed']")
+
+
+
+

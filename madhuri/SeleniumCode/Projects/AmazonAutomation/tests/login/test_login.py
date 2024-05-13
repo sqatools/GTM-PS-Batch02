@@ -16,7 +16,6 @@ class TestLogin:
             correct_password = amazon_test_data['login']['correct_password']
         )
 
-
     def test_invalid_pwd_login(self):
         self.lg.incorrect_password_login(
             correct_username = amazon_test_data['login']['correct_mobile'],

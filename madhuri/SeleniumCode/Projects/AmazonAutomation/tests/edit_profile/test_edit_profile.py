@@ -12,12 +12,20 @@ class TestEditProfile:
         self.ep = EditProfile(self.driver)
         self.lg = Login(self.driver)
 
-    def test_login_before_edit(self):
+    # def test_login_before_edit(self):
+    #     self.lg.home_page_login(
+    #         correct_username=amazon_test_data['login']['correct_mobile'],
+    #         correct_password=amazon_test_data['login']['correct_password']
+    #     )
+    #     assert self.driver.title == amazon_test_data['page_title']['home_page_title']
+
+    def test_login_user(self):
         self.rp.login_user(
-            username=amazon_test_data['login']['correct_mobile'],
-            password=amazon_test_data['login']['correct_password']
+            username= amazon_test_data['login']['correct_mobile'],
+            password= amazon_test_data['login']['correct_password']
         )
         assert self.driver.title == amazon_test_data['page_title']['home_page_title']
+
 
     def test_update_profile_information(self):
         self.ep.edit_profile_info(fullname=amazon_test_data['edit_profile']['fullname'])
