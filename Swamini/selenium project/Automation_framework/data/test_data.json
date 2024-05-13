@@ -3,12 +3,21 @@
     "test1" : {
             "full_name" : "swamini kumthekar",
             "mob_no" : "7387022324",
-            "password" : "Swamini@123"
+            "password" : "Swamini@123",
+            "incorrect_username": "swamini",
+            "incorrect_password": "Swami123"
 
       },
     "test2" : {
             "email_id" : "swaminikumthekar77@gmail.com"
 
-      }
+      },
+
+    "test4": {
+            "profile_name_update": "Swami123"
+    },
+    "test5": {
+            "search_name": "shoe"
+    }
   }
 }
