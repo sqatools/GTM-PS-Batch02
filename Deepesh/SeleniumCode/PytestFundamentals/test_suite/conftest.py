@@ -29,3 +29,11 @@ def setup_m():
     driver.implicitly_wait(15)
     driver.get("https://automationbysqatools.blogspot.com/2021/05/dummy-website.html")
     return driver
+
+@pytest.fixture(scope="class")
+def setup_class(request):
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    driver.implicitly_wait(15)
+    driver.get("https://automationbysqatools.blogspot.com/2021/05/dummy-website.html")
+    request.cls.driver = driver

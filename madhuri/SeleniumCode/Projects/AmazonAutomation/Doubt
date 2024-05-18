@@ -1,0 +1,19 @@
+1. locator file should be only one for entire framewrok
+2. login page should be common or not ?
+
+ => 1 test case -> 1 locator file -> 1 locator function -> 1 test case file ?
+ or
+ => 1 test case -> common locator file -> common locator function -> different test case file
+
+
+
+1. Test if a new user can successfully register -> done except captcha
+2. Verify login is successful with correct email and password. -> done
+3. Ensure login fails with incorrect email or password. -> done (incorrect email,password both)
+4. Check if a user can successfully edit their profile information -> done (how to check user is login or not inside test case)
+5. Test searching for products using its name like shoe -> done
+6. Verify that searching with filters(e.g.,category,price range) yields accurate results. -> partially
+7. Ensure that the product detail page displays all necessary
+ information(price,reviews,description). -> partially
+ 8. Check if products can be sorted by relevance,price,rating,etc. -> not done
+ 9.

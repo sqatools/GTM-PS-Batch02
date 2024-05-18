@@ -1,0 +1,28 @@
+"""
+command to install pytest
+"""
+import pytest
+# from selenium import webdriver
+from selenium.webdriver.common.by import By
+#
+# driver = webdriver.Chrome()
+# driver.maximize_window()
+# driver.implicitly_wait(15)
+# driver.get("https://automationbysqatools.blogspot.com/2021/05/dummy-website.html")
+
+@pytest.mark.usefixtures("setup_class")
+class TestDummyWebSite:
+    def test_choose_ticket_price(self):
+        price_locator = "//span[contains(text(), 'Dummy hotel booking ticket - $400 ')]//preceding-sibling::input"
+        price_element = self.driver.find_element(By.XPATH, price_locator)
+        price_element.click()
+
+    def test_user_details(self):
+        first_name = self.driver.find_element(By.XPATH, "(//input[@id='firstname'])[1]")
+        first_name.send_keys("John")
+        last_name = self.driver.find_element(By.XPATH, "(//input[@id='firstname'])[2]")
+        last_name.send_keys("Doe")
+
+    def test_select_dob(self):
+        dob_element = self.driver.find_element(By.ID, "birthday")
+        dob_element.send_keys("04/16/2024")

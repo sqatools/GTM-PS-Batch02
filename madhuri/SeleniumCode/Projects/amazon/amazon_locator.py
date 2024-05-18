@@ -31,3 +31,17 @@ write_product_review_locator = (By.ID, f"Write-a-product-review_{no}")
 
 # Review Form
 review_form = (By.CLASS_NAME, "ryp__review-form__form")
+overall_rating_locator = (By.XPATH, "//span[contains(text(),'Rate features')]//preceding::button[@data-hook='ryp-star']")
+night_vision_locator = (By.XPATH, "//span[contains(text(),'Night vision')]//following::button[@data-hook='ryp-star']")
+value_for_money_locator = (By.XPATH, "//span[contains(text(),'Value for money')]//following::button[@data-hook='ryp-star']")
+review_title_locator = (By.ID, "scarface-review-title-label")
+review_text_card_locator = (By.ID, "scarface-review-text-card-title")
+submit_review_locator = (By.XPATH, "//span[@data-hook='ryp-review-submit-button']//button")
+
+# 5. Search product using its name in search bar
+search_bar_locator = (By.ID, "twotabsearchtextbox")
+search_icon_locator = (By.ID, "nav-search-submit-button")
+# filter_by_category_locator = (By.XPATH, "//span[contains(text(),'Women's Running Shoes")]")
+filter_by_price_locator = (By.XPATH, "//span[contains(text(),'Under ₹500')]")
+# filter_by_color_locator = (By.XPATH, "")
+

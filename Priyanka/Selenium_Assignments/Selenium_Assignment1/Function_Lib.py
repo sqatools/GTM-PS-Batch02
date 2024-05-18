@@ -20,7 +20,7 @@ def get_driver(URL, BROWSER, timeout):
     driver.maximize_window()
     driver.implicitly_wait(10)
     driver.get(URL)
-    #return driver, wait
+    return driver, wait
 
 
 def get_element(locator):

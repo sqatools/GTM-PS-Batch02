@@ -7,3 +7,30 @@ python -m pytest -v -s .\test_smoke_selenium_fixture.py
 
 #  command to execute the test with markers
 python -m pytest -v -m smoke .\test_suite\test_smoke_cases.py
+
+# command to install pytest-html package
+pip install pytest-html
+
+# command to generate the html report.
+ python -m pytest -v .\test_smoke_cases_skip.py --html=report.html
+
+# command to execute the specific test function from class
+ python -m pytest -v .\test_math_operation_class.py::TestMathOperation::test_addition
+
+# command to execute the test cases parallel.
+# we have to install the one package to run the test cases parallely.
+-> pip install pytest-xdist
+-> python -m pytest -n 3 -v -s .\test_smoke_cases.py
+
+# command to rerun the failed test cases
+-> python -m pytest -v -s .\test_smoke_cases.py --last-failed
+
+# command to clear the cache of pytest framework
+python -m pytest -v -s .\test_smoke_cases.py --cache-clear
+
+
+# Command to get list of packages in requirement.txt file
+pip freeze >> requirement.txt
+
+# Install packages with requirement.txt
+pip install -r requirement.txt
