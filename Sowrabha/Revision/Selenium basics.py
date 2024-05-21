@@ -10,6 +10,9 @@ driver.get(URL)
 #driver.find_element(By.XPATH,"//input[@type='checkbox']").click()
 time.sleep(2)
 
+driver.find_element(By.XPATH, "//span[text()='Dummy ticket for visa application - $200 ']").click()
+
+
 # ID # Done
 # XPATH #
 # LINK_TEXT # Done
@@ -42,3 +45,4 @@ time.sleep(2)
 #4)Indexing : (// a[@ href= '/hotels/'])[1]
 driver.find_element(By.XPATH,"//input[@id='firstname'][1]").send_keys("HI")
 time.sleep(10)
+
