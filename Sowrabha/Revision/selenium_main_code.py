@@ -24,3 +24,18 @@ def send_data(data,locator):
     element=Wait.until(ec.visibility_of_element_located(locator))
     element.send_keys(data)
 
+def get_element(locator):
+    element= Wait.until(ec.visibility_of_element_located(locator))
+    return element
+
+def click_element(locator):
+    element=get_element(locator)
+    element.click()
+
+def send_keys(data,locator):
+    element=get_element(locator)
+    element.send_keys(data)
+
+def get_text(locator):
+    element=get_element(locator)
+    return element.text

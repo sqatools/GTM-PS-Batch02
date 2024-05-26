@@ -2,6 +2,7 @@ import time
 
 from selenium_main_code import *
 from selenium_locator_code import *
+from selenium_testdata import *
 
 get_driver()
 send_data('rahul',first_name_locator)
@@ -15,5 +16,8 @@ send_data("12/6/1024",departure_locator)
 send_data("15/6/2024",return_locator)
 send_data("10/6/1024",Visa_locator)
 send_data("Rahul",Billing_loctor)
+send_data(str_add,street_locator)
 #click_element(checkbox_locator)
+cur_header_text = get_text(Header_locator)
+assert cur_header_text==web_heading
 time.sleep(10)
