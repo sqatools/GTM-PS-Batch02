@@ -20,9 +20,11 @@ time.sleep(4)
 dept_date=Wait.until(ec.visibility_of_element_located((By.ID,"departdate")))
 dept_date.send_keys("10/10/2024")
 time.sleep(5)
+dept_date.screenshot("deptscreenshot.png")
 
 #radio button
 driver.find_element(By.XPATH,"//input[@value='radio_123']").click()
+driver.save_screenshot("webpage.png")
 time.sleep(5)
 
 #Get attribute value
