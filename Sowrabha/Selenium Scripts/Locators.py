@@ -23,3 +23,4 @@ S1_address_locator=(By.ID,"street_address2")
 DOB_locator=(By.ID, "visadate")
 checkbox_locator=(By.XPATH,"(//input[@type='checkbox'])[1]")
 country_dropdown_locator = (By.ID, "billing_country")
+header_locator=
