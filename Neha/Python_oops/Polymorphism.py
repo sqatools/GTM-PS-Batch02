@@ -1,5 +1,5 @@
 """
-Polymorphism : When user provide multiple task to one member then it known as polymorphism
+Polymorphism : When same method behaves differently according to the object we call in it
 Method Overriding : When parent class and child class has same method name, then child class method
                    will override the parent the method. this concept is known as method overriding.
 """

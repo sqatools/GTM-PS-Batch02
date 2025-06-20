@@ -108,5 +108,22 @@ What is init file do..? -- to change the folder in package,its an blank file
 #Need to create the parent object in polymorphism concept(overriding)
 #Concept of args and kwargs
 #itertools.combinations
+#lambda function/list comprehension
+#
 #13). Python program to reverse a list with a while loop.
 #18). Python program to print a specific list after removing the 1st, 3rd, and 6th elements from the list.
+#dic: 11Input = {'d' : 21, 'b' : 53, 'a': 13, 'c': 41}
+#list SQA
+#28). Python program to generate all sublists with 5 or more elements in it from the given list.
+#34). Python program to combine two list elements as a sublist in a list.
+# list1 = [3, 5, 7, 8, 9]
+# list2 = [1, 4, 3, 6, 2]
+# Output = [[3, 1], [5, 4], [7, 3], [8, 6], [9, 2]]
+
+
+
+# # Output =
+# # (‘a’, 13)
+# # (‘b’, 53)
+# # (‘c’, 41)
+# # (‘d’, 21)

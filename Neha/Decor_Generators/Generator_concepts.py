@@ -55,3 +55,12 @@ print(gen_obj)
 
 for data in gen_obj:
     print(data)
+
+
+"""
+Decorator: Its a design pattern that allows the to add functionality to an existing method/function 
+without modify the original structure
+Decorators are commonly used for tasks such as logging, authentication, caching.
+
+
+"""

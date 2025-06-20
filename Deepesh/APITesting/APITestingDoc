@@ -1,0 +1,24 @@
+API : Application Programming Interface
+
+URL = https://www.google.co.in/gmail
+
+https : secure protocol
+www.google.co.in : server address
+/gmail : API end point
+
+API Methods:
+GET : retrieves the information or data from specific server
+POST : submits the data to be processed to a specific server
+DELETE :  Delete the record from specific server
+PUT : update the specified information with new data.
+PATCH : update the partial information of specific server
+
+HTTP Response status code
+
+100-  199 : Informational Response
+200 - 299 : Successful response
+300 - 399 : Redirection response message
+400 - 499 : Client error response
+500 - 502 : Server error response
+
+

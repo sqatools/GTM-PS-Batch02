@@ -13,6 +13,11 @@ print(dir(list))
 'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
 """
 
+"""
+List Comprehension-Python list comprehensions are a concise way to create lists. 
+[expression for item in iterable if condition]
+"""
+
 
 """1 Python program to calculate the square of each number from the given list.
 
@@ -79,15 +84,15 @@ Output = [5, 7, 11, 17, 19, 2, 8, 12, 22]
 #write the python code for all the values count
 #in the list and then remove the duplicates
 
-# list = [1, 2, 3, 2, 1, 3, 2, 4, 5, 4]
-#
-# #count value
-# values_count = {value:list.count(value) for value in list}
-# #remove duplicates
-# unique_list = (set(list))
-#
-# print(f'Count of all values:{values_count}')
-# print(f"Unique list:{unique_list}")
+list = [1, 2, 3, 2, 1, 3, 2, 4, 5, 4]
+
+#count value
+values_count = {value:list.count(value) for value in list}
+#remove duplicates
+unique_list = (set(list))
+
+print(f'Count of all values:{values_count}')
+print(f"Unique list:{unique_list}")
 
 #2). Python program to combine two lists.
 # list_a = [1, 2, 3, 2, 1, 3, 2, 4, 5, 4]
@@ -145,20 +150,20 @@ Output = [5, 7, 11, 17, 19, 2, 8, 12, 22]
 # print(list_9)
 
 #10 Python program to split the list into two-part, the left side all odd values and the right side all even values.
-Input = [5, 7, 2, 8, 11, 12, 17, 19, 22]
-# Output = [5, 7, 11, 17, 19, 2, 8, 12, 22]
-
-odd = [ ]
-even = [ ]
-
-for i in Input:
-    if i % 2 == 0:
-        even.append(i)
-    else:
-        odd.append(i)
-
-odd.extend(even)
-print(odd)  #[5, 7, 11, 17, 19, 2, 8, 12, 22]
+# Input = [5, 7, 2, 8, 11, 12, 17, 19, 22]
+# # Output = [5, 7, 11, 17, 19, 2, 8, 12, 22]
+#
+# odd = [ ]
+# even = [ ]
+#
+# for i in Input:
+#     if i % 2 == 0:
+#         even.append(i)
+#     else:
+#         odd.append(i)
+#
+# odd.extend(even)
+# print(odd)  #[5, 7, 11, 17, 19, 2, 8, 12, 22]
 
 
 
